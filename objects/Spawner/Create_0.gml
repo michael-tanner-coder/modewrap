@@ -1,0 +1,1 @@
+spawn_countdown = max_spawn_interval;

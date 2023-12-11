@@ -1,0 +1,1 @@
+aim_direction = 270;
