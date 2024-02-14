@@ -1,6 +1,14 @@
 health = 1;
 score = 0;
 image_speed = 1;
+lives = 3;
+max_lives = 4;
+points_to_next_life = 0;
+
+//modes = loadFromJson("enabled_modes.json");
+modes = global.levels[global.level_index].characters;
+mode_queue = array_shuffle(modes);
+mode_queue_index = 1;
 
 xspd  =0;
 yspd = 0;
@@ -14,54 +22,25 @@ jump_max = 1;
 jump_count = 0;
 jump_hold_frames = 15;
 jump_timer = 0;
+grounded = false;
+bounce_from_block = false;
 
 player_character_index = 0;
-player_jump_vars = [
-// Normal mode
-{
-	jump_spd: -2.5,
-	jump_max: 1,
-	jump_hold_frames: 15,
-	grav: 0.25,
-	move_spd: 1,
-	run: spr_player_run,
-	idle: spr_player_idle,
-	hurt: spr_player_hurt,
-},
 
-// Short mode
-{
-	jump_spd: -2.5,
-	jump_max: 1,
-	jump_hold_frames: 15,
-	grav: 0.25,
-	move_spd: 2,
-	run: spr_player_short_run,
-	idle: spr_player_short_idle,
-	hurt: spr_player_short_hurt,
-},
+player_jump_vars = global.mode_properties;
 
-// Tall mode
-{
-	jump_spd: -3,
-	jump_max: 1,
-	jump_hold_frames: 10,
-	grav: 0.25,
-	move_spd: 1,
-	run: spr_player_tall_run,
-	idle: spr_player_tall_idle,
-	hurt: spr_player_tall_hurt,
-},
-
-// Big mode
-{
-	jump_spd: -1.5,
-	jump_max: 1,
-	jump_hold_frames: 15,
-	grav: 1,
-	move_spd: 1,
-	run: spr_player_big_run,
-	idle: spr_player_big_idle,
-	hurt: spr_player_big_hurt,
+// Methods
+get_jump_stats = function() {
+	var matching_jump_stats = array_filter(player_jump_vars, function(element, index) {
+		return element.key == mode;
+	})
+	
+	if (is_array(matching_jump_stats)) {
+		return matching_jump_stats[0];
+	}
+	
+	return player_jump_vars[0];
 }
-];
+
+// Default to normal mode jumping
+_player_jump_stats = player_jump_vars[0];

@@ -1,1 +1,1 @@
-spawn_countdown = max_spawn_interval;
+global.spawn_countdown = max_spawn_interval;

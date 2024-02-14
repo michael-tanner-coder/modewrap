@@ -15,10 +15,5 @@ function screenwrap(){
 		return true;
 	}
 	
-	if (y < 0) {
-		y = 240;
-		return true;
-	}
-	
 	return false;
 }

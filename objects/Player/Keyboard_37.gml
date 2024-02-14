@@ -1,6 +1,3 @@
-var _player_jump_stats = player_jump_vars[mode_index];
-
-
 if(image_xscale != -1)
 {
 	image_xscale = -1;
@@ -8,6 +5,10 @@ if(image_xscale != -1)
 }
 
 sprite_index = _player_jump_stats.run;
+
+if (health < 2 && _player_jump_stats.backup_sprites) {
+	sprite_index = _player_jump_stats.backup_sprites.run;
+}
 
 
 

@@ -1,3 +1,1 @@
-health -= 1;
-instance_destroy(other.id);
-
+check_for_game_over();

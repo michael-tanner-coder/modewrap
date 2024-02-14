@@ -1,2 +1,2 @@
-fall_speed = min_fall_speed;
+//fall_speed = min_fall_speed;
 

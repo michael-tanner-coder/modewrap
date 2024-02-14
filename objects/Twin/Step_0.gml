@@ -1,0 +1,2 @@
+yspd += grav;
+y+=yspd;
