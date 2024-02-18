@@ -59,6 +59,7 @@ else
 	}
 }
 
+
 // jump buffer
 if (_jump_key_pressed) {
 	jump_buffer_time = max_jump_buffer_time;
