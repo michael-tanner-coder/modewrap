@@ -332,7 +332,8 @@ blah blah blah
 			
 			["GAMEPLAY", [
 				["GAME SPEED",		new Slider([0, 1], 1, "game_speed")],						// Changes how fast the game runs
-				["SCREENSHAKE",		new Toggle(true,	"screenshake_enabled")]					// Toggle screenshake effects on/off
+				["SCREENSHAKE",		new Toggle(true,	"screenshake_enabled")],					// Toggle screenshake effects on/off
+				["ENDLESS MODE",		new Toggle(true,	"endless_mode_enabled")],					// Toggle screenshake effects on/off
 			]],
 			
 			["CONTROLS", new Controls(global.input_sys, "input_save.json", true, ["right", "left", "up", "down"])], // Changes player controls

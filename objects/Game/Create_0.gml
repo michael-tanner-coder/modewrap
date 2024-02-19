@@ -37,59 +37,59 @@ coin_rows = 4;
 
 // Unlockables
 mode_unlocks = [
-	{
-		points: 500,
-		mode: "big",
-	},
-	
-	{
-		points: 700,
-		mode: "spikey",
-	},
-	
-	{
-		points: 2000,
-		mode: "stretch",
-	},
-	
-	{
-		points: 2500,
-		mode: "twin",
-	},
-	
-	{
-		points: 3000,
-		mode: "boots",
-	},
+    {
+        points: 500,
+        mode: "big",
+    },
+
+    {
+        points: 700,
+        mode: "spikey",
+    },
+
+    {
+        points: 2000,
+        mode: "stretch",
+    },
+
+    {
+        points: 2500,
+        mode: "twin",
+    },
+
+    {
+        points: 3000,
+        mode: "boots",
+    },
 ];
 
 // Mode Unlock Functions
-load_default_modes = function() {
-	var _modes = loadFromJson("unlocked_modes.json");
-	
-	if (!is_array(_modes)) {
-		var _default_modes = ["normal", "small", "tall"];
-		saveToJson(_default_modes, "unlocked_modes.json");
-	}
-}
+load_default_modes = function () {
+    var _modes = loadFromJson("unlocked_modes.json");
 
-unlock_mode = function() {
-	var _modes = loadFromJson("unlocked_modes.json");
-	
-	for(var i = 0; i < array_length(mode_unlocks); i++)  {
-		var _current_mode = mode_unlocks[i].mode;
-		var _points_to_unlock_mode = mode_unlocks[i].points;
-		
-		if (array_contains(_modes, _current_mode)) {
-			continue;
-		}
-		
-		if (score >= _points_to_unlock_mode) {
-			array_push(_modes, _current_mode);
-			saveToJson(_modes, "unlocked_modes.json");
-		}
-	}
-}
+    if (!is_array(_modes)) {
+        var _default_modes = ["normal", "small", "tall"];
+        saveToJson(_default_modes, "unlocked_modes.json");
+    }
+};
+
+unlock_mode = function () {
+    var _modes = loadFromJson("unlocked_modes.json");
+
+    for (var i = 0; i < array_length(mode_unlocks); i++) {
+        var _current_mode = mode_unlocks[i].mode;
+        var _points_to_unlock_mode = mode_unlocks[i].points;
+
+        if (array_contains(_modes, _current_mode)) {
+            continue;
+        }
+
+        if (score >= _points_to_unlock_mode) {
+            array_push(_modes, _current_mode);
+            saveToJson(_modes, "unlocked_modes.json");
+        }
+    }
+};
 
 // Default save data
 load_default_modes();
