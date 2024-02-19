@@ -1,4 +1,4 @@
-draw_set_font(Retro);
+draw_set_font(Header);
 
 if (global.intro) {
 	draw_self();
