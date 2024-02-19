@@ -79,7 +79,7 @@ blah blah blah
 		txt: {
 			// Used when drawing most of the things
 			normal: {
-				font:			fPixelBig,	// Text font
+				font:			Header,	// Text font
 				scale:			auto,		// (A) Text scale
 				right_scale:	auto,		// (A) Right side text scale (slider, toggle...)
 				outline_on:		true		// (bool) Whether the text should be outlined or not
@@ -87,7 +87,7 @@ blah blah blah
 			
 			// Used when drawing smaller things (e.g. Input icons, information text at the bottom)
 			small: {
-				font:		fPixel,		// Text font
+				font:		Paragraph,		// Text font
 				scale:		auto,		// (A) Text scale
 				outline_on:	true		// (bool) Whether the text should be outlined or not
 			}
@@ -200,7 +200,7 @@ blah blah blah
 				}
 			},
 			
-			reset_button_name:	"Reset Defaults" 	// Reset defaults button name 
+			reset_button_name:	"RESET DEFAULTS" 	// Reset defaults button name 
 		},
 		
 		// Credits
@@ -224,7 +224,7 @@ blah blah blah
 		
 		// Back button
 		back_button: {
-			name: "Back"	// Previous menu page button name
+			name: "BACK"	// Previous menu page button name
 		}
 	};
 	
@@ -276,7 +276,7 @@ blah blah blah
 			col:		look.col.selected.normal,	// Text color
 			outline_col:look.col.unselected.normal,	// Outline color or undefined if the outline is not needed
 			scale:		auto,						// Text scale
-			str:		"Game Paused"				// The text to be drawn
+			str:		"GAME PAUSED"				// The text to be drawn
 		}
 	}
 
@@ -285,23 +285,23 @@ blah blah blah
 #region Menu array (user)
 
 	menu = [
-		["Start Game", 
+		["START GAME", 
 			[
-				["Continue", new ScriptRunner(function() { room_goto(Cutscene);		// Goes to game room
+				["CONTINUE", new ScriptRunner(function() { room_goto(Cutscene);		// Goes to game room
 					menuModePause();
 					menuSetPreset(e_menu_presets.pause_menu);
 					room = Cutscene;
 				}), 
 		
-				"Resume",		new ScriptRunner(resumeGame)],	// Resumes the game when paused
+				"RESUME",		new ScriptRunner(resumeGame)],	// Resumes the game when paused
 		
-				["New Game", new ScriptRunner(function() { return undefined; }), undefined, undefined], // Play the game with looping levels and no end
+				["NEW GAME", new ScriptRunner(function() { return undefined; }), undefined, undefined], // Play the game with looping levels and no end
 			]
 		], 
 		
 		
 		
-		["Unlocks", new ScriptRunner(
+		["UNLOCKS", new ScriptRunner(
 				function()
 				{ 
 					room_goto(Unlocks);
@@ -312,7 +312,7 @@ blah blah blah
 		), undefined, undefined], // Go to menu to see all unlocked characters
 		
 		// View a table of all highscores
-		["Highscores", new ScriptRunner(
+		["HIGHSCORES", new ScriptRunner(
 				function()
 				{ 
 					room_goto(Scores);		// Goes to score room
@@ -322,37 +322,37 @@ blah blah blah
 				})
 		],
 		
-		["Options", [
+		["OPTIONS", [
 		
-			["Graphics", [
-				["Window Mode",	new Shift(["Windowed", "Fullscreen"], 1, "window_mode")],			// Changes window mode, see Game object
-				["Particles",	new Toggle(true,	"particles")],									// Not set to do anything
+			["GRAPHICS", [
+				["WINDOW MODE",	new Shift(["WINDOWED", "FULLSCREEN"], 1, "window_mode")],			// Changes window mode, see Game object
+				["PARTICLES",	new Toggle(true,	"particles")],									// Not set to do anything
 		
 			]],
 			
-			["Gameplay", [
-				["Game Speed",		new Slider([0, 1], 1, "game_speed")],						// Changes how fast the game runs
-				["Screenshake",		new Toggle(true,	"screenshake_enabled")]					// Toggle screenshake effects on/off
+			["GAMEPLAY", [
+				["GAME SPEED",		new Slider([0, 1], 1, "game_speed")],						// Changes how fast the game runs
+				["SCREENSHAKE",		new Toggle(true,	"screenshake_enabled")]					// Toggle screenshake effects on/off
 			]],
 			
-			["Controls", new Controls(global.input_sys, "input_save.json", true, ["right", "left", "up", "down"])], // Changes player controls
+			["CONTROLS", new Controls(global.input_sys, "input_save.json", true, ["right", "left", "up", "down"])], // Changes player controls
 			
-			["Audio", [
-				["Master",	new Slider([0, 1], 0.3,		"audio_master")],	// Sets volume of sounds in all audio groups
-				["Sounds",	new Slider([0, 1], 1,		"audio_sounds")],	// Sets volume of sounds in sound_group
-				["Music",	new Slider([0, 1], 1,		"audio_music")]		// Sets volume of sounds in music_group
+			["AUDIO", [
+				["MASTER",	new Slider([0, 1], 0.3,		"audio_master")],	// Sets volume of sounds in all audio groups
+				["SOUNDS",	new Slider([0, 1], 1,		"audio_sounds")],	// Sets volume of sounds in sound_group
+				["MUSIC",	new Slider([0, 1], 1,		"audio_music")]		// Sets volume of sounds in music_group
 			]],
 		
-			["Data", [
-				["Delete data?",	new ScriptRunner(function() { return undefined})],	// Delete all score and unlock data
+			["DATA", [
+				["DELETE DATA?",	new ScriptRunner(function() { return undefined})],	// Delete all score and unlock data
 			]],			
 		]],
 		
 		// Credits edit text above
-		["Credits",	new Credits(credits_string), undefined, undefined],
+		["CREDITS",	new Credits(credits_string), undefined, undefined],
 		
-		["Quit",		new ScriptRunner(game_end),			// Quits game
-		"Title Screen", new ScriptRunner(function() {		// Goes to title screen when in game room
+		["QUIT",		new ScriptRunner(game_end),			// Quits game
+		"TITLE SCREEN", new ScriptRunner(function() {		// Goes to title screen when in game room
 			menuModeTitle(); 
 			menuSetPreset(e_menu_presets.title_screen);
 			room = Title;
