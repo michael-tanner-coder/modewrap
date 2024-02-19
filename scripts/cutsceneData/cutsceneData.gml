@@ -89,6 +89,6 @@ global.cutscenes = [
                 animation: spr_player_twin_hurt,
             },
         ],
-        next_level: Title,
+        next_level: rmCredits,
     },
 ];

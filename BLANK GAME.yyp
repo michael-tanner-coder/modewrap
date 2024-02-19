@@ -106,6 +106,7 @@
     {"id":{"name":"fTitle","path":"fonts/fTitle/fTitle.yy",},},
     {"id":{"name":"spr_cannonball","path":"sprites/spr_cannonball/spr_cannonball.yy",},},
     {"id":{"name":"Unlocks","path":"rooms/Unlocks/Unlocks.yy",},},
+    {"id":{"name":"oCreditsController","path":"objects/oCreditsController/oCreditsController.yy",},},
     {"id":{"name":"inRange","path":"scripts/inRange/inRange.yy",},},
     {"id":{"name":"spr_bunny","path":"sprites/spr_bunny/spr_bunny.yy",},},
     {"id":{"name":"spr_player_tall_hurt","path":"sprites/spr_player_tall_hurt/spr_player_tall_hurt.yy",},},
@@ -176,6 +177,7 @@
     {"id":{"name":"sInpMouseLeft","path":"sprites/sInpMouseLeft/sInpMouseLeft.yy",},},
     {"id":{"name":"spr_bomb_explosion","path":"sprites/spr_bomb_explosion/spr_bomb_explosion.yy",},},
     {"id":{"name":"spr_player_twin_idle","path":"sprites/spr_player_twin_idle/spr_player_twin_idle.yy",},},
+    {"id":{"name":"rmCredits","path":"rooms/rmCredits/rmCredits.yy",},},
     {"id":{"name":"snMenuMove","path":"sounds/snMenuMove/snMenuMove.yy",},},
     {"id":{"name":"spr_spawner","path":"sprites/spr_spawner/spr_spawner.yy",},},
     {"id":{"name":"Background","path":"objects/Background/Background.yy",},},
@@ -296,6 +298,7 @@
     {"roomId":{"name":"Level_4","path":"rooms/Level_4/Level_4.yy",},},
     {"roomId":{"name":"Level_Bonus","path":"rooms/Level_Bonus/Level_Bonus.yy",},},
     {"roomId":{"name":"Scores","path":"rooms/Scores/Scores.yy",},},
+    {"roomId":{"name":"rmCredits","path":"rooms/rmCredits/rmCredits.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

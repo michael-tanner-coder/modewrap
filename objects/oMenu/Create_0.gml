@@ -62,6 +62,8 @@ blah blah blah
 
 #endregion
 
+global.credits = credits_string;
+
 #region Look settings (user)
 
 	// Settings marked with the (A) tag can be set to auto (automatic)
