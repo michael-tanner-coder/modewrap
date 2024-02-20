@@ -14,6 +14,7 @@ enum states {
     hurt = 2,
     respawn = 3,
     game_over = 4,
+    screenwrapping = 5,
 }
 
 state = states.idle;
@@ -106,7 +107,6 @@ states_array[states.game_over] = {
         show_debug_message("exit game over state");
     },
 };
-
 
 // State transition
 change_state = function(next_state) {
