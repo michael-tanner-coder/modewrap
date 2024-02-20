@@ -1,4 +1,4 @@
-// 
+// Base properties
 health = 1;
 score = 0;
 image_speed = 1;
@@ -7,15 +7,13 @@ max_lives = 4;
 points_to_next_life = 0;
 mode = character_modes.normal;
 
-// STATES
+// States
 enum states {
     idle = 0, 
-    running =1,
-    jumping = 2,
-    falling = 3, 
-    hurt = 4,
-    respawn = 5,
-    game_over = 6,
+    running = 1,
+    hurt = 2,
+    respawn = 3,
+    game_over = 4,
 }
 
 state = states.idle;
@@ -30,7 +28,7 @@ idle_behavior = function() {
 
     // transitions
     if (xspd != 0) {
-        state = states.running;
+        change_state(states.running);
     }
 }
 
@@ -44,19 +42,82 @@ running_behavior = function() {
     
     // transitions
     if (xspd == 0) {
-        state = states.idle;
+        change_state(states.idle);
     }
 }
 
-jumping_behavior = function() {}
-falling_behavior = function() {}
-hurt_behavior = function() {}
+hurt_behavior = function() {
+    // animation 
+    sprite_index = get_character_properties().hurt;
+	
+	if (_player_jump_stats.backup_sprites) {
+		sprite_index = _player_jump_stats.backup_sprites.hurt;
+	}
+
+
+}
+
 respawn_behavior = function() {}
-game_over_behavior = function() {}
 
-states_array[states.idle] = idle_behavior;
-states_array[states.running] = running_behavior;
+game_over_behavior = function() {
+    // animation 
+    sprite_index = get_character_properties().hurt;
 
+    if (_player_jump_stats.backup_sprites) {
+        sprite_index = _player_jump_stats.backup_sprites.hurt;
+    }
+}
+
+// State Behaviors
+states_array[states.idle] = {
+    entrance_behavior: function() {
+        show_debug_message("enter idle state");
+    },
+    active_behavior: idle_behavior,
+    exit_behavior: function() {
+        show_debug_message("exit idle state");
+    },
+};
+states_array[states.running] = {
+    entrance_behavior: function() {
+        show_debug_message("enter running state");
+    },
+    active_behavior: running_behavior,
+    exit_behavior: function() {
+        show_debug_message("exit running state");
+    },
+};
+states_array[states.hurt] = {
+    entrance_behavior: function() {},
+    active_behavior: hurt_behavior,
+    exit_behavior: function() {},
+};
+states_array[states.respawn] = {
+    entrance_behavior: function() {},
+    active_behavior: respawn_behavior,
+    exit_behavior: function() {},
+};
+states_array[states.game_over] = {
+    entrance_behavior: function() {
+        show_debug_message("enter game over state");
+    },
+    active_behavior: game_over_behavior,
+    exit_behavior: function() {
+        show_debug_message("exit game over state");
+    },
+};
+
+
+// State transition
+change_state = function(next_state) {
+    if (state != next_state) {
+        script_execute(states_array[state].exit_behavior);
+        script_execute(states_array[next_state].entrance_behavior);
+        state = next_state;
+    }
+}
+
+// Modes
 modes = global.levels[global.level_index].characters;
 mode_queue = [character_modes.normal, character_modes.small, character_modes.tall, character_modes.big, character_modes.boots, character_modes.spikey, character_modes.stretch];
 mode_queue_index = 1;

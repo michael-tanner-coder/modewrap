@@ -123,7 +123,7 @@ x += xspd;
 y += yspd;
 
 // animation
-script_execute(states_array[state]);
+script_execute(states_array[state].active_behavior);
 
 // arrow key commands
 if (_up_key_pressed && _player_jump_stats.backup_sprites && health > 1) {
