@@ -9,7 +9,7 @@
  */
 function pubsub_subscribe(_event, _func) {
     with (obj_pubsub_manager) {
-        subscribe(other.id, _even, _func);
+        subscribe(other.id, _event, _func);
         return false;
     }
 }

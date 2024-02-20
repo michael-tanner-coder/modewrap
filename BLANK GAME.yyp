@@ -98,7 +98,7 @@
     {"id":{"name":"spr_overlay","path":"sprites/spr_overlay/spr_overlay.yy",},},
     {"id":{"name":"spr_player_hurt","path":"sprites/spr_player_hurt/spr_player_hurt.yy",},},
     {"id":{"name":"isMouseInButton","path":"scripts/isMouseInButton/isMouseInButton.yy",},},
-    {"id":{"name":"obj_pub_sub_manager","path":"objects/obj_pub_sub_manager/obj_pub_sub_manager.yy",},},
+    {"id":{"name":"obj_pubsub_manager","path":"objects/obj_pubsub_manager/obj_pubsub_manager.yy",},},
     {"id":{"name":"snMenuPageShift","path":"sounds/snMenuPageShift/snMenuPageShift.yy",},},
     {"id":{"name":"checkForCollision","path":"scripts/checkForCollision/checkForCollision.yy",},},
     {"id":{"name":"snd_coin","path":"sounds/snd_coin/snd_coin.yy",},},

@@ -93,3 +93,9 @@ unlock_mode = function () {
 
 // Default save data
 load_default_modes();
+
+// Events
+pubsub_subscribe("coin_collected", function() {
+	global.collected_coins +=1;
+	score += 100;
+});
