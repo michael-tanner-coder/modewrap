@@ -33,6 +33,7 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"UI","order":19,"path":"folders/UI.yy",},
+    {"name":"PubSub","order":20,"path":"folders/PubSub.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_life","order":63,"path":"sprites/spr_life/spr_life.yy",},
@@ -76,6 +77,7 @@
     {"name":"spr_overlay","order":35,"path":"sprites/spr_overlay/spr_overlay.yy",},
     {"name":"spr_player_hurt","order":21,"path":"sprites/spr_player_hurt/spr_player_hurt.yy",},
     {"name":"isMouseInButton","order":11,"path":"scripts/isMouseInButton/isMouseInButton.yy",},
+    {"name":"obj_pub_sub_manager","order":27,"path":"objects/obj_pub_sub_manager/obj_pub_sub_manager.yy",},
     {"name":"snMenuPageShift","order":3,"path":"sounds/snMenuPageShift/snMenuPageShift.yy",},
     {"name":"checkForCollision","order":2,"path":"scripts/checkForCollision/checkForCollision.yy",},
     {"name":"snd_coin","order":3,"path":"sounds/snd_coin/snd_coin.yy",},
