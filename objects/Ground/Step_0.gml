@@ -4,7 +4,7 @@ if(place_meeting(x, y+1, Player)) {
 		audio_play_sound(snd_move_platform, 2, false);
 	}
 	
-	if (Player.mode == "tall") {
+	if (Player.mode == character_modes.tall) {
 		y -= Player.sprite_height;
 		pushed = true;
 	}
