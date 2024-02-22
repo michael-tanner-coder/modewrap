@@ -54,8 +54,6 @@ hurt_behavior = function() {
 	if (_player_jump_stats.backup_sprites) {
 		sprite_index = _player_jump_stats.backup_sprites.hurt;
 	}
-
-
 }
 
 respawn_behavior = function() {}
@@ -89,7 +87,9 @@ states_array[states.running] = {
     },
 };
 states_array[states.hurt] = {
-    entrance_behavior: function() {},
+    entrance_behavior: function() {
+		alarm_set(0, 10);
+	},
     active_behavior: hurt_behavior,
     exit_behavior: function() {},
 };
