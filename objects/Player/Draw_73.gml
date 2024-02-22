@@ -18,6 +18,7 @@ for (var _i = 0; _i < lives; _i++) {
 
 // Current mode
 var _current_mode_index = global.mode_text_sprites[mode].sprite;
+var _character_mode_text = global.mode_text_sprites[mode].text_image;
 draw_sprite_ext(
     spr_mode_text,
     0,
@@ -30,8 +31,8 @@ draw_sprite_ext(
     image_alpha
 );
 draw_sprite_ext(
-    spr_modes,
-    _current_mode_index,
+    _character_mode_text,
+    0,
     _start_x,
     _start_y + 12,
     2,

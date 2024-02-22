@@ -15,41 +15,49 @@ enum character_modes {
 global.mode_text_sprites[character_modes.normal] = {
 	key: "normal",
 	index: 2,
+	text_image: spr_mode_normal,
 	sprite: spr_player_idle
 };
 global.mode_text_sprites[character_modes.small] = {
 	key: "small",
 	index: 2,
+	text_image: spr_mode_small,
 	sprite: spr_player_short_idle
 };
 global.mode_text_sprites[character_modes.tall] = {
 	key: "tall",
 	index: 3,
+	text_image: spr_mode_tall,
 	sprite: spr_player_tall_idle
 };
 global.mode_text_sprites[character_modes.big] = {
 	key: "big",
 	index: 6,
+	text_image: spr_mode_big,
 	sprite: spr_player_big_idle
 };
 global.mode_text_sprites[character_modes.boots] = {
 	key: "boots",
 	index: 1,
+	text_image: spr_mode_boots,
 	sprite: spr_player_spike_boots_idle
 };
 global.mode_text_sprites[character_modes.spikey] = {
 	key: "spikey",
 	index: 5,
+	text_image: spr_mode_spikey,
 	sprite: spr_player_spikey_idle
 };
 global.mode_text_sprites[character_modes.stretch] = {
 	key: "stretch",
 	index: 4,
+	text_image: spr_mode_float,
 	sprite: spr_player_stretch_feet_idle
 };
 global.mode_text_sprites[character_modes.twin] = {
 	key: "twin",
 	index: 7,
+	text_image: spr_mode_twin,
 	sprite: spr_player_twin_idle
 };
 
