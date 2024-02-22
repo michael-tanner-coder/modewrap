@@ -34,7 +34,7 @@ event_struct = {};
 subscribe = function(_id, _event, _func) {
     if (is_undefined(event_struct[$ _event])) {
         event_struct[$ _event] = [];
-    } else if (is_subscribed(_id, _event) != 1) {
+    } else if (is_subscribed(_id, _event) != -1) {
         return;
     }
     array_push(event_struct[$ _event], [_id, _func]);

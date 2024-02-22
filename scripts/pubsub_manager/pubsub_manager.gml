@@ -50,5 +50,6 @@ function pubsub_publish(_event, _data) {
         publish(_event, _data);
         return true;
     }
+
     return false;
 }

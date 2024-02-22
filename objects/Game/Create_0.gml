@@ -95,7 +95,7 @@ unlock_mode = function () {
 load_default_modes();
 
 // Events
-pubsub_subscribe("coin_collected", function() {
-	global.collected_coins +=1;
-	score += 100;
+pubsub_subscribe("coin_collected", function () {
+    global.collected_coins += 1;
+    score += 100;
 });

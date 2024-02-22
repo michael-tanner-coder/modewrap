@@ -72,20 +72,20 @@ game_over_behavior = function() {
 // State Behaviors
 states_array[states.idle] = {
     entrance_behavior: function() {
-        show_debug_message("enter idle state");
+        // show_debug_message("enter idle state");
     },
     active_behavior: idle_behavior,
     exit_behavior: function() {
-        show_debug_message("exit idle state");
+        // show_debug_message("exit idle state");
     },
 };
 states_array[states.running] = {
     entrance_behavior: function() {
-        show_debug_message("enter running state");
+        // show_debug_message("enter running state");
     },
     active_behavior: running_behavior,
     exit_behavior: function() {
-        show_debug_message("exit running state");
+        // show_debug_message("exit running state");
     },
 };
 states_array[states.hurt] = {
