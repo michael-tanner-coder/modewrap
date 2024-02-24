@@ -25,6 +25,11 @@ if (place_meeting(x, y + 1, Ground)) {
     jump_count = 0;
 
     if (!grounded) {
+        var _max_yspd = 100;
+        var _yspd_factor = yspd / _max_yspd; // could use this to determine squash when falling faster
+        xscale = 1.1;
+        yscale = 0.9;
+
         // reset fall speed when hitting the ground
         fall_speed = 1;
 
@@ -78,6 +83,9 @@ if (jump_buffer_time > 0 && jump_count < _player_jump_stats.jump_max) {
     spawn_dust_particles();
 
     audio_play_sound(snd_jump_normal, 1, false);
+
+    xscale = 0.8;
+    yscale = 1.2;
 }
 
 // end jump early by stopping timer
@@ -91,12 +99,18 @@ if (jump_timer > 0 || bounce_from_block) {
 
     if (bounce_from_block) {
         yspd *= 2;
+        xscale = 0.8;
+        yscale = 1.2;
     }
 
     jump_timer--;
 
     bounce_from_block = false;
 }
+
+// lerp scale back to 1 to revert any squash and stretch
+xscale = lerp(xscale, 1, 0.05);
+yscale = lerp(yscale, 1, 0.05);
 
 // collision
 if (place_meeting(x + xspd, y, Ground)) {

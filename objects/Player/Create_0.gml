@@ -7,6 +7,10 @@ max_lives = 4;
 points_to_next_life = 0;
 mode = character_modes.normal;
 
+// scale for squash and stretch
+xscale = 1;
+yscale = 1;
+
 // States
 enum states {
     idle = 0, 

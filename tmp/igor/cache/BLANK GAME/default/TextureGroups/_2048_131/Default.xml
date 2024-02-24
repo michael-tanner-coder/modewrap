@@ -134,78 +134,86 @@
   <tpe x="503" y="298" tpage="default_0">spr_cannonball_167f7cb9-208b-48b4-a296-7d248d190ae1.tpe</tpe>
   <tpe x="752" y="956" tpage="default_0">spr_cannonball_abd35552-e02c-47cf-b618-f1589d511880.tpe</tpe>
   <tpe x="656" y="1003" tpage="default_0">spr_cannonball_d2eccdb4-e899-481d-b073-a6e6dc5e1e79.tpe</tpe>
-  <tpe x="201" y="1013" tpage="default_0">spr_modes_7dd6ab48-de7c-4577-abda-6c06f89bc7e9.tpe</tpe>
-  <tpe x="620" y="988" tpage="default_0">spr_respawn_platform_00fb582f-1a96-47e9-9d65-8f820644ec69.tpe</tpe>
-  <tpe x="734" y="763" tpage="default_0">spr_respawn_platform_45ec9328-4437-46f7-84d9-bc9b7ea2f8ea.tpe</tpe>
-  <tpe x="272" y="994" tpage="default_0">spr_respawn_platform_5253ed50-c272-4d5e-9fa1-95f3ffd52da2.tpe</tpe>
-  <tpe x="255" y="1011" tpage="default_0">spr_respawn_platform_69083cca-7030-4975-85bb-4641cb43daa6.tpe</tpe>
-  <tpe x="734" y="975" tpage="default_0">spr_respawn_platform_6fff84c4-f975-4a1d-b743-6ac5d27b6b3a.tpe</tpe>
-  <tpe x="671" y="1003" tpage="default_0">spr_respawn_platform_978087dc-069b-456c-8c9d-efb43f3f7929.tpe</tpe>
+  <tpe x="201" y="1013" tpage="default_0">spr_mode_normal_18e16653-bf37-41b4-a4d2-c9f4bcfd5a91.tpe</tpe>
+  <tpe x="620" y="988" tpage="default_0">spr_modes_7dd6ab48-de7c-4577-abda-6c06f89bc7e9.tpe</tpe>
+  <tpe x="734" y="763" tpage="default_0">spr_respawn_platform_00fb582f-1a96-47e9-9d65-8f820644ec69.tpe</tpe>
+  <tpe x="272" y="994" tpage="default_0">spr_respawn_platform_45ec9328-4437-46f7-84d9-bc9b7ea2f8ea.tpe</tpe>
+  <tpe x="255" y="1011" tpage="default_0">spr_respawn_platform_5253ed50-c272-4d5e-9fa1-95f3ffd52da2.tpe</tpe>
+  <tpe x="734" y="975" tpage="default_0">spr_respawn_platform_69083cca-7030-4975-85bb-4641cb43daa6.tpe</tpe>
+  <tpe x="671" y="1003" tpage="default_0">spr_respawn_platform_6fff84c4-f975-4a1d-b743-6ac5d27b6b3a.tpe</tpe>
+  <tpe x="756" y="730" tpage="default_0">spr_respawn_platform_978087dc-069b-456c-8c9d-efb43f3f7929.tpe</tpe>
   <tpe x="441" y="1015" tpage="default_0">spr_victory_text_07928b10-c362-495e-9188-b8012c3128c9.tpe</tpe>
   <tpe x="764" y="868" tpage="default_0">sInpGamepadLeftTrigger_4a0fa76d-45a5-4a4e-89ea-93213b00bc26.tpe</tpe>
   <tpe x="763" y="617" tpage="default_0">sInpGamepadRightTrigger_4a0fa76d-45a5-4a4e-89ea-93213b00bc26.tpe</tpe>
-  <tpe x="642" y="988" tpage="default_0">spr_player_stretch_head_hurt_e69b47dc-f698-4c52-bc7f-2a1a705e51e7.tpe</tpe>
-  <tpe x="756" y="730" tpage="default_0">spr_player_stretch_head_idle_93781e5b-e34d-49f4-8ee4-46f7d252f980.tpe</tpe>
-  <tpe x="294" y="994" tpage="default_0">spr_player_stretch_head_idle_995b448f-4b63-45f4-9835-8832012780dc.tpe</tpe>
-  <tpe x="294" y="994" tpage="default_0">spr_player_stretch_head_idle_a050d3d6-2829-48f7-bb5b-8dea554915ea.tpe</tpe>
-  <tpe x="277" y="1007" tpage="default_0">spr_player_stretch_head_run_283ceda7-833e-4bba-8586-d4a937723739.tpe</tpe>
-  <tpe x="277" y="1007" tpage="default_0">spr_player_stretch_head_run_ce6e72a2-b9b1-4084-a657-7a9d0755faf9.tpe</tpe>
-  <tpe x="756" y="975" tpage="default_0">spr_player_stretch_head_run_d6b01be8-a17d-4625-8180-02a5fc474a0b.tpe</tpe>
-  <tpe x="734" y="988" tpage="default_0">spr_player_twin_idle_5173d696-a097-4979-9b91-6642f8abcf8a.tpe</tpe>
-  <tpe x="298" y="1007" tpage="default_0">spr_modes_971fd72d-80a3-441a-ac76-0bff07bf2065.tpe</tpe>
-  <tpe x="693" y="1003" tpage="default_0">sInpGamepadRightBumper_4a0fa76d-45a5-4a4e-89ea-93213b00bc26.tpe</tpe>
-  <tpe x="755" y="988" tpage="default_0">spr_player_587b90fb-963e-4465-b548-541e81b2d15f.tpe</tpe>
-  <tpe x="756" y="743" tpage="default_0">spr_player_hurt_21c81d82-1577-43ab-b0c6-0d553f6be7f3.tpe</tpe>
-  <tpe x="755" y="988" tpage="default_0">spr_player_idle_9017f93b-7d99-43ef-894c-28fcf7931d03.tpe</tpe>
-  <tpe x="756" y="759" tpage="default_0">spr_player_run_20e5216b-a51d-425f-b48c-3292907d9263.tpe</tpe>
-  <tpe x="734" y="1001" tpage="default_0">spr_player_run_c0051efc-ab6a-44d8-a25b-9b6887962425.tpe</tpe>
-  <tpe x="713" y="1003" tpage="default_0">spr_shockwave_9b8a1071-2545-4a9a-90af-127333f62747.tpe</tpe>
-  <tpe x="750" y="1004" tpage="default_0">spr_shockwave_c191c136-7360-415a-bad0-e29a8ecb8ce2.tpe</tpe>
-  <tpe x="763" y="665" tpage="default_0">spr_coin_94c36898-d767-4be8-b339-078f3ece168b.tpe</tpe>
-  <tpe x="503" y="317" tpage="default_0">spr_coin_a6c1ac25-e7cc-4a38-939f-dea2b6830bd1.tpe</tpe>
-  <tpe x="515" y="992" tpage="default_0">spr_modes_ed77f8ff-0fe7-4b76-8968-a4beb1b2938d.tpe</tpe>
+  <tpe x="294" y="994" tpage="default_0">spr_player_stretch_head_hurt_e69b47dc-f698-4c52-bc7f-2a1a705e51e7.tpe</tpe>
+  <tpe x="277" y="1007" tpage="default_0">spr_player_stretch_head_idle_93781e5b-e34d-49f4-8ee4-46f7d252f980.tpe</tpe>
+  <tpe x="756" y="975" tpage="default_0">spr_player_stretch_head_idle_995b448f-4b63-45f4-9835-8832012780dc.tpe</tpe>
+  <tpe x="756" y="975" tpage="default_0">spr_player_stretch_head_idle_a050d3d6-2829-48f7-bb5b-8dea554915ea.tpe</tpe>
+  <tpe x="734" y="988" tpage="default_0">spr_player_stretch_head_run_283ceda7-833e-4bba-8586-d4a937723739.tpe</tpe>
+  <tpe x="734" y="988" tpage="default_0">spr_player_stretch_head_run_ce6e72a2-b9b1-4084-a657-7a9d0755faf9.tpe</tpe>
+  <tpe x="693" y="1003" tpage="default_0">spr_player_stretch_head_run_d6b01be8-a17d-4625-8180-02a5fc474a0b.tpe</tpe>
+  <tpe x="756" y="743" tpage="default_0">spr_player_twin_idle_5173d696-a097-4979-9b91-6642f8abcf8a.tpe</tpe>
+  <tpe x="298" y="1007" tpage="default_0">spr_mode_boots_a350fdc3-0608-4c7e-947d-179f8a39cb98.tpe</tpe>
+  <tpe x="767" y="956" tpage="default_0">spr_modes_971fd72d-80a3-441a-ac76-0bff07bf2065.tpe</tpe>
+  <tpe x="769" y="578" tpage="default_0">sInpGamepadRightBumper_4a0fa76d-45a5-4a4e-89ea-93213b00bc26.tpe</tpe>
+  <tpe x="763" y="665" tpage="default_0">spr_player_587b90fb-963e-4465-b548-541e81b2d15f.tpe</tpe>
+  <tpe x="766" y="913" tpage="default_0">spr_player_hurt_21c81d82-1577-43ab-b0c6-0d553f6be7f3.tpe</tpe>
+  <tpe x="763" y="665" tpage="default_0">spr_player_idle_9017f93b-7d99-43ef-894c-28fcf7931d03.tpe</tpe>
+  <tpe x="755" y="988" tpage="default_0">spr_player_run_20e5216b-a51d-425f-b48c-3292907d9263.tpe</tpe>
+  <tpe x="765" y="756" tpage="default_0">spr_player_run_c0051efc-ab6a-44d8-a25b-9b6887962425.tpe</tpe>
+  <tpe x="792" y="246" tpage="default_0">spr_shockwave_9b8a1071-2545-4a9a-90af-127333f62747.tpe</tpe>
+  <tpe x="777" y="967" tpage="default_0">spr_shockwave_c191c136-7360-415a-bad0-e29a8ecb8ce2.tpe</tpe>
+  <tpe x="503" y="317" tpage="default_0">spr_coin_94c36898-d767-4be8-b339-078f3ece168b.tpe</tpe>
+  <tpe x="770" y="591" tpage="default_0">spr_coin_a6c1ac25-e7cc-4a38-939f-dea2b6830bd1.tpe</tpe>
+  <tpe x="515" y="992" tpage="default_0">spr_mode_float_ce1c7d9f-4f14-44b9-ae89-df447575344c.tpe</tpe>
+  <tpe x="492" y="475" tpage="default_0">spr_modes_ed77f8ff-0fe7-4b76-8968-a4beb1b2938d.tpe</tpe>
+  <tpe x="771" y="698" tpage="default_0">spr_mode_spikey_70accc95-1605-4617-99d3-42981b93d7b9.tpe</tpe>
   <tpe x="671" y="1016" tpage="default_0">spr_modes_fd95af1b-1161-4e0d-bb7e-d6732e030325.tpe</tpe>
-  <tpe x="765" y="775" tpage="default_0">spr_player_idle_2ad5e1be-7f86-4ec3-9d2a-de9ae87a94c9.tpe</tpe>
-  <tpe x="765" y="775" tpage="default_0">spr_player_run_2a1f316a-8803-47f2-9e6b-5fbddd08fb4a.tpe</tpe>
-  <tpe x="781" y="246" tpage="default_0">spr_score_text_e5a7324b-2cd7-412d-8568-50380ace97c7.tpe</tpe>
-  <tpe x="769" y="578" tpage="default_0">spr_shockwave_99eb503b-a0e7-4f11-9020-c89ac31f0e74.tpe</tpe>
-  <tpe x="766" y="913" tpage="default_0">spr_shockwave_e31773bb-4cad-44d5-9a33-2fcdb5f9a60a.tpe</tpe>
-  <tpe x="785" y="256" tpage="default_0">sInpGamepadStart_4a0fa76d-45a5-4a4e-89ea-93213b00bc26.tpe</tpe>
-  <tpe x="492" y="475" tpage="default_0">spr_modes_2af62b3b-a55c-4b6b-8484-2349548dedff.tpe</tpe>
-  <tpe x="771" y="698" tpage="default_0">spr_shockwave_4cfb853d-51b3-4d69-8520-a9f8f0405379.tpe</tpe>
+  <tpe x="774" y="534" tpage="default_0">spr_player_idle_2ad5e1be-7f86-4ec3-9d2a-de9ae87a94c9.tpe</tpe>
+  <tpe x="774" y="534" tpage="default_0">spr_player_run_2a1f316a-8803-47f2-9e6b-5fbddd08fb4a.tpe</tpe>
+  <tpe x="763" y="637" tpage="default_0">spr_score_text_e5a7324b-2cd7-412d-8568-50380ace97c7.tpe</tpe>
+  <tpe x="772" y="560" tpage="default_0">spr_shockwave_99eb503b-a0e7-4f11-9020-c89ac31f0e74.tpe</tpe>
+  <tpe x="769" y="888" tpage="default_0">spr_shockwave_e31773bb-4cad-44d5-9a33-2fcdb5f9a60a.tpe</tpe>
+  <tpe x="778" y="262" tpage="default_0">sInpGamepadStart_4a0fa76d-45a5-4a4e-89ea-93213b00bc26.tpe</tpe>
+  <tpe x="769" y="929" tpage="default_0">spr_mode_small_af18ccd7-3ea5-4039-96e9-ca2f88a246e9.tpe</tpe>
+  <tpe x="769" y="929" tpage="default_0">spr_modes_2af62b3b-a55c-4b6b-8484-2349548dedff.tpe</tpe>
+  <tpe x="771" y="988" tpage="default_0">spr_shockwave_4cfb853d-51b3-4d69-8520-a9f8f0405379.tpe</tpe>
   <tpe x="232" y="1014" tpage="default_0">spr_player_twin_blue_ff1d61b5-f606-42c2-b340-c7630b6d3304.tpe</tpe>
-  <tpe x="763" y="637" tpage="default_0">spr_player_twin_red_hurt_b92bc0c8-a7d4-4e18-84c3-99cf44403148.tpe</tpe>
-  <tpe x="767" y="956" tpage="default_0">spr_player_twin_red_idle_e093b911-603c-4d5f-8ee5-2cb63eb35935.tpe</tpe>
-  <tpe x="771" y="988" tpage="default_0">spr_player_twin_red_run_e7d56507-5e5c-47dc-9c28-00c1aafbc087.tpe</tpe>
-  <tpe x="766" y="1004" tpage="default_0">spr_player_twin_red_run_ee1decbf-a044-48f3-802b-f70a32b4abdc.tpe</tpe>
+  <tpe x="734" y="1001" tpage="default_0">spr_player_twin_red_hurt_b92bc0c8-a7d4-4e18-84c3-99cf44403148.tpe</tpe>
+  <tpe x="765" y="772" tpage="default_0">spr_player_twin_red_idle_e093b911-603c-4d5f-8ee5-2cb63eb35935.tpe</tpe>
+  <tpe x="777" y="743" tpage="default_0">spr_player_twin_red_run_e7d56507-5e5c-47dc-9c28-00c1aafbc087.tpe</tpe>
+  <tpe x="808" y="246" tpage="default_0">spr_player_twin_red_run_ee1decbf-a044-48f3-802b-f70a32b4abdc.tpe</tpe>
   <tpe x="503" y="334" tpage="default_0">spr_coin_0bb2813d-ddfb-46a5-83d7-1c231d65ae5c.tpe</tpe>
-  <tpe x="772" y="743" tpage="default_0">spr_coin_9b825fdf-051c-472c-a435-141b980d375a.tpe</tpe>
-  <tpe x="765" y="790" tpage="default_0">spr_shockwave_c93e228c-2b01-4abb-911f-7e06946fe5ed.tpe</tpe>
-  <tpe x="807" y="246" tpage="default_0">spr_mode_text_68c32475-8ec1-4b73-8a46-0cf9b07f0fc5.tpe</tpe>
+  <tpe x="772" y="681" tpage="default_0">spr_coin_9b825fdf-051c-472c-a435-141b980d375a.tpe</tpe>
+  <tpe x="772" y="708" tpage="default_0">spr_shockwave_c93e228c-2b01-4abb-911f-7e06946fe5ed.tpe</tpe>
+  <tpe x="798" y="262" tpage="default_0">spr_mode_text_68c32475-8ec1-4b73-8a46-0cf9b07f0fc5.tpe</tpe>
   <tpe x="576" y="974" tpage="default_0">spr_player_short_idle_885dee14-6df1-43d2-8235-ef5c6e165d72.tpe</tpe>
   <tpe x="576" y="974" tpage="default_0">spr_player_short_idle_93fc23d6-5a29-401d-b07f-c3665c5c4fb5.tpe</tpe>
-  <tpe x="770" y="593" tpage="default_0">spr_player_short_run_c1d49e36-fc4f-48f3-af09-c610cfb94a6a.tpe</tpe>
-  <tpe x="774" y="534" tpage="default_0">spr_player_short_run_f5ac3536-a147-47d6-b5a8-db7f76fe0772.tpe</tpe>
-  <tpe x="772" y="560" tpage="default_0">spr_short_player_e4031457-502b-4f9a-a045-9926d0b11c9d.tpe</tpe>
-  <tpe x="769" y="888" tpage="default_0">spr_modes_4e84e677-196d-4aaa-85d1-3b205969b795.tpe</tpe>
-  <tpe x="805" y="256" tpage="default_0">spr_modes_b5c024d8-699d-4220-806b-5d5c8d6eb388.tpe</tpe>
-  <tpe x="772" y="682" tpage="default_0">spr_player_stretch_feet_hurt_29f080d5-ceed-4efe-9feb-5eb72655c904.tpe</tpe>
-  <tpe x="772" y="713" tpage="default_0">spr_player_twin_red_idle_61a82f85-d766-441b-93ad-87d826e95b6d.tpe</tpe>
-  <tpe x="772" y="713" tpage="default_0">spr_player_twin_red_run_81adfb38-cc20-451a-9eb5-e97e93697940.tpe</tpe>
-  <tpe x="768" y="648" tpage="default_0">spr_time_text_605c4fda-d905-45e1-ba9b-109fbe715c24.tpe</tpe>
+  <tpe x="789" y="549" tpage="default_0">spr_player_short_run_c1d49e36-fc4f-48f3-af09-c610cfb94a6a.tpe</tpe>
+  <tpe x="768" y="647" tpage="default_0">spr_player_short_run_f5ac3536-a147-47d6-b5a8-db7f76fe0772.tpe</tpe>
+  <tpe x="777" y="608" tpage="default_0">spr_short_player_e4031457-502b-4f9a-a045-9926d0b11c9d.tpe</tpe>
+  <tpe x="778" y="274" tpage="default_0">spr_mode_tall_02a8e884-f236-495a-87b9-cba4d6164598.tpe</tpe>
+  <tpe x="698" y="1016" tpage="default_0">spr_mode_twin_39aac81a-bf2a-4608-a764-99352ef8db4c.tpe</tpe>
+  <tpe x="778" y="274" tpage="default_0">spr_modes_4e84e677-196d-4aaa-85d1-3b205969b795.tpe</tpe>
+  <tpe x="769" y="939" tpage="default_0">spr_modes_b5c024d8-699d-4220-806b-5d5c8d6eb388.tpe</tpe>
+  <tpe x="793" y="939" tpage="default_0">spr_player_stretch_feet_hurt_29f080d5-ceed-4efe-9feb-5eb72655c904.tpe</tpe>
+  <tpe x="782" y="904" tpage="default_0">spr_player_twin_red_idle_61a82f85-d766-441b-93ad-87d826e95b6d.tpe</tpe>
+  <tpe x="782" y="904" tpage="default_0">spr_player_twin_red_run_81adfb38-cc20-451a-9eb5-e97e93697940.tpe</tpe>
+  <tpe x="771" y="1003" tpage="default_0">spr_time_text_605c4fda-d905-45e1-ba9b-109fbe715c24.tpe</tpe>
   <tpe x="458" y="262" tpage="default_0">spr_ground_corner_08fb1e3e-9948-45c9-bb4d-6947e692cb45.tpe</tpe>
   <tpe x="149" y="1014" tpage="default_0">spr_player_short_hurt_17bcd571-569b-4581-ba0b-9718641c94c8.tpe</tpe>
-  <tpe x="769" y="929" tpage="default_0">spr_player_short_idle_c35821d3-0487-4ae7-a08d-746bc4fb35aa.tpe</tpe>
-  <tpe x="769" y="929" tpage="default_0">spr_player_short_run_874bdf33-b9bb-4741-bf59-a4ccffa21c70.tpe</tpe>
-  <tpe x="769" y="941" tpage="default_0">spr_player_stretch_feet_run_53d261f4-7536-42c3-ab7b-8e7d3ecc7dc3.tpe</tpe>
-  <tpe x="793" y="268" tpage="default_0">spr_player_stretch_feet_run_6d7844d6-f0a1-4f51-91f5-de021c9b028c.tpe</tpe>
-  <tpe x="793" y="277" tpage="default_0">spr_player_twin_red_idle_cde235e1-a781-482f-b376-02523a49970d.tpe</tpe>
-  <tpe x="777" y="967" tpage="default_0">spr_shockwave_4a8084e0-32b8-47c2-aa15-4605561099f3.tpe</tpe>
+  <tpe x="765" y="783" tpage="default_0">spr_player_short_idle_c35821d3-0487-4ae7-a08d-746bc4fb35aa.tpe</tpe>
+  <tpe x="765" y="783" tpage="default_0">spr_player_short_run_874bdf33-b9bb-4741-bf59-a4ccffa21c70.tpe</tpe>
+  <tpe x="782" y="914" tpage="default_0">spr_player_stretch_feet_run_53d261f4-7536-42c3-ab7b-8e7d3ecc7dc3.tpe</tpe>
+  <tpe x="784" y="783" tpage="default_0">spr_player_stretch_feet_run_6d7844d6-f0a1-4f51-91f5-de021c9b028c.tpe</tpe>
+  <tpe x="792" y="983" tpage="default_0">spr_player_twin_red_idle_cde235e1-a781-482f-b376-02523a49970d.tpe</tpe>
+  <tpe x="781" y="754" tpage="default_0">spr_shockwave_4a8084e0-32b8-47c2-aa15-4605561099f3.tpe</tpe>
   <tpe x="506" y="407" tpage="default_0">spr_shockwave_8ea7e6c1-a940-44e5-a7f3-7f80ab0b16fe.tpe</tpe>
   <tpe x="506" y="262" tpage="default_0">spr_shockwave_f804240e-d2eb-48c5-b1c8-80df8c8368c5.tpe</tpe>
-  <tpe x="766" y="1015" tpage="default_0">spr_modes_60b103ab-f53f-4176-81b9-711d2a51ff8e.tpe</tpe>
-  <tpe x="787" y="999" tpage="default_0">spr_life_9e4d42de-a16d-416e-9029-c6d39117d902.tpe</tpe>
-  <tpe x="507" y="485" tpage="default_0">spr_ground_middle_c1f18f18-10b4-4f32-81ee-58aac093956f.tpe</tpe>
+  <tpe x="755" y="1004" tpage="default_0">spr_mode_big_0fd2ddf7-17d9-4f00-bb00-8755dfc68ff6.tpe</tpe>
+  <tpe x="755" y="1004" tpage="default_0">spr_modes_60b103ab-f53f-4176-81b9-711d2a51ff8e.tpe</tpe>
+  <tpe x="651" y="988" tpage="default_0">spr_life_9e4d42de-a16d-416e-9029-c6d39117d902.tpe</tpe>
+  <tpe x="756" y="756" tpage="default_0">spr_ground_middle_c1f18f18-10b4-4f32-81ee-58aac093956f.tpe</tpe>
   <tpe x="2" y="1018" tpage="default_0">spr_player_stretch_feet_idle_2f1d5b19-55a8-43f9-b646-d7a1bc7a8c79.tpe</tpe>
   <tpe x="2" y="1018" tpage="default_0">spr_player_stretch_feet_idle_3e0b490c-07a7-435c-9b53-8e48fa827fcb.tpe</tpe>
   <tpe x="2" y="1018" tpage="default_0">spr_player_stretch_feet_idle_7b67c9f3-c857-4e45-9374-80b2b22ac0ce.tpe</tpe>
@@ -213,7 +221,7 @@
   <tpe x="472" y="1015" tpage="default_0">spr_dust_cloud_0eeaf9f3-5998-4f74-b929-fc09f3c6e54f.tpe</tpe>
   <tpe x="586" y="710" tpage="default_0">spr_coin_bf01bb4e-79c6-418b-888e-2140cfbfd6cb.tpe</tpe>
   <tpe x="315" y="994" tpage="default_0">spr_shockwave_c2e750ad-a550-4984-912c-d9b652775df2.tpe</tpe>
-  <tpe x="698" y="1016" tpage="default_0">spr_shockwave_6bb51a95-e79c-4545-8331-af8f13aff9cb.tpe</tpe>
+  <tpe x="507" y="486" tpage="default_0">spr_shockwave_6bb51a95-e79c-4545-8331-af8f13aff9cb.tpe</tpe>
   <tpe x="391" y="983" tpage="default_0">spr_shockwave_0ee370b4-b0ac-45fc-9ad6-2be5f41a53b1.tpe</tpe>
   <tpe x="557" y="1019" tpage="default_0">res_pt_shape_pixel.tpe</tpe>
   <tpe x="718" y="626" tpage="default_0">sInpGamepadLeftBumper_4a0fa76d-45a5-4a4e-89ea-93213b00bc26.tpe</tpe>
