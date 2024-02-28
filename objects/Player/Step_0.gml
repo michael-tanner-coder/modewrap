@@ -12,17 +12,20 @@ var _jump_key_pressed = inputs.jump.pressed;
 var _jump_key_hold = inputs.jump.down;
 var _jump_key_up = inputs.jump.released;
 var _up_key_pressed = inputs.up.pressed;
+var _down_key_held = inputs.down.down;
 
 //
 if (_jump_key_up) {
     jump_buffer_time = 0;
 }
 
+var gravity_boost = _down_key_held;
+
 // speed
 xspd = (_right_key - _left_key) * _player_jump_stats.move_spd;
 
 // gravity
-yspd += _player_jump_stats.grav;
+yspd += _player_jump_stats.grav + gravity_boost;
 
 // block destruction
 can_destroy_blocks_below = _player_jump_stats.can_destroy_blocks_below;
