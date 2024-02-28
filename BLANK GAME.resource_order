@@ -18,6 +18,7 @@
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
+    {"name":"PubSub","order":20,"path":"folders/PubSub.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
     {"name":"Cutscenes","order":17,"path":"folders/Scripts/Cutscenes.yy",},
@@ -33,7 +34,6 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"UI","order":19,"path":"folders/UI.yy",},
-    {"name":"PubSub","order":20,"path":"folders/PubSub.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_life","order":63,"path":"sprites/spr_life/spr_life.yy",},

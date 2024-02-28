@@ -43,10 +43,14 @@ global.axis_val_ls = ds_list_create();
 
 #region Define input system (user)
 global.input_sys = new InputSystem({
-     right:  [vk_right,  "d", gp_padr, gp_axislr],
-     left:   [vk_left,   "a", gp_padl, gp_axisll],
-     jump:   [vk_up,     "w", gp_a],
-     shoot:  [vk_space,  gp_shoulderrb, gp_x]
+     right: [vk_right,  "d", gp_padr, gp_axislr],
+     left:  [vk_left,   "a", gp_padl, gp_axisll],
+     up:   	[vk_up,   "w", gp_padu, gp_axislu],
+     down:  [vk_down,   "s", gp_padd, gp_axisld],
+     jump:  [vk_space, gp_a],
+	 pause: [vk_enter, vk_escape, gp_start],
+	 skip: [vk_enter, gp_start, gp_b],
+	 select: [vk_enter, vk_space, gp_a],
 });
 #endregion
 

@@ -381,8 +381,7 @@ global.credits = credits_string;
 		left:	["A",		vk_left,	gp_padl,	gp_axisll],		// Move left
 		enter:	[vk_space,	vk_enter,	gp_a],						// Press button
 		click:	[mb_left],											// Mouse click
-		back:	["Q",		vk_escape,	gp_b],						// Previous page
-		
+		back:	["Q", "X",	vk_escape,	gp_b],						// Previous page
 		pause:	[vk_escape,	"p", gp_start, gp_select]				// Pause/Resume
 	});
 

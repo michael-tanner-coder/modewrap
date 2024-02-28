@@ -52,7 +52,7 @@ function Controls(input_system, filename, reset_on, order) : MenuElement() const
 	}
 	
 	// Load inputs
-	in_sys.load(self.filename);
+	// in_sys.load(self.filename);
 	
 	inputs = in_sys.inputs;
 	

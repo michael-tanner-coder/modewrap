@@ -4,11 +4,19 @@ var _dt = delta_time / _room_delta;
 if (global.paused || lives <= 0) return;
 
 // get inputs
-var _right_key = keyboard_check(vk_right);
-var _left_key = keyboard_check(vk_left);
-var _jump_key_pressed = keyboard_check_pressed(vk_space);
-var _jump_key_hold = keyboard_check(vk_space);
-var _up_key_pressed = keyboard_check_pressed(vk_up);
+var inputs = global.input_sys.check();
+
+var _right_key = inputs.right.down;
+var _left_key = inputs.left.down;
+var _jump_key_pressed = inputs.jump.pressed;
+var _jump_key_hold = inputs.jump.down;
+var _jump_key_up = inputs.jump.released;
+var _up_key_pressed = inputs.up.pressed;
+
+//
+if (_jump_key_up) {
+    jump_buffer_time = 0;
+}
 
 // speed
 xspd = (_right_key - _left_key) * _player_jump_stats.move_spd;

@@ -1,3 +1,6 @@
+// Inputs
+var inputs = global.input_sys.check();
+
 // Speed settings
 if (lives > 0) {
     room_speed = 60 * global.settings.game_speed;
@@ -34,7 +37,7 @@ if (global.settings.window_mode == 1) {
 
 // when the room is paused after game over, press Enter to restart
 if (global.paused && global.game_over) {
-    if (keyboard_check(vk_enter)) {
+    if (inputs.select.down) {
         room_speed = 60;
 
         // Update save data
@@ -59,7 +62,7 @@ if (global.paused && global.game_over) {
 
 if (global.paused && global.victory) {
     // Manually move to the next level if we are in the victory state, reset goal and time limit
-    if (keyboard_check(vk_enter)) {
+    if (inputs.select.down) {
         go_to_next_level();
         global.victory = false;
         global.level_timer = 60 * global.levels[global.level_index].time_limit;
