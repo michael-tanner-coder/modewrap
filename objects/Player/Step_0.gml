@@ -4,10 +4,12 @@ var _dt = delta_time / _room_delta;
 if (global.paused || lives <= 0) return;
 
 // get inputs
-var inputs = global.input_sys.check();
+var inputs = global.input_sys.check(global.current_device);
 
 var _right_key = inputs.right.down;
 var _left_key = inputs.left.down;
+var _left_key_pressed = inputs.left.pressed;
+var _right_key_pressed = inputs.right.pressed;
 var _jump_key_pressed = inputs.jump.pressed;
 var _jump_key_hold = inputs.jump.down;
 var _jump_key_up = inputs.jump.released;
@@ -24,11 +26,27 @@ var gravity_boost = _down_key_held;
 // speed
 xspd = (_right_key - _left_key) * _player_jump_stats.move_spd;
 
+// facing direction
+if (_right_key && image_xscale != 1) {
+    image_xscale = 1;
+    x -= sprite_width;
+}
+
+if (_left_key && image_xscale != -1) {
+    image_xscale = -1;
+    x -= sprite_width;
+}
+
 // gravity
 yspd += _player_jump_stats.grav + gravity_boost;
 
 // block destruction
 can_destroy_blocks_below = _player_jump_stats.can_destroy_blocks_below;
+
+// particles
+if (_left_key_pressed || _right_key_pressed) {
+    spawn_dust_particles();
+}
 
 // jumping
 // reset jump count

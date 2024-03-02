@@ -53,6 +53,7 @@ global.input_sys = new InputSystem({
 	 progress: [vk_space, gp_b],
 	 select: [vk_enter, vk_space, gp_a],
 });
+global.current_device = 0;
 #endregion
 
 #region Input sprites (user)

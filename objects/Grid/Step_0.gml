@@ -1,4 +1,4 @@
-var inputs = global.input_sys.check();
+var inputs = global.input_sys.check(global.current_device);
 
 if (inputs.right.pressed) {
     move_grid_cursor(x_index + 1, y_index);

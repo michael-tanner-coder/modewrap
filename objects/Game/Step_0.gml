@@ -1,5 +1,5 @@
 // Inputs
-var inputs = global.input_sys.check();
+var inputs = global.input_sys.check(global.current_device);
 
 // Speed settings
 if (lives > 0) {

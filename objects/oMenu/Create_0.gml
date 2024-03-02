@@ -1,3 +1,7 @@
+if (gamepad_is_connected(0)) {
+	show_debug_message("Gamepad is connected");
+}
+
 /// @desc Settings
 
 /// @private

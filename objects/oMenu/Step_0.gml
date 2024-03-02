@@ -5,7 +5,7 @@
 #endregion
 
 // Create input
-in = in_sys.check(0);
+in = in_sys.check(global.current_device);
 
 #region Pause
 
