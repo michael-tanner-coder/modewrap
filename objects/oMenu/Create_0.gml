@@ -342,7 +342,7 @@ global.credits = credits_string;
 				["ENDLESS MODE",		new Toggle(true,	"endless_mode_enabled")],					// Toggle screenshake effects on/off
 			]],
 			
-			["CONTROLS", new Controls(global.input_sys, "input_save.json", true, ["right", "left", "up", "down"])], // Changes player controls
+			["CONTROLS", new Controls(global.input_sys, "input_save.json", true, ["right", "left", "up", "down", "jump"])], // Changes player controls
 			
 			["AUDIO", [
 				["MASTER",	new Slider([0, 1], 0.3,		"audio_master")],	// Sets volume of sounds in all audio groups

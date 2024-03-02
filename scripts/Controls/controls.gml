@@ -87,7 +87,7 @@ function Controls(input_system, filename, reset_on, order) : MenuElement() const
 		
 		var enter = oMenu.in.enter.pressed or oMenu.in.click.pressed;
 		
-		#region Add and remove inputs
+		//#region Add and remove inputs
 		
 		var name = names[oMenu.menu_option];
 		var column = oMenu.in_column;
