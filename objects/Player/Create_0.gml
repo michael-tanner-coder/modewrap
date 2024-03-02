@@ -123,7 +123,7 @@ change_state = function(next_state) {
 
 // Modes
 modes = global.levels[global.level_index].characters;
-mode_queue = [character_modes.normal, character_modes.small, character_modes.tall, character_modes.big, character_modes.boots, character_modes.spikey, character_modes.stretch];
+mode_queue = [character_modes.normal, character_modes.twin, character_modes.small, character_modes.tall, character_modes.big, character_modes.boots, character_modes.spikey, character_modes.stretch];
 mode_queue_index = 1;
 
 // movement vars

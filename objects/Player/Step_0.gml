@@ -170,7 +170,13 @@ script_execute(states_array[state].active_behavior);
 
 // arrow key commands
 if (_up_key_pressed && _player_jump_stats.backup_sprites && health > 1) {
-    instance_create_layer(x, y - sprite_height, layer, Twin);
+    var _twin_instance = instance_create_layer(
+        x,
+        y - sprite_height,
+        layer,
+        Twin
+    );
+    _twin_instance.image_xscale = image_xscale;
     health -= 1;
 }
 
