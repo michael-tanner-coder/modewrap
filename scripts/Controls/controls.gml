@@ -87,7 +87,7 @@ function Controls(input_system, filename, reset_on, order) : MenuElement() const
 		
 		var enter = oMenu.in.enter.pressed or oMenu.in.click.pressed;
 		
-		//#region Add and remove inputs
+		// #region Add and remove inputs
 		
 		var name = names[oMenu.menu_option];
 		var column = oMenu.in_column;
@@ -133,7 +133,7 @@ function Controls(input_system, filename, reset_on, order) : MenuElement() const
 		// Set self as menu extension
 		oMenu.menu_extension = self;
 		
-		#region Create menu page for menu obj
+		// #region Create menu page for menu obj
 		
 		// Create empty page
 		var page = array_create(getlen(names));
@@ -160,7 +160,7 @@ function Controls(input_system, filename, reset_on, order) : MenuElement() const
 	}
 }
 
-#region Input constructor (system)
+// #region Input constructor (system)
 
 // This constructor is needed by the system, you don't have to do anything with it!
 
@@ -233,7 +233,7 @@ function Input(in_sys, name) : MenuElement() constructor {
 
 #endregion
 
-#region Reset constructor (system)
+// #region Reset constructor (system)
 
 // This constructor is needed by the system, you don't have to do anything with it!
 

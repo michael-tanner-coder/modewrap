@@ -1,14 +1,14 @@
 
 gamepad_deadzone = 0.1;
 
-#region Create maps (system)
+// #region Create maps (system)
 
 global.axis_last_val = ds_map_create();
 global.axis_val_ls = ds_list_create();
 
 #endregion
 
-#region Macros (system)
+// #region Macros (system)
 
 #macro gp_axislr	string(gp_axislh) + "+"
 #macro gp_axisll	string(gp_axislh) + "-"
@@ -41,7 +41,7 @@ global.axis_val_ls = ds_list_create();
 
 #endregion
 
-#region Define input system (user)
+// #region Define input system (user)
 global.input_sys = new InputSystem({
      right: [vk_right,  "d", gp_padr, gp_axislr],
      left:  [vk_left,   "a", gp_padl, gp_axisll],
@@ -56,7 +56,7 @@ global.input_sys = new InputSystem({
 global.current_device = 0;
 #endregion
 
-#region Input sprites (user)
+// #region Input sprites (user)
 
 // Here you can change the input sprites which are drawn by the drawInput() function. 
 
@@ -99,7 +99,7 @@ global.input_sprites = {
 
 #endregion
 
-#region Get input ranges (system)
+// #region Get input ranges (system)
 
 var keys = [vk_add, vk_alt, vk_anykey, vk_backspace, vk_control, vk_decimal, vk_delete, vk_divide, vk_down, vk_end, vk_enter, vk_escape,
 			vk_f1, vk_f2, vk_f3, vk_f4, vk_f5, vk_f6, vk_f7, vk_f8, vk_f9, vk_f10, vk_f11, vk_f12, vk_home, vk_insert, vk_lalt, vk_lcontrol,
@@ -129,7 +129,7 @@ global.input_range = {
 
 #endregion
 
-#region Gamepad last array (system)
+// #region Gamepad last array (system)
 
 global.gamepad_inputs = [gp_axislu, gp_axisld, gp_axislr, gp_axisll, gp_axisru, gp_axisrd, gp_axisrr, gp_axisrl];
 
@@ -140,13 +140,13 @@ array_copy(global.gamepad_inputs, array_length(global.gamepad_inputs), gamepad, 
 
 #endregion
 
-#region Gamepads connected (system)
+// #region Gamepads connected (system)
 
 global.gamepads_connected = array_create(12, -1);
 
 #endregion
 
-#region Cleanup (system)
+// #region Cleanup (system)
 
 delete keys;
 delete gamepad;

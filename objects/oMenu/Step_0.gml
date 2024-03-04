@@ -1,13 +1,13 @@
 /// @desc Run button functions
 
-#region Change actual values (user)
+// #region Change actual values (user)
 
 #endregion
 
 // Create input
 in = in_sys.check(global.current_device);
 
-#region Pause
+// #region Pause
 
 if (pause_enabled) {
 	if (in.pause.pressed and !inputting) {
@@ -22,7 +22,7 @@ if (pause_enabled) {
 
 if (!menu_enabled) exit;
 
-#region Run menu extension step
+// #region Run menu extension step
 
 if (menu_extension != undefined and is_struct(menu_extension)) {
 	if (variable_struct_exists(menu_extension, "step")) {
@@ -39,7 +39,7 @@ if (getlen(page) == 0) exit;
 var back = !ds_stack_empty(prev_pages);
 var num = getlen(page) + back;
 
-#region Switch buttons
+// #region Switch buttons
 
 // Get horizontal and vertical inputs
 hinput			= in.right.down - in.left.down;
@@ -90,7 +90,7 @@ if (input_mode == e_input_mode.keyboard) {
 
 
 
-#region Run button functions
+// #region Run button functions
 
 for (var i = 0; i < num; i++) {
 	var pressed = (in.enter.pressed or in.click.pressed) and menu_option == i;

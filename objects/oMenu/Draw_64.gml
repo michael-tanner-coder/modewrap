@@ -1,6 +1,6 @@
 /// @desc Drawing
 
-#region Title text (user)
+// #region Title text (user)
 
 // You can draw your title text here
 
@@ -8,7 +8,7 @@
 
 if (!menu_enabled) exit;
 
-#region Run menu extension draw
+// #region Run menu extension draw
 
 if (menu_extension != undefined and is_struct(menu_extension)){
 	if (variable_struct_exists(menu_extension, "draw")) {
@@ -25,7 +25,7 @@ if (getlen(page) == 0) exit;
 var back = !ds_stack_empty(prev_pages);
 var num = getlen(page) + back;
 
-#region Check for sidebar menu items
+// #region Check for sidebar menu items
 
 	var sidebar = false;
 	
@@ -47,7 +47,7 @@ var num = getlen(page) + back;
 
 #endregion
 
-#region Create animation array
+// #region Create animation array
 
 	var anim_type = sidebar ? e_anim_type.sidebar : e_anim_type.button;
 	
@@ -80,7 +80,7 @@ var menu_middle = start_y + ((gui_h - start_y) / 2);
 var xx = start_x;
 var yy = start_y;
 
-#region Scrolling
+// #region Scrolling
 
 // Set scrolling y
 if (scrolling_y == undefined) scrolling_y = start_y;
@@ -104,7 +104,7 @@ if (menu_h > (gui_h - start_y)) {
 
 #endregion
 
-#region Adjust controls position
+// #region Adjust controls position
 
 	if (menu_extension != undefined and is_struct(menu_extension)) {
 		if (instanceof(menu_extension) == "Controls") {
@@ -114,7 +114,7 @@ if (menu_h > (gui_h - start_y)) {
 
 #endregion
 
-#region Main drawing loop
+// #region Main drawing loop
 
 	var skipped_items = 0;
 

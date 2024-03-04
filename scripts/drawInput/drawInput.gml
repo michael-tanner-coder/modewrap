@@ -24,12 +24,12 @@ function drawInput(x, y, input, font, scale, col, replace_col, txt_scale, left_o
 	if (txt_scale == undefined) txt_scale = 1;
 	if (left_origin == undefined) left_origin = false;
 	
-	#region Draw input icon function
+	// #region Draw input icon function
 	
 	static drawInputIcon = function(spr, xx, yy, scale, rot, col, replace_col, font, str, txt_scale, left_origin) {
 		if (spr == undefined) exit;
 		
-		#region Shader stuff
+		// #region Shader stuff
 		
 		var sh = shChangeHighlightColor;
 		
@@ -88,7 +88,7 @@ function drawInput(x, y, input, font, scale, col, replace_col, txt_scale, left_o
     var type = getInputType(input, true);
     
     switch type {
-        #region Keys
+        // #region Keys
         
         // Ord
         case e_input_subtype.unicode:
@@ -121,13 +121,13 @@ function drawInput(x, y, input, font, scale, col, replace_col, txt_scale, left_o
             
         #endregion
         
-        #region Gamepad
+        // #region Gamepad
         
         case e_input_subtype.gp:
             var gp_type = getGpInputSubtype(input);
             
             switch gp_type {
-                #region Dpad
+                // #region Dpad
                 
                 case e_gp_input_subtype.dpad:
                     spr = global.input_sprites.gamepad.dpad;
@@ -146,7 +146,7 @@ function drawInput(x, y, input, font, scale, col, replace_col, txt_scale, left_o
                 
                 #endregion
                 
-                #region Buttons
+                // #region Buttons
                 
                 case e_gp_input_subtype.button:
                     switch input {
@@ -162,7 +162,7 @@ function drawInput(x, y, input, font, scale, col, replace_col, txt_scale, left_o
                     
                 #endregion
                 
-                #region Trigger 
+                // #region Trigger 
                 
                 case e_gp_input_subtype.trigger:
                     switch input {
@@ -174,7 +174,7 @@ function drawInput(x, y, input, font, scale, col, replace_col, txt_scale, left_o
                 
                 #endregion
                 
-                #region Bumper
+                // #region Bumper
                 
                 case e_gp_input_subtype.bumper:
                     switch input {
@@ -186,7 +186,7 @@ function drawInput(x, y, input, font, scale, col, replace_col, txt_scale, left_o
                 
                 #endregion
                 
-            	#region Start
+            	// #region Start
             	
             	case e_gp_input_subtype.start:
             		spr = global.input_sprites.gamepad.start;
@@ -198,7 +198,7 @@ function drawInput(x, y, input, font, scale, col, replace_col, txt_scale, left_o
             
         #endregion
         
-        #region Gamepad axis
+        // #region Gamepad axis
             
         case e_input_subtype.gp_axis:
             spr = global.input_sprites.gamepad.axis;
@@ -212,7 +212,7 @@ function drawInput(x, y, input, font, scale, col, replace_col, txt_scale, left_o
             
         #endregion
         
-        #region Mouse
+        // #region Mouse
         
         case e_input_subtype.mouse:
             switch input {

@@ -13,7 +13,7 @@ if (gamepad_is_connected(0)) {
 /// @private
 #macro mouse_gui_y device_mouse_y_to_gui(0)
 
-#region Settings struct setup (system)
+// #region Settings struct setup (system)
 	
 	// Menu save file name
 	save_filename = "menu_save.json";
@@ -23,7 +23,7 @@ if (gamepad_is_connected(0)) {
 
 #endregion
 
-#region Audio settings (user)
+// #region Audio settings (user)
 
 	audio = {
 		press:		snButtonPress,		// Button press
@@ -40,7 +40,7 @@ if (gamepad_is_connected(0)) {
 
 #endregion
 
-#region Credits text (user)
+// #region Credits text (user)
 
 var credits_string = 
 	@"
@@ -68,7 +68,7 @@ blah blah blah
 
 global.credits = credits_string;
 
-#region Look settings (user)
+// #region Look settings (user)
 
 	// Settings marked with the (A) tag can be set to auto (automatic)
 	// If so the system will predict an appropriate size for the item
@@ -236,7 +236,7 @@ global.credits = credits_string;
 	
 #endregion
 
-#region Animation settings (user)
+// #region Animation settings (user)
 	
 	anim = {
 		// Button in the middle
@@ -256,7 +256,7 @@ global.credits = credits_string;
 	
 #endregion
 	
-#region Scrolling settings (user)
+// #region Scrolling settings (user)
 	
 	scrolling = {
 		speed:		0.2,	// Scrollig speed
@@ -265,7 +265,7 @@ global.credits = credits_string;
 
 #endregion
 
-#region Pause settings (user)
+// #region Pause settings (user)
 
 	pause_settings = {
 		menu_ypos:		auto,		// (A) The menu's y position when the game is paused
@@ -288,7 +288,7 @@ global.credits = credits_string;
 
 #endregion
 
-#region Menu array (user)
+// #region Menu array (user)
 
 	menu = [
 		["START GAME", 
@@ -376,7 +376,7 @@ global.credits = credits_string;
 
 #endregion
 
-#region Input setup (user)
+// #region Input setup (user)
 
 	in_sys = new InputSystem({
 		up:		["W",		vk_up,		gp_padu,	gp_axislu],		// Move up
@@ -391,7 +391,7 @@ global.credits = credits_string;
 
 #endregion
 
-#region Automatic values (system)
+// #region Automatic values (system)
 
 // Get font height
 text_height = {};
@@ -471,9 +471,9 @@ delete text_height;
 
 #endregion
 
-#region Other stuff (system)
+// #region Other stuff (system)
 	
-	#region Functions (system)
+	// #region Functions (system)
 	
 	function col2(selected, c1, c2) {
 		return selected ? {c1: c2, c2: c1} : {c1: c1, c2: c2};
@@ -485,7 +485,7 @@ delete text_height;
 	
 	#endregion
 	
-	#region Other vars (system)
+	// #region Other vars (system)
 	
 	menu_enabled = true;
 	pause_enabled = false;
