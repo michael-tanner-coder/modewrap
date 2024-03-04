@@ -6,6 +6,29 @@ lives = 3;
 max_lives = 4;
 points_to_next_life = 0;
 mode = character_modes.normal;
+mode_index = 0;
+
+// Jump properties
+jump_buffer_time = 0;
+max_jump_buffer_time = 24;
+max_jump_force = 2.5;
+
+// Physics properties
+my_gravity = 1;
+fall_speed = 1;
+max_fall_speed = 1;
+min_fall_speed = 0.875;
+y_velocity = 0;
+x_velocity = 1;
+
+// Damage properties
+iframes = 0;
+screenwrap_iframes = 24;
+
+// Interaction properties
+can_destroy_blocks_below = false;
+is_stretching = false;
+stretch_height = 0;
 
 // scale for squash and stretch
 xscale = 1;
