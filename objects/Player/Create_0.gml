@@ -35,16 +35,15 @@ xscale = 1;
 yscale = 1;
 
 // States
-enum states {
-    idle = 0, 
-    running = 1,
-    hurt = 2,
-    respawn = 3,
-    game_over = 4,
-    screenwrapping = 5,
+enum STATES {
+    IDLE = 0, 
+    RUNNING = 1,
+    HURT = 2,
+    RESPAWN = 3,
+    GAME_OVER = 4,
 }
 
-state = states.idle;
+state = STATES.IDLE;
 
 idle_behavior = function() {
     // animation
@@ -56,7 +55,7 @@ idle_behavior = function() {
 
     // transitions
     if (xspd != 0) {
-        change_state(states.running);
+        change_state(STATES.RUNNING);
     }
 }
 
@@ -70,7 +69,7 @@ running_behavior = function() {
     
     // transitions
     if (xspd == 0) {
-        change_state(states.idle);
+        change_state(STATES.IDLE);
     }
 }
 
@@ -95,7 +94,7 @@ game_over_behavior = function() {
 }
 
 // State Behaviors
-states_array[states.idle] = {
+states_array[STATES.IDLE] = {
     entrance_behavior: function() {
         // show_debug_message("enter idle state");
     },
@@ -104,7 +103,7 @@ states_array[states.idle] = {
         // show_debug_message("exit idle state");
     },
 };
-states_array[states.running] = {
+states_array[STATES.RUNNING] = {
     entrance_behavior: function() {
         // show_debug_message("enter running state");
     },
@@ -113,19 +112,19 @@ states_array[states.running] = {
         // show_debug_message("exit running state");
     },
 };
-states_array[states.hurt] = {
+states_array[STATES.HURT] = {
     entrance_behavior: function() {
 		alarm_set(0, 10);
 	},
     active_behavior: hurt_behavior,
     exit_behavior: function() {},
 };
-states_array[states.respawn] = {
+states_array[STATES.RESPAWN] = {
     entrance_behavior: function() {},
     active_behavior: respawn_behavior,
     exit_behavior: function() {},
 };
-states_array[states.game_over] = {
+states_array[STATES.GAME_OVER] = {
     entrance_behavior: function() {
         show_debug_message("enter game over state");
     },

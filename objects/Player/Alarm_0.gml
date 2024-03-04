@@ -1,4 +1,1 @@
-change_state(states.idle);
-
-
-
+change_state(STATES.IDLE);

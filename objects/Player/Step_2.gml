@@ -5,7 +5,7 @@ if (jump_buffer_time > 0) {
 
 // Game Over
 if (lives <= 0) {
-    state = states.game_over;
+    state = STATES.GAME_OVER;
 }
 
 // Health

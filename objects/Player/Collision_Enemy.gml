@@ -1,4 +1,4 @@
-if (iframes <= 0 && other.nonlethal_frames <= 0 && state != states.hurt) {
+if (iframes <= 0 && other.nonlethal_frames <= 0 && state != STATES.HURT) {
     take_damage_from_enemy();
-    change_state(states.hurt);
+    change_state(STATES.HURT);
 }
