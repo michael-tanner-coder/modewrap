@@ -9,7 +9,7 @@
 /// @example inputLast(global.gamepads_connected[0]);
 
 function inputLast(gp_num) {
-	if (gp_num == undefined) gp_num = 0;
+	if (gp_num == undefined) gp_num = global.current_device;
 	
 	var in = undefined;
 	
