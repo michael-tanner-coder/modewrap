@@ -73,6 +73,7 @@
     {"id":{"name":"chance","path":"scripts/chance/chance.yy",},},
     {"id":{"name":"Credits","path":"scripts/Credits/Credits.yy",},},
     {"id":{"name":"sInpGamepadRightTrigger","path":"sprites/sInpGamepadRightTrigger/sInpGamepadRightTrigger.yy",},},
+    {"id":{"name":"ScoreSystem","path":"objects/ScoreSystem/ScoreSystem.yy",},},
     {"id":{"name":"snd_move_platform","path":"sounds/snd_move_platform/snd_move_platform.yy",},},
     {"id":{"name":"spr_mode_spikey","path":"sprites/spr_mode_spikey/spr_mode_spikey.yy",},},
     {"id":{"name":"spawnProgression","path":"scripts/spawnProgression/spawnProgression.yy",},},

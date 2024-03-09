@@ -53,6 +53,7 @@
     {"name":"chance","order":2,"path":"scripts/chance/chance.yy",},
     {"name":"Credits","order":2,"path":"scripts/Credits/Credits.yy",},
     {"name":"sInpGamepadRightTrigger","order":12,"path":"sprites/sInpGamepadRightTrigger/sInpGamepadRightTrigger.yy",},
+    {"name":"ScoreSystem","order":28,"path":"objects/ScoreSystem/ScoreSystem.yy",},
     {"name":"snd_move_platform","order":5,"path":"sounds/snd_move_platform/snd_move_platform.yy",},
     {"name":"spr_mode_spikey","order":74,"path":"sprites/spr_mode_spikey/spr_mode_spikey.yy",},
     {"name":"spawnProgression","order":7,"path":"scripts/spawnProgression/spawnProgression.yy",},
