@@ -19,7 +19,7 @@ global.levels = [
     {
         key: "1-2",
         enemies: [Crawlie],
-        goal_coins: 8,
+        goal_coins: 3,
         time_limit: 100,
         spawn_interval: 6,
         enemy_speed: 1,
@@ -31,7 +31,7 @@ global.levels = [
     {
         key: "1-3",
         enemies: [Crawlie],
-        goal_coins: 9,
+        goal_coins: 3,
         time_limit: 100,
         spawn_interval: 6,
         enemy_speed: 1,
@@ -43,7 +43,7 @@ global.levels = [
     {
         key: "1-4",
         enemies: [Crawlie],
-        goal_coins: 9,
+        goal_coins: 3,
         time_limit: 100,
         spawn_interval: 6,
         enemy_speed: 1,

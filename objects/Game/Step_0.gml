@@ -91,8 +91,13 @@ if (global.collected_coins >= goal_coin_count) {
         global.level_index + 1 <= array_length(global.levels) - 1 &&
         global.levels[global.level_index + 1].map != global.current_map
     ) {
+        if (!global.victory) {
+        	pubsub_publish("level_over", 0);
+        }
+        
         global.paused = true;
         global.victory = true;
+        
         return;
     }
 

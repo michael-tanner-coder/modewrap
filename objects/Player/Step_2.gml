@@ -15,5 +15,5 @@ if (health <= 0) {
     lives -= 1;
     health = 1;
     iframes = 60;
-    //instance_create_layer(x, 40, layer, RespawnPlatform);
+    pubsub_publish("life_lost", 0);
 }

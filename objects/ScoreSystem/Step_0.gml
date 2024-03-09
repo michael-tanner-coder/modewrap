@@ -5,9 +5,3 @@ if (combo_timer <= 0) {
     combo_bonus = 0;
     combo_timer = 0;
 }
-
-
-
-
-
-
