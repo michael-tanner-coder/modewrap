@@ -229,6 +229,7 @@
     {"name":"spr_player_short_hurt","order":24,"path":"sprites/spr_player_short_hurt/spr_player_short_hurt.yy",},
     {"name":"sInpGamepadAxis","order":3,"path":"sprites/sInpGamepadAxis/sInpGamepadAxis.yy",},
     {"name":"sInpGamepadRightBumper","order":11,"path":"sprites/sInpGamepadRightBumper/sInpGamepadRightBumper.yy",},
+    {"name":"SoundSystem","order":29,"path":"objects/SoundSystem/SoundSystem.yy",},
     {"name":"spr_player_twin_hurt","order":47,"path":"sprites/spr_player_twin_hurt/spr_player_twin_hurt.yy",},
     {"name":"InputSystem","order":4,"path":"scripts/InputSystem/InputSystem.yy",},
     {"name":"spr_player_twin_red_hurt","order":49,"path":"sprites/spr_player_twin_red_hurt/spr_player_twin_red_hurt.yy",},
