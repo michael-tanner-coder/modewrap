@@ -1,15 +1,15 @@
-if(place_meeting(x, y+1, Player)) {
+if(place_meeting(x, y+1, obj_player)) {
 	if(!pushed) 
 	{
 		audio_play_sound(snd_move_platform, 2, false);
 	}
 	
-	if (Player.mode == character_modes.tall) {
-		y -= Player.sprite_height;
+	if (obj_player.mode == character_modes.tall) {
+		y -= obj_player.sprite_height;
 		pushed = true;
 	}
 	
-	if (Player._player_jump_stats.can_destroy_blocks_above) {
+	if (obj_player._player_jump_stats.can_destroy_blocks_above) {
 		spawn_dust_particles();
 		x = -1000;
 		inactive = true;
@@ -17,12 +17,12 @@ if(place_meeting(x, y+1, Player)) {
 	}
 }
 
-if(place_meeting(x, y-1, Player) && Player.can_destroy_blocks_below) {
+if(place_meeting(x, y-1, obj_player) && obj_player.can_destroy_blocks_below) {
 	spawn_dust_particles();
 	x = -1000;
 	inactive = true;
 	alarm_set(0, 750);
-	Player.bounce_from_block = true;
+	obj_player.bounce_from_block = true;
 	// Player.can_destroy_blocks_below = false;
 }
 

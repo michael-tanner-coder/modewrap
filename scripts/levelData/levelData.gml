@@ -6,7 +6,7 @@ global.levels = [
     // 1
     {
         key: "1-1",
-        enemies: [Crawlie],
+        enemies: [obj_crawlie],
         goal_coins: 3,
         time_limit: 100,
         spawn_interval: 6,
@@ -18,7 +18,7 @@ global.levels = [
     },
     {
         key: "1-2",
-        enemies: [Crawlie],
+        enemies: [obj_crawlie],
         goal_coins: 3,
         time_limit: 100,
         spawn_interval: 6,
@@ -30,7 +30,7 @@ global.levels = [
     },
     {
         key: "1-3",
-        enemies: [Crawlie],
+        enemies: [obj_crawlie],
         goal_coins: 3,
         time_limit: 100,
         spawn_interval: 6,
@@ -42,7 +42,7 @@ global.levels = [
     },
     {
         key: "1-4",
-        enemies: [Crawlie],
+        enemies: [obj_crawlie],
         goal_coins: 3,
         time_limit: 100,
         spawn_interval: 6,
@@ -56,7 +56,7 @@ global.levels = [
     // 2
     {
         key: "2-1",
-        enemies: [Bunny],
+        enemies: [obj_bunny],
         goal_coins: 3,
         time_limit: 100,
         spawn_interval: 6,
@@ -68,7 +68,7 @@ global.levels = [
     },
     {
         key: "2-2",
-        enemies: [Bunny],
+        enemies: [obj_bunny],
         goal_coins: 6,
         time_limit: 100,
         spawn_interval: 6,
@@ -80,7 +80,7 @@ global.levels = [
     },
     {
         key: "2-3",
-        enemies: [Bunny],
+        enemies: [obj_bunny],
         goal_coins: 9,
         time_limit: 100,
         spawn_interval: 6,
@@ -92,7 +92,7 @@ global.levels = [
     },
     {
         key: "2-4",
-        enemies: [Bunny],
+        enemies: [obj_bunny],
         goal_coins: 9,
         time_limit: 100,
         spawn_interval: 6,
@@ -106,7 +106,7 @@ global.levels = [
     // 3
     {
         key: "3-1",
-        enemies: [Cannon],
+        enemies: [obj_cannon],
         goal_coins: 3,
         time_limit: 100,
         spawn_interval: 6,
@@ -118,7 +118,7 @@ global.levels = [
     },
     {
         key: "3-2",
-        enemies: [Cannon],
+        enemies: [obj_cannon],
         goal_coins: 6,
         time_limit: 100,
         spawn_interval: 6,
@@ -130,7 +130,7 @@ global.levels = [
     },
     {
         key: "3-3",
-        enemies: [Cannon],
+        enemies: [obj_cannon],
         goal_coins: 9,
         time_limit: 100,
         spawn_interval: 6,
@@ -142,7 +142,7 @@ global.levels = [
     },
     {
         key: "3-4",
-        enemies: [Cannon],
+        enemies: [obj_cannon],
         goal_coins: 9,
         time_limit: 100,
         spawn_interval: 6,
@@ -156,7 +156,7 @@ global.levels = [
     // 4
     {
         key: "4-1",
-        enemies: [Butterfly],
+        enemies: [obj_butterfly],
         goal_coins: 3,
         time_limit: 100,
         spawn_interval: 6,
@@ -168,7 +168,7 @@ global.levels = [
     },
     {
         key: "4-2",
-        enemies: [Butterfly],
+        enemies: [obj_butterfly],
         goal_coins: 6,
         time_limit: 100,
         spawn_interval: 6,
@@ -180,7 +180,7 @@ global.levels = [
     },
     {
         key: "4-3",
-        enemies: [Butterfly],
+        enemies: [obj_butterfly],
         goal_coins: 9,
         time_limit: 100,
         spawn_interval: 6,
@@ -192,7 +192,7 @@ global.levels = [
     },
     {
         key: "4-4",
-        enemies: [Butterfly],
+        enemies: [obj_butterfly],
         goal_coins: 9,
         time_limit: 100,
         spawn_interval: 6,

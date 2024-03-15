@@ -23,12 +23,12 @@ function spawn_progression() {
 	
 	// destroy all enemies after reaching level benchmarks
 	if (score >= _level1 && !reached_level_2)  {
-		instance_destroy(Enemy);
+		instance_destroy(obj_enemy);
 		reached_level_2 = true;
 	}
 	
 	if (score >= _level2 && !reached_level_3)  {
-		instance_destroy(Enemy);
+		instance_destroy(obj_enemy);
 		reached_level_3 = true;
 	}
 

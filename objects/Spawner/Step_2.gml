@@ -3,7 +3,7 @@ if (global.paused || global.intro) {
 }
 
 var _dt = delta_time / 1000000;
-var _spawn_num = instance_number(Enemy);
+var _spawn_num = instance_number(obj_enemy);
 
 global.spawn_countdown -= _dt;
 

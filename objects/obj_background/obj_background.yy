@@ -1,18 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Crawlie",
-  "eventList": [],
+  "name": "obj_background",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "parentObjectId": {
-    "name": "Enemy",
-    "path": "objects/Enemy/Enemy.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_crawler",
-    "path": "sprites/spr_crawler/spr_crawler.yy",
+    "name": "spr_background",
+    "path": "sprites/spr_background/spr_background.yy",
   },
   "spriteMaskId": null,
   "visible": true,

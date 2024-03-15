@@ -1,8 +1,8 @@
 function destroy_enemies(){
-	var _enemy_count = instance_number(Cannon) + instance_number(Crawlie) + instance_number(Bunny);
+	var _enemy_count = instance_number(obj_cannon) + instance_number(obj_crawlie) + instance_number(obj_bunny);
 	pubsub_publish("all_monsters_defeated", _enemy_count);
 	
-	instance_destroy(Cannon);
-	instance_destroy(Crawlie);
-	instance_destroy(Bunny);
+	instance_destroy(obj_cannon);
+	instance_destroy(obj_crawlie);
+	instance_destroy(obj_bunny);
 }
