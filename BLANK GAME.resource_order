@@ -34,6 +34,7 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"UI","order":19,"path":"folders/UI.yy",},
+    {"name":"Art prototypes","order":22,"path":"folders/Art prototypes.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_life","order":63,"path":"sprites/spr_life/spr_life.yy",},
@@ -190,6 +191,7 @@
     {"name":"Butterfly","order":10,"path":"objects/Butterfly/Butterfly.yy",},
     {"name":"resumeGame","order":6,"path":"scripts/resumeGame/resumeGame.yy",},
     {"name":"spr_player_stretch_head_run","order":58,"path":"sprites/spr_player_stretch_head_run/spr_player_stretch_head_run.yy",},
+    {"name":"spr_player_new","order":21,"path":"sprites/spr_player_new/spr_player_new.yy",},
     {"name":"spr_mode_tall","order":71,"path":"sprites/spr_mode_tall/spr_mode_tall.yy",},
     {"name":"Animation","order":4,"path":"objects/Animation/Animation.yy",},
     {"name":"saveToJson","order":3,"path":"scripts/saveToJson/saveToJson.yy",},
