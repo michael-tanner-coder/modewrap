@@ -293,10 +293,10 @@ global.credits = credits_string;
 	menu = [
 		["START GAME", 
 			[
-				["CONTINUE", new ScriptRunner(function() { room_goto(Cutscene);		// Goes to game room
+				["CONTINUE", new ScriptRunner(function() { room_goto(rm_cutscene);		// Goes to game room
 					menuModePause();
 					menuSetPreset(e_menu_presets.pause_menu);
-					room = Cutscene;
+					room = rm_cutscene;
 				}), 
 		
 				"RESUME",		new ScriptRunner(resumeGame)],	// Resumes the game when paused
@@ -310,10 +310,10 @@ global.credits = credits_string;
 		["UNLOCKS", new ScriptRunner(
 				function()
 				{ 
-					room_goto(Unlocks);
+					room_goto(rm_unlocks);
 					menuModePause();
 					menuSetPreset(e_menu_presets.pause_menu);
-					room = Unlocks;
+					room = rm_unlocks;
 				}
 		), undefined, undefined], // Go to menu to see all unlocked characters
 		
@@ -321,10 +321,10 @@ global.credits = credits_string;
 		["HIGHSCORES", new ScriptRunner(
 				function()
 				{ 
-					room_goto(Scores);		// Goes to score room
+					room_goto(rm_scores);		// Goes to score room
 					menuModePause();
 					menuSetPreset(e_menu_presets.pause_menu);
-					room = Scores;
+					room = rm_scores;
 				})
 		],
 		
@@ -362,7 +362,7 @@ global.credits = credits_string;
 		"TITLE SCREEN", new ScriptRunner(function() {		// Goes to title screen when in game room
 			menuModeTitle(); 
 			menuSetPreset(e_menu_presets.title_screen);
-			room = Title;
+			room = rm_title;
 		})]
 	];
 

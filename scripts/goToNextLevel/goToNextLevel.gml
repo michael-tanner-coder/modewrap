@@ -18,14 +18,14 @@ function go_to_next_level() {
         show_debug_message("Reached final cutscene");
         global.level_index = 0;
         global.cutscene_index = array_length(global.cutscenes) - 1;
-        room_goto(Cutscene);
+        room_goto(rm_cutscene);
         return;
     }
 
     // If there is a defined cutscene for the next level, go to that cutscene first before moving to the next level
     if (global.levels[global.level_index].cutscene != undefined) {
         global.cutscene_index = global.levels[global.level_index].cutscene;
-        room_goto(Cutscene);
+        room_goto(rm_cutscene);
         return;
     }
 

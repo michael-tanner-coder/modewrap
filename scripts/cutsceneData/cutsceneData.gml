@@ -17,7 +17,7 @@ global.cutscenes = [
                 animation: spr_player_hurt,
             },
         ],
-        next_level: Level_1,
+        next_level: rm_level_1,
     },
     {
         key: "test scene 2",
@@ -35,7 +35,7 @@ global.cutscenes = [
                 animation: spr_player_big_hurt,
             },
         ],
-        next_level: Level_2,
+        next_level: rm_level_2,
     },
     {
         key: "test scene 3",
@@ -53,7 +53,7 @@ global.cutscenes = [
                 animation: spr_player_tall_hurt,
             },
         ],
-        next_level: Level_3,
+        next_level: rm_level_3,
     },
     {
         key: "test scene 4",
@@ -71,7 +71,7 @@ global.cutscenes = [
                 animation: spr_player_short_hurt,
             },
         ],
-        next_level: Level_4,
+        next_level: rm_level_4,
     },
     {
         key: "test scene 4",
@@ -89,6 +89,6 @@ global.cutscenes = [
                 animation: spr_player_twin_hurt,
             },
         ],
-        next_level: rmCredits,
+        next_level: rm_credits,
     },
 ];

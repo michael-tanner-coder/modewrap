@@ -51,10 +51,10 @@ if (global.paused && global.game_over) {
         global.game_over = false;
 
         // Go to score menu to rank the player' score
-        room_goto(Scores);
+        room_goto(rm_scores);
         menuModePause();
         menuSetPreset(e_menu_presets.pause_menu);
-        room = Scores;
+        room = rm_scores;
     }
 
     return;
