@@ -16,7 +16,7 @@ if (move_speed > 0) {
 yspd += my_gravity;
 
 // check for ground
-if (place_meeting(x,y+1, Ground))
+if (place_meeting(x,y+1, obj_ground))
 {
 	if (!grounded) {
 		grounded = true;
@@ -32,10 +32,10 @@ if (xspd == 0) {
 }
 
 // collision
-if (place_meeting(x + xspd, y, Ground)) 
+if (place_meeting(x + xspd, y, obj_ground)) 
 {
 	var _pixel_check = sign(xspd);
-	while(!place_meeting(x + _pixel_check, y, Ground))
+	while(!place_meeting(x + _pixel_check, y, obj_ground))
 	{
 		x += _pixel_check;
 	}
@@ -44,10 +44,10 @@ if (place_meeting(x + xspd, y, Ground))
 }
 
 
-if (place_meeting(x + xspd, y + yspd, Ground)) 
+if (place_meeting(x + xspd, y + yspd, obj_ground)) 
 {
 	var _pixel_check = sign(yspd);
-	while(!place_meeting(x + xspd, y + _pixel_check, Ground)) 
+	while(!place_meeting(x + xspd, y + _pixel_check, obj_ground)) 
 	{
 		y += _pixel_check;
 	}

@@ -6,9 +6,9 @@ function check_for_collision(_dt = 1)
 	
 	while(
 			(
-				position_meeting(x, y + _bbox_height, Ground) || 
-				position_meeting(x + _bbox_width/2, y + _bbox_height, Ground) || 
-				position_meeting(x + _bbox_width, y + _bbox_height, Ground)
+				position_meeting(x, y + _bbox_height, obj_ground) || 
+				position_meeting(x + _bbox_width/2, y + _bbox_height, obj_ground) || 
+				position_meeting(x + _bbox_width, y + _bbox_height, obj_ground)
 			) 
 			&& grounded
 		) 

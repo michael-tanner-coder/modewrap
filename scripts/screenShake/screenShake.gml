@@ -10,7 +10,7 @@ function screenshake(_time, _magnitude, _fade)
 		return;
 	}
 	
-	with (CameraShake)
+	with (obj_camera_shake)
 	{
 	    shake = true;
 	    shake_time = _time;

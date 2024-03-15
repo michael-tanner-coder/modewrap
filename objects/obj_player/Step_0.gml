@@ -50,7 +50,7 @@ if (_left_key_pressed || _right_key_pressed) {
 
 // jumping
 // reset jump count
-if (place_meeting(x, y + 1, Ground)) {
+if (place_meeting(x, y + 1, obj_ground)) {
     jump_count = 0;
 
     if (!grounded) {
@@ -76,7 +76,7 @@ if (place_meeting(x, y + 1, Ground)) {
                 x + sprite_width / 2,
                 y + 4,
                 layer,
-                Shockwave
+                obj_shockwave
             );
             _shockwave_right.hspeed = 2;
 
@@ -84,7 +84,7 @@ if (place_meeting(x, y + 1, Ground)) {
                 x + sprite_width / 2,
                 y + 4,
                 layer,
-                Shockwave
+                obj_shockwave
             );
             _shockwave_left.hspeed = -2;
             _shockwave_left.image_xscale = -1;
@@ -142,18 +142,18 @@ xscale = lerp(xscale, 1, 0.05);
 yscale = lerp(yscale, 1, 0.05);
 
 // collision
-if (place_meeting(x + xspd, y, Ground)) {
+if (place_meeting(x + xspd, y, obj_ground)) {
     var _pixel_check = sign(xspd);
-    while (!place_meeting(x + _pixel_check, y, Ground)) {
+    while (!place_meeting(x + _pixel_check, y, obj_ground)) {
         x += _pixel_check;
     }
 
     xspd = 0;
 }
 
-if (place_meeting(x + xspd, y + yspd, Ground)) {
+if (place_meeting(x + xspd, y + yspd, obj_ground)) {
     var _pixel_check = sign(yspd);
-    while (!place_meeting(x + xspd, y + _pixel_check, Ground)) {
+    while (!place_meeting(x + xspd, y + _pixel_check, obj_ground)) {
         y += _pixel_check;
     }
 
@@ -174,7 +174,7 @@ if (_up_key_pressed && _player_jump_stats.backup_sprites && health > 1) {
         x,
         y - sprite_height,
         layer,
-        Twin
+        obj_twin
     );
     _twin_instance.image_xscale = image_xscale;
     health -= 1;
@@ -220,9 +220,9 @@ if (_screenwrapped) {
 
     _player_jump_stats = get_character_properties();
 
-    instance_destroy(Player_Head);
+    instance_destroy(obj_player_head);
     if (mode == character_modes.stretch) {
-        instance_create_layer(x, y, layer, Player_Head);
+        instance_create_layer(x, y, layer, obj_player_head);
         is_stretching = false;
     }
 
