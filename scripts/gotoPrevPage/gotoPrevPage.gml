@@ -22,6 +22,6 @@ function gotoPrevPage() {
     	scrolling_y = undefined;
     	
     	// Save
-    	saveToJson(global.settings, save_filename);
+    	save_to_json(global.settings, save_filename);
     }
 }

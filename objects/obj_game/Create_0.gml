@@ -64,7 +64,7 @@ load_default_modes = function () {
 
     if (!is_array(_modes)) {
         var _default_modes = ["normal", "small", "tall"];
-        saveToJson(_default_modes, "unlocked_modes.json");
+        save_to_json(_default_modes, "unlocked_modes.json");
     }
 };
 
@@ -81,7 +81,7 @@ unlock_mode = function () {
 
         if (score >= _points_to_unlock_mode) {
             array_push(_modes, _current_mode);
-            saveToJson(_modes, "unlocked_modes.json");
+            save_to_json(_modes, "unlocked_modes.json");
         }
     }
 };

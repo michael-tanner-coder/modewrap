@@ -25,5 +25,5 @@ function save_score(){
 	}
 		
 	// replace the score file's old score array
-	saveToJson(_highscores, "score_data.json");
+	save_to_json(_highscores, "score_data.json");
 }

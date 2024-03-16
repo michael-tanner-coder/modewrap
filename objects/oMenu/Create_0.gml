@@ -480,7 +480,7 @@ delete text_height;
 	}
 	
 	function saveMenu() {
-		saveToJson(global.settings, save_filename);
+		save_to_json(global.settings, save_filename);
 	}
 	
 	#endregion

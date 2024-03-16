@@ -68,7 +68,7 @@ function InputSystem(inputs) constructor {
     /// @example in_sys.save();
     
     static save = function(filename) {
-        if (is_string(filename)) saveToJson(inputs, filename);
+        if (is_string(filename)) save_to_json(inputs, filename);
     }
     
     /// @func load(filename)

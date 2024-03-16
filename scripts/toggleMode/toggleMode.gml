@@ -14,7 +14,7 @@ function toggle_mode(_mode){
 		array_push(_enabled_modes, _mode);	
 	}
 	
-	saveToJson(_enabled_modes, "enabled_modes.json");
+	save_to_json(_enabled_modes, "enabled_modes.json");
 	
 	delete toggled_mode;
 }
