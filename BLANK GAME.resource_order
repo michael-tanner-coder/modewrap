@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings": [
     {"name":"Animation Curves","order":12,"path":"folders/Animation Curves.yy",},
+    {"name":"Art prototypes","order":22,"path":"folders/Art prototypes.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"HTML_FS","order":1,"path":"folders/Extensions/HTML_FS.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
@@ -34,7 +35,6 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"UI","order":19,"path":"folders/UI.yy",},
-    {"name":"Art prototypes","order":22,"path":"folders/Art prototypes.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_life","order":63,"path":"sprites/spr_life/spr_life.yy",},

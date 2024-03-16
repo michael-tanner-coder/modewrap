@@ -19,7 +19,7 @@ if (gamepad_is_connected(0)) {
 	save_filename = "menu_save.json";
 	
 	// Load menu save
-	global.settings = loadFromJson(save_filename);
+	global.settings = load_from_json(save_filename);
 
 #endregion
 

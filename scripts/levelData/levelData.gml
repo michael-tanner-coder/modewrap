@@ -1,4 +1,4 @@
-var _enabled_character_modes = loadFromJson("enabled_modes.json");
+var _enabled_character_modes = load_from_json("enabled_modes.json");
 
 global.level_index = 0;
 

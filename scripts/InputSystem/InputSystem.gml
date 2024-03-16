@@ -79,7 +79,7 @@ function InputSystem(inputs) constructor {
     
     static load = function(filename) {
         if (is_string(filename)) {
-            var loaded_inputs = loadFromJson(filename);
+            var loaded_inputs = load_from_json(filename);
             
             if (is_struct(loaded_inputs) and getlen(loaded_inputs) > 0) inputs = loaded_inputs;
             

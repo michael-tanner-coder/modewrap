@@ -1,4 +1,4 @@
-data = loadFromJson("unlocked_modes.json");
+data = load_from_json("unlocked_modes.json");
 
 total_grid_width = columns * (32 + grid_item_spacing);
 start_x = camera_get_view_width(view_camera[0])/2 - total_grid_width/2;
@@ -12,7 +12,7 @@ grid = ds_grid_create(columns, rows);
 x_index = 0;
 y_index = 0;
 
-enabled_modes = loadFromJson("enabled_modes.json");
+enabled_modes = load_from_json("enabled_modes.json");
 
 if (!is_array(enabled_modes)) {
 	enabled_modes = ["normal", "big"];

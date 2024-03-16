@@ -1,1 +1,1 @@
-_highscores = loadFromJson("score_data.json");
+_highscores = load_from_json("score_data.json");

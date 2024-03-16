@@ -1,5 +1,5 @@
 function toggle_mode(_mode){
-	var _enabled_modes = loadFromJson("enabled_modes.json");
+	var _enabled_modes = load_from_json("enabled_modes.json");
 	toggled_mode = _mode;
 	
 	if (!is_array(_enabled_modes)) {

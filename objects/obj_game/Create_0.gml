@@ -60,7 +60,7 @@ mode_unlocks = [
 
 // Mode Unlock Functions
 load_default_modes = function () {
-    var _modes = loadFromJson("unlocked_modes.json");
+    var _modes = load_from_json("unlocked_modes.json");
 
     if (!is_array(_modes)) {
         var _default_modes = ["normal", "small", "tall"];
@@ -69,7 +69,7 @@ load_default_modes = function () {
 };
 
 unlock_mode = function () {
-    var _modes = loadFromJson("unlocked_modes.json");
+    var _modes = load_from_json("unlocked_modes.json");
 
     for (var i = 0; i < array_length(mode_unlocks); i++) {
         var _current_mode = mode_unlocks[i].mode;

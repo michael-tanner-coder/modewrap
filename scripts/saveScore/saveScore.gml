@@ -1,5 +1,5 @@
 function save_score(){
-	var _highscores = loadFromJson("score_data.json");
+	var _highscores = load_from_json("score_data.json");
 	var _max_score_record_count = 5;
 		
 	// check if our current score is large enough to be considered a high score

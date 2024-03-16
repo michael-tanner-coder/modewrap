@@ -12,7 +12,7 @@ animation.depth = depth;
 typewriter.content_text = scene_script[script_index].line;
 animation.sprite_index = scene_script[script_index].animation;
 
-var _player_data = loadFromJson("player_data.json");
+var _player_data = load_from_json("player_data.json");
 
 progress_cutscene = function () {
     if (!typewriter.line_complete) {
