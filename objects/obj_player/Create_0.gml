@@ -5,7 +5,7 @@ image_speed = 1;
 lives = 3;
 max_lives = 4;
 points_to_next_life = 0;
-mode = character_modes.normal;
+mode = CHARACTER.NORMAL;
 mode_index = 0;
 
 // Jump properties
@@ -145,7 +145,7 @@ change_state = function(next_state) {
 
 // Modes
 modes = global.levels[global.level_index].characters;
-mode_queue = [character_modes.normal, character_modes.big, character_modes.small, character_modes.tall, character_modes.big, character_modes.boots, character_modes.spikey, character_modes.stretch];
+mode_queue = [CHARACTER.NORMAL, CHARACTER.BIG, CHARACTER.SMALL, CHARACTER.TALL, CHARACTER.BIG, CHARACTER.BOOTS, CHARACTER.SPIKEY, CHARACTER.STRETCH];
 mode_queue_index = 1;
 
 // movement vars

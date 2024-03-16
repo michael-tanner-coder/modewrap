@@ -4,7 +4,7 @@ if(place_meeting(x, y+1, obj_player)) {
 		audio_play_sound(snd_move_platform, 2, false);
 	}
 	
-	if (obj_player.mode == character_modes.tall) {
+	if (obj_player.mode == CHARACTER.TALL) {
 		y -= obj_player.sprite_height;
 		pushed = true;
 	}

@@ -221,7 +221,7 @@ if (_screenwrapped) {
     _player_jump_stats = get_character_properties();
 
     instance_destroy(obj_player_head);
-    if (mode == character_modes.stretch) {
+    if (mode == CHARACTER.STRETCH) {
         instance_create_layer(x, y, layer, obj_player_head);
         is_stretching = false;
     }
