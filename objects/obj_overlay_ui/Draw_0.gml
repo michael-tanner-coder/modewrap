@@ -12,17 +12,17 @@ if (global.intro) {
         sprite_get_height(spr_game_over) -
         16;
 
-    draw_sprite_ext(
-        spr_title,
-        0,
-        _text_x,
-        _text_y - 2,
-        2,
-        2,
-        image_angle,
-        image_blend,
-        image_alpha
-    );
+    // draw_sprite_ext(
+    //     spr_title,
+    //     0,
+    //     _text_x,
+    //     _text_y - 2,
+    //     2,
+    //     2,
+    //     image_angle,
+    //     image_blend,
+    //     image_alpha
+    // );
 
     draw_set_halign(fa_center);
     draw_set_color(c_white);
@@ -30,7 +30,7 @@ if (global.intro) {
     var _level_number = string_split(_level_key, "-")[0];
     drawText(
         _text_x + 16,
-        _text_y + 22,
+        _text_y + 9,
         "LEVEL: " + string(_level_number),
         1,
         c_black
