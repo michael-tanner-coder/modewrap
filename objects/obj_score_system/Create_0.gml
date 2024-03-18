@@ -43,7 +43,7 @@ pubsub_subscribe("level_over", function () {
     var _time_bonus = (_total_seconds_of_level / _time_spent_on_level) * base_time_bonus;
     var _monster_bonus = monsters_defeated * base_monster_bonus;
     var _no_lives_lost_bonus = no_lives_lost ? base_no_lives_lost_bonus : 0;
-    var _level_score = points_accrued + _time_bonus + _monster_bonus + _no_lives_lost_bonus;
+    var _level_score = points_accrued;
     score += _level_score;
     
     show_debug_message("Points Accrued: " + string(points_accrued));
