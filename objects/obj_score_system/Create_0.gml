@@ -1,3 +1,4 @@
+score = 0;
 combo_bonus = 0;
 combo_bonus_increment = 0.2;
 default_score_multiplier = 1;

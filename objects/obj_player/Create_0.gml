@@ -1,6 +1,5 @@
 // Base properties
 health = 1;
-score = 0;
 image_speed = 1;
 lives = 3;
 max_lives = 4;
