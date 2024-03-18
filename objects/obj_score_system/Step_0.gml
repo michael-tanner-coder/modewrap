@@ -5,3 +5,7 @@ if (combo_timer <= 0) {
     combo_bonus = 0;
     combo_timer = 0;
 }
+
+if (points_accrued > 9999) {
+	points_accrued = 9999;
+}
