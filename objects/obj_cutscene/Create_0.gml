@@ -17,7 +17,7 @@ var _current_modes = load_from_json("unlocked_modes.json");
 var _new_character = global.cutscenes[global.cutscene_index].character_unlock;
 
 if (is_array(_current_modes) && _new_character != undefined && !array_contains(_current_modes, _new_character)) {
-    array_push(_current_modes, _new_character);
+    array_insert(_current_modes, 1, _new_character);
     save_to_json(_current_modes, "unlocked_modes.json");
 }
 
