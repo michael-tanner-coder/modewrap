@@ -194,38 +194,31 @@ if (is_stretching) {
 // Screnwrapping
 var _screenwrapped = screenwrap();
 
-if (_screenwrapped) {
+if (_screenwrapped && !is_screenwrapping) {
+	is_screenwrapping = true;
+	
     iframes = screenwrap_iframes;
 
-    var _prev_mode = mode;
-
-    while (mode == _prev_mode) {
-        // pick random new mode
-        mode = mode_queue[mode_queue_index];
-
-        // get index of current mode
-        for (var _i = 0; _i <= array_length(modes) - 1; _i++) {
-            if (modes[_i] == mode) {
-                mode_index = _i;
-            }
-        }
-
-        mode_queue_index++;
-    }
-
+    // get the next character
+    mode = mode_queue[mode_queue_index];
+    
     // increase mode_queue_index
-    if (mode_queue_index >= array_length(mode_queue)) {
+    mode_queue_index++;
+    if (mode_queue_index > array_length(mode_queue) - 1) {
         mode_queue_index = 0;
     }
 
+	// get stats pertaining to new character
     _player_jump_stats = get_character_properties();
 
+	// reset and spawn floating head instance for float character
     instance_destroy(obj_player_head);
     if (mode == CHARACTER.STRETCH) {
         instance_create_layer(x, y, layer, obj_player_head);
         is_stretching = false;
     }
 
+	// 
     change_mode();
 
     health = _player_jump_stats.base_health;
@@ -240,6 +233,10 @@ if (_screenwrapped) {
     if (!grounded) {
         fall_speed = min_fall_speed;
     }
+}
+
+if (!_screenwrapped) {
+	is_screenwrapping = false;
 }
 
 // I-Frames

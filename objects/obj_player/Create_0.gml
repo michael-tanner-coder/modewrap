@@ -28,6 +28,7 @@ screenwrap_iframes = 24;
 can_destroy_blocks_below = false;
 is_stretching = false;
 stretch_height = 0;
+is_screenwrapping = false;
 
 // scale for squash and stretch
 xscale = 1;

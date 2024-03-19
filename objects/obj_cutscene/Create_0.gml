@@ -21,7 +21,7 @@ show_debug_message(_current_modes);
 show_debug_message("_new_character");
 show_debug_message(_new_character);
 
-if (is_array(_current_modes) && _new_character != undefined) {
+if (is_array(_current_modes) && _new_character != undefined && !array_contains(_current_modes, _new_character)) {
     array_push(_current_modes, _new_character);
     save_to_json(_current_modes, "unlocked_modes.json");
 }
