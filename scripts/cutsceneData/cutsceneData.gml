@@ -5,21 +5,6 @@ global.cutscenes = [
         key: "test scene 1",
         scene_script: [
             {
-                line: "UNLOCKED TALL",
-                animation: spr_player_tall_run,
-            },
-            {
-                line: "Push blocks with your head",
-                animation: spr_player_tall_idle,
-            },
-        ],
-        next_level: rm_level_2,
-        character_unlock: CHARACTER.TALL
-    },
-    {
-        key: "test scene 2",
-        scene_script: [
-            {
                 line: "UNLOCKED SPIKEY",
                 animation: spr_player_spikey_idle,
             },
@@ -28,13 +13,13 @@ global.cutscenes = [
                 animation: spr_player_spikey_idle,
             },
         ],
-        next_level: rm_level_3,
-        character_unlock: CHARACTER.SPIKEY,
+        next_level: rm_level_2,
+        character_unlock: CHARACTER.SPIKEY
     },
     {
-        key: "test scene 3",
+        key: "test scene 2",
         scene_script: [
-            {
+             {
                 line: "UNLOCKED BOOTS",
                 animation: spr_player_spike_boots_idle,
             },
@@ -43,8 +28,23 @@ global.cutscenes = [
                 animation: spr_player_spike_boots_idle,
             },
         ],
-        next_level: rm_level_4,
+        next_level: rm_level_3,
         character_unlock: CHARACTER.BOOTS,
+    },
+    {
+        key: "test scene 3",
+        scene_script: [
+            {
+                    line: "UNLOCKED FLOAT",
+                    animation: spr_player_stretch_head_idle,
+            },
+            {
+                line: "Press 'Up' to raise your head high",
+                animation: spr_player_stretch_head_idle,
+            },
+        ],
+        next_level: rm_level_4,
+        character_unlock: CHARACTER.STRETCH,
     },
     {
         key: "test scene 4",
@@ -54,16 +54,16 @@ global.cutscenes = [
                 animation: spr_player_stretch_head_idle,
             },
             {
-                line: "UNLOCKED FLOAT",
-                animation: spr_player_stretch_head_idle,
+                line: "UNLOCKED TWINS",
+                animation: spr_player_twin_idle,
             },
             {
-                line: "Press 'Up' to raise your head high",
-                animation: spr_player_stretch_head_idle,
+                line: "Press 'Up' to fling your brother",
+                animation: spr_player_twin_idle,
             },
             {
                 line: "Now play it all again lol",
-                animation: spr_player_stretch_head_idle,
+                animation: spr_player_twin_idle,
             },
         ],
         next_level: rm_level_1,
