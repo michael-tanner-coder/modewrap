@@ -1,6 +1,5 @@
 // TODO: balance level designs / coin placements / enemy placements
 // TODO: add social media info / wishlist link
-// TODO: prep social media profiles and website
 
 // Graphics setup
 window_set_fullscreen(false);
