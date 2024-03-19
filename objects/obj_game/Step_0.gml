@@ -61,7 +61,7 @@ if (global.paused && global.game_over) {
 
 if (global.paused && global.victory) {
     // Manually move to the next level if we are in the victory state, reset goal and time limit
-    if (inputs.select.down) {
+    if (inputs.select.pressed) {
         go_to_next_level();
         global.victory = false;
         global.level_timer = 60 * global.levels[global.level_index].time_limit;
