@@ -33,10 +33,10 @@ progress_cutscene = function () {
         typewriter.line_complete &&
         script_index >= array_length(scene_script) - 1
     ) {
-        if (global.cutscene_index == array_length(global.cutscenes) - 1) {
-            room_goto(rm_scores);
-            return;
-        }
+        // if (global.cutscene_index == array_length(global.cutscenes) - 1) {
+        //     room_goto(rm_scores);
+        //     return;
+        // }
 
         room_goto(global.cutscenes[global.cutscene_index].next_level);
         return;
