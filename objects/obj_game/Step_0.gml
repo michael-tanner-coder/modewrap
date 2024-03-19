@@ -83,7 +83,11 @@ if (lives <= 0) {
 }
 
 if (global.collected_coins >= goal_coin_count) {
-    instance_destroy(obj_enemy);
+	instance_destroy(obj_cannon);
+	instance_destroy(obj_cannonball);
+	instance_destroy(obj_butterfly);
+	instance_destroy(obj_bunny);
+	instance_destroy(obj_crawlie);
 
     // If we are at the end of a sequence of levels on the same map, paused the game to show the Victory UI
     if (

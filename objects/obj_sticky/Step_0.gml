@@ -10,6 +10,11 @@ if (xspd == 0 && yspd == 0)
 	yspd = prev_xspd > 0 ? 1 : (prev_xspd < 0 ? -1 : 0);
 }
 
+// if no ground blocks are nearby, destroy self
+if (distance_to_object(obj_ground) > 5) {
+	instance_destroy(self);
+}
+
 
 // update x,y positions based on speed
 x+=xspd;
