@@ -1,4 +1,3 @@
-// TODO: loop the game
 // TODO: pair unlocks with the right levels
 // TODO: balance level designs / coin placements / enemy placements
 // TODO: add social media info / wishlist link

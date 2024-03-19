@@ -66,7 +66,7 @@ global.cutscenes = [
                 animation: spr_player_stretch_head_idle,
             },
         ],
-        next_level: rm_credits,
+        next_level: rm_level_1,
         character_unlock: CHARACTER.TWIN,
     },
 ];
