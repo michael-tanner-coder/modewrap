@@ -144,7 +144,9 @@ change_state = function(next_state) {
 
 // Modes
 modes = global.levels[global.level_index].characters;
-mode_queue = [CHARACTER.NORMAL, CHARACTER.BIG, CHARACTER.SMALL, CHARACTER.TALL, CHARACTER.BIG, CHARACTER.BOOTS, CHARACTER.SPIKEY, CHARACTER.STRETCH];
+// save_to_json([CHARACTER.NORMAL, CHARACTER.BIG, CHARACTER.SMALL], "unlocked_modes.json");
+mode_queue = load_from_json("unlocked_modes.json");
+// mode_queue = [CHARACTER.NORMAL, CHARACTER.BIG, CHARACTER.SMALL, CHARACTER.TALL, CHARACTER.BOOTS, CHARACTER.SPIKEY, CHARACTER.STRETCH];
 mode_queue_index = 1;
 
 // movement vars
