@@ -295,16 +295,16 @@ global.credits = credits_string;
 			[
 				["NEW GAME", new ScriptRunner(function() {
 					reset_character_data();
-					room_goto(rm_level_1);		// Goes to game room
+					room_goto(rm_level_2);		// Goes to game room
 					menuModePause();
 					menuSetPreset(e_menu_presets.pause_menu);
-					room = rm_level_1;
+					room = rm_level_2;
 				}), undefined, undefined], // Play the game with looping levels and no end
 
-				["CONTINUE", new ScriptRunner(function() { room_goto(rm_level_1);		// Goes to game room
+				["CONTINUE", new ScriptRunner(function() { room_goto(rm_level_2);		// Goes to game room
 					menuModePause();
 					menuSetPreset(e_menu_presets.pause_menu);
-					room = rm_level_1;
+					room = rm_level_2;
 				}), 
 		
 				"RESUME",		new ScriptRunner(resumeGame)],	// Resumes the game when paused

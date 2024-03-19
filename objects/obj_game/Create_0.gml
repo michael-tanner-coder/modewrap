@@ -1,6 +1,5 @@
 // TODO: balance level designs / coin placements / enemy placements
 // -- level 1 is mostly fine, but keep testing it
-// -- bug on level 2 where characters get stuck in lower blocks
 // -- enemy type on level 3 may be a bad fit
 // -- test level 4 more, least played one
 // -- test tighter time restrictions and game overs

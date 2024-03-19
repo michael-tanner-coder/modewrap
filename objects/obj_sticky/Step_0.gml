@@ -15,7 +15,6 @@ if (distance_to_object(obj_ground) > 5) {
 	instance_destroy(self);
 }
 
-
 // update x,y positions based on speed
 x+=xspd;
 y+=yspd;
