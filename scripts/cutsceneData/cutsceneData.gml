@@ -5,90 +5,68 @@ global.cutscenes = [
         key: "test scene 1",
         scene_script: [
             {
-                line: "testing",
-                animation: spr_player_idle,
+                line: "UNLOCKED TALL",
+                animation: spr_player_tall_run,
             },
             {
-                line: "testing 2",
-                animation: spr_player_run,
-            },
-            {
-                line: "testing 3 (end)",
-                animation: spr_player_hurt,
+                line: "Push blocks with your head",
+                animation: spr_player_tall_idle,
             },
         ],
-        next_level: rm_level_1,
+        next_level: rm_level_2,
+        character_unlock: CHARACTER.TALL
     },
     {
         key: "test scene 2",
         scene_script: [
             {
-                line: "testing",
-                animation: spr_player_big_idle,
+                line: "UNLOCKED SPIKEY",
+                animation: spr_player_spikey_idle,
             },
             {
-                line: "testing 2",
-                animation: spr_player_big_run,
-            },
-            {
-                line: "testing 3 (end)",
-                animation: spr_player_big_hurt,
+                line: "Destroy blocks with your spike",
+                animation: spr_player_spikey_idle,
             },
         ],
-        next_level: rm_level_2,
+        next_level: rm_level_3,
+        character_unlock: CHARACTER.SPIKEY,
     },
     {
         key: "test scene 3",
         scene_script: [
             {
-                line: "testing",
-                animation: spr_player_tall_idle,
+                line: "UNLOCKED BOOTS",
+                animation: spr_player_spike_boots_idle,
             },
             {
-                line: "testing 2",
-                animation: spr_player_tall_run,
-            },
-            {
-                line: "testing 3 (end)",
-                animation: spr_player_tall_hurt,
-            },
-        ],
-        next_level: rm_level_3,
-    },
-    {
-        key: "test scene 4",
-        scene_script: [
-            {
-                line: "testing",
-                animation: spr_player_short_idle,
-            },
-            {
-                line: "testing 2",
-                animation: spr_player_short_run,
-            },
-            {
-                line: "testing 3 (end)",
-                animation: spr_player_short_hurt,
+                line: "Bounce and break blocks below",
+                animation: spr_player_spike_boots_idle,
             },
         ],
         next_level: rm_level_4,
+        character_unlock: CHARACTER.BOOTS,
     },
     {
         key: "test scene 4",
         scene_script: [
             {
-                line: "testing",
-                animation: spr_player_twin_idle,
+                line: "YOU REACHED THE END!",
+                animation: spr_player_stretch_head_idle,
             },
             {
-                line: "testing 2",
-                animation: spr_player_twin_run,
+                line: "UNLOCKED FLOAT",
+                animation: spr_player_stretch_head_idle,
             },
             {
-                line: "testing 3 (end)",
-                animation: spr_player_twin_hurt,
+                line: "Press 'Up' to raise your head high",
+                animation: spr_player_stretch_head_idle,
+            },
+            {
+                line: "Now play it all again lol",
+                animation: spr_player_stretch_head_idle,
             },
         ],
         next_level: rm_credits,
+        character_unlock: CHARACTER.TWIN,
     },
 ];
