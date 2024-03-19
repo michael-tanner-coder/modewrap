@@ -42,7 +42,6 @@ if (global.paused && global.game_over) {
 
         // Update save data
         save_score();
-        unlock_mode();
 
         // Reset game state
         global.level_index = 0;
