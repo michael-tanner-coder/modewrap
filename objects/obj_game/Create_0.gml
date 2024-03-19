@@ -34,27 +34,27 @@ coin_rows = 4;
 mode_unlocks = [
     {
         points: 500,
-        mode: "big",
+        mode: CHARACTER.BIG,
     },
 
     {
         points: 700,
-        mode: "spikey",
+        mode: CHARACTER.SPIKEY,
     },
 
     {
         points: 2000,
-        mode: "stretch",
+        mode: CHARACTER.STRETCH,
     },
 
     {
         points: 2500,
-        mode: "twin",
+        mode: CHARACTER.TWIN,
     },
 
     {
         points: 3000,
-        mode: "boots",
+        mode: CHARACTER.BOOTS,
     },
 ];
 
@@ -63,7 +63,7 @@ load_default_modes = function () {
     var _modes = load_from_json("unlocked_modes.json");
 
     if (!is_array(_modes)) {
-        var _default_modes = ["normal", "small", "tall"];
+        var _default_modes = [CHARACTER.NORMAL, CHARACTER.SMALL, CHARACTER.TALL];
         save_to_json(_default_modes, "unlocked_modes.json");
     }
 };
