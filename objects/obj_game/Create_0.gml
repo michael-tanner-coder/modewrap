@@ -1,8 +1,7 @@
 // TODO: balance level designs / coin placements / enemy placements
-// -- test levels 1 and 4 more
+// -- test levels 3/4 more
 // -- ease up lvl 2
-// -- test tighter time restrictions and game overs
-// TODO: add social media info / wishlist link
+// -- test tighter time restrictions
 
 // Graphics setup
 window_set_fullscreen(false);

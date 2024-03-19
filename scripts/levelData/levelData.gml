@@ -19,7 +19,7 @@ global.levels = [
     {
         key: "1-2",
         enemies: [obj_crawlie],
-        goal_coins: 6,
+        goal_coins: 3,
         time_limit: 100,
         spawn_interval: 6,
         enemy_speed: 1,
@@ -31,7 +31,7 @@ global.levels = [
     {
         key: "1-3",
         enemies: [obj_crawlie],
-        goal_coins: 9,
+        goal_coins: 6,
         time_limit: 100,
         spawn_interval: 6,
         enemy_speed: 1,
@@ -43,7 +43,7 @@ global.levels = [
     {
         key: "1-4",
         enemies: [obj_crawlie],
-        goal_coins: 9,
+        goal_coins: 6,
         time_limit: 100,
         spawn_interval: 6,
         enemy_speed: 1,
@@ -69,7 +69,7 @@ global.levels = [
     {
         key: "2-2",
         enemies: [obj_bunny],
-        goal_coins: 6,
+        goal_coins: 3,
         time_limit: 80,
         spawn_interval: 6,
         enemy_speed: 1,
@@ -81,7 +81,7 @@ global.levels = [
     {
         key: "2-3",
         enemies: [obj_bunny],
-        goal_coins: 9,
+        goal_coins: 6,
         time_limit: 80,
         spawn_interval: 6,
         enemy_speed: 1,
@@ -93,7 +93,7 @@ global.levels = [
     {
         key: "2-4",
         enemies: [obj_bunny],
-        goal_coins: 9,
+        goal_coins: 6,
         time_limit: 80,
         spawn_interval: 6,
         enemy_speed: 1,
@@ -119,7 +119,7 @@ global.levels = [
     {
         key: "3-2",
         enemies: [obj_butterfly],
-        goal_coins: 6,
+        goal_coins: 3,
         time_limit: 60,
         spawn_interval: 6,
         enemy_speed: 1,
@@ -131,7 +131,7 @@ global.levels = [
     {
         key: "3-3",
         enemies: [obj_butterfly],
-        goal_coins: 9,
+        goal_coins: 6,
         time_limit: 60,
         spawn_interval: 6,
         enemy_speed: 1,
@@ -143,7 +143,7 @@ global.levels = [
     {
         key: "3-4",
         enemies: [obj_butterfly],
-        goal_coins: 9,
+        goal_coins: 6,
         time_limit: 60,
         spawn_interval: 6,
         enemy_speed: 1,
@@ -169,7 +169,7 @@ global.levels = [
     {
         key: "4-2",
         enemies: [obj_bunny],
-        goal_coins: 6,
+        goal_coins: 3,
         time_limit: 50,
         spawn_interval: 6,
         enemy_speed: 1,
@@ -181,11 +181,11 @@ global.levels = [
     {
         key: "4-3",
         enemies: [obj_butterfly],
-        goal_coins: 9,
+        goal_coins: 6,
         time_limit: 50,
         spawn_interval: 6,
         enemy_speed: 1,
-        spawn_limit: 3,
+        spawn_limit: 2,
         map: rm_level_4,
         cutscene: undefined,
         characters: _enabled_character_modes,
@@ -193,11 +193,11 @@ global.levels = [
     {
         key: "4-4",
         enemies: [obj_crawlie, obj_butterfly, obj_bunny],
-        goal_coins: 9,
+        goal_coins: 6,
         time_limit: 50,
         spawn_interval: 6,
         enemy_speed: 1,
-        spawn_limit: 3,
+        spawn_limit: 1,
         map: rm_level_4,
         cutscene: undefined,
         characters: _enabled_character_modes,
