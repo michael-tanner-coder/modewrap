@@ -1,7 +1,6 @@
 // TODO: balance level designs / coin placements / enemy placements
-// -- level 1 is mostly fine, but keep testing it
-// -- enemy type on level 3 may be a bad fit
-// -- test level 4 more, least played one
+// -- test levels 1 and 4 more
+// -- ease up lvl 2
 // -- test tighter time restrictions and game overs
 // TODO: add social media info / wishlist link
 

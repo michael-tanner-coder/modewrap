@@ -289,22 +289,22 @@ global.credits = credits_string;
 #endregion
 
 // #region Menu array (user)
-
+	start_level = rm_level_1;
 	menu = [
 		["START GAME", 
 			[
 				["NEW GAME", new ScriptRunner(function() {
 					reset_character_data();
-					room_goto(rm_level_2);		// Goes to game room
+					room_goto(start_level);		// Goes to game room
 					menuModePause();
 					menuSetPreset(e_menu_presets.pause_menu);
-					room = rm_level_2;
+					room = start_level;
 				}), undefined, undefined], // Play the game with looping levels and no end
 
-				["CONTINUE", new ScriptRunner(function() { room_goto(rm_level_2);		// Goes to game room
+				["CONTINUE", new ScriptRunner(function() { room_goto(start_level);		// Goes to game room
 					menuModePause();
 					menuSetPreset(e_menu_presets.pause_menu);
-					room = rm_level_2;
+					room = start_level;
 				}), 
 		
 				"RESUME",		new ScriptRunner(resumeGame)],	// Resumes the game when paused
