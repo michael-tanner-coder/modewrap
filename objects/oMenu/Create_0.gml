@@ -293,10 +293,10 @@ global.credits = credits_string;
 	menu = [
 		["START GAME", 
 			[
-				["CONTINUE", new ScriptRunner(function() { room_goto(rm_cutscene);		// Goes to game room
+				["CONTINUE", new ScriptRunner(function() { room_goto(rm_level_1);		// Goes to game room
 					menuModePause();
 					menuSetPreset(e_menu_presets.pause_menu);
-					room = rm_cutscene;
+					room = rm_level_1;
 				}), 
 		
 				"RESUME",		new ScriptRunner(resumeGame)],	// Resumes the game when paused
