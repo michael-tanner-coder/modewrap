@@ -2,8 +2,8 @@ scene_script = global.cutscenes[global.cutscene_index].scene_script;
 
 script_index = 0;
 
-typewriter = instance_create_layer(x, y, layer, obj_typewriter);
-animation = instance_create_layer(x, y + 50, layer, obj_animation);
+typewriter = instance_create_layer(x, y - 40, layer, obj_typewriter);
+animation = instance_create_layer(x + 120, y + 50, layer, obj_animation);
 
 depth = -10;
 typewriter.depth = depth;
@@ -15,11 +15,6 @@ animation.sprite_index = scene_script[script_index].animation;
 // Unlock a new character if they are available for this cutscene
 var _current_modes = load_from_json("unlocked_modes.json");
 var _new_character = global.cutscenes[global.cutscene_index].character_unlock;
-
-show_debug_message("_current_modes");
-show_debug_message(_current_modes);
-show_debug_message("_new_character");
-show_debug_message(_new_character);
 
 if (is_array(_current_modes) && _new_character != undefined && !array_contains(_current_modes, _new_character)) {
     array_push(_current_modes, _new_character);

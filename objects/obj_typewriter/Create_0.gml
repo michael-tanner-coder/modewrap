@@ -2,8 +2,8 @@ content_text = "test text ... test text";
 rendered_text = "";
 text_index = 1;
 typing_speed = 10;
-line_width = 80;
-line_spacing = 15;
+line_width = 160;
+line_spacing = 25;
 line_complete = false;
 
 update_text = function() {

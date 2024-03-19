@@ -1,5 +1,3 @@
-// TODO: pair unlocks with the right levels
-// TODO: show tutorial text
 // TODO: let players delete progress
 // TODO: balance level designs / coin placements / enemy placements
 // TODO: add social media info / wishlist link
