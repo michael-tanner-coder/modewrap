@@ -301,7 +301,13 @@ global.credits = credits_string;
 		
 				"RESUME",		new ScriptRunner(resumeGame)],	// Resumes the game when paused
 		
-				["NEW GAME", new ScriptRunner(function() { return undefined; }), undefined, undefined], // Play the game with looping levels and no end
+				["NEW GAME", new ScriptRunner(function() {
+					reset_character_data();
+					room_goto(rm_level_1);		// Goes to game room
+					menuModePause();
+					menuSetPreset(e_menu_presets.pause_menu);
+					room = rm_level_1;
+				}), undefined, undefined], // Play the game with looping levels and no end
 			]
 		], 
 		

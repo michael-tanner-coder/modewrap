@@ -1,4 +1,3 @@
-// TODO: let players delete progress
 // TODO: balance level designs / coin placements / enemy placements
 // TODO: add social media info / wishlist link
 // TODO: prep social media profiles and website

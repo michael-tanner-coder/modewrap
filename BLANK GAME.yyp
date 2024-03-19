@@ -159,6 +159,7 @@
     {"id":{"name":"rm_level_2","path":"rooms/rm_level_2/rm_level_2.yy",},},
     {"id":{"name":"spr_ground_corner","path":"sprites/spr_ground_corner/spr_ground_corner.yy",},},
     {"id":{"name":"shChangeHighlightColor","path":"shaders/shChangeHighlightColor/shChangeHighlightColor.yy",},},
+    {"id":{"name":"dataManagement","path":"scripts/dataManagement/dataManagement.yy",},},
     {"id":{"name":"spr_player_short_run","path":"sprites/spr_player_short_run/spr_player_short_run.yy",},},
     {"id":{"name":"menuModeTitle","path":"scripts/menuModeTitle/menuModeTitle.yy",},},
     {"id":{"name":"spr_butterfly","path":"sprites/spr_butterfly/spr_butterfly.yy",},},
