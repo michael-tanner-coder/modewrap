@@ -10,10 +10,7 @@ if (lives <= 0) {
 
 // Health
 if (health <= 0) {
-    x = room_width / 2;
-    y = -50;
     lives -= 1;
     health = 1;
-    iframes = 60;
     pubsub_publish("life_lost", 0);
 }

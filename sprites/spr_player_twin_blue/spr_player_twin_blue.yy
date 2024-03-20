@@ -14,6 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ff1d61b5-f606-42c2-b340-c7630b6d3304",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a00312cb-6176-4368-9d5a-97c2da346221",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"606ff25e-1a0b-4d04-87fc-8823460624f4",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,6 +57,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ff1d61b5-f606-42c2-b340-c7630b6d3304","path":"sprites/spr_player_twin_blue/spr_player_twin_blue.yy",},},},"Disabled":false,"id":"c9e5daba-4ae3-41fd-b6d2-b3f299d75103","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a00312cb-6176-4368-9d5a-97c2da346221","path":"sprites/spr_player_twin_blue/spr_player_twin_blue.yy",},},},"Disabled":false,"id":"a8a5e587-782d-4b54-a5ee-c8d7d3cf6e8f","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"606ff25e-1a0b-4d04-87fc-8823460624f4","path":"sprites/spr_player_twin_blue/spr_player_twin_blue.yy",},},},"Disabled":false,"id":"d01d2c65-ceed-4e03-a7de-cc2017937820","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

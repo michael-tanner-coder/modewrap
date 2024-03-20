@@ -11,6 +11,3 @@ if (points_to_next_life >= 1000) {
 if (lives > max_lives) {
 	lives = max_lives;
 }
-
-
-

@@ -80,6 +80,9 @@ hurt_behavior = function() {
 	if (_player_jump_stats.backup_sprites) {
 		sprite_index = _player_jump_stats.backup_sprites.hurt;
 	}
+	
+	// invincibility during this state
+	iframes = 60;
 }
 
 respawn_behavior = function() {}
@@ -114,7 +117,7 @@ states_array[STATES.RUNNING] = {
 };
 states_array[STATES.HURT] = {
     entrance_behavior: function() {
-		alarm_set(0, 10);
+		alarm_set(0, 50);
 	},
     active_behavior: hurt_behavior,
     exit_behavior: function() {},
@@ -145,9 +148,7 @@ change_state = function(next_state) {
 
 // Modes
 modes = global.levels[global.level_index].characters;
-// save_to_json([CHARACTER.NORMAL, CHARACTER.BIG, CHARACTER.SMALL], "unlocked_modes.json");
 mode_queue = load_from_json("unlocked_modes.json");
-// mode_queue = [CHARACTER.NORMAL, CHARACTER.BIG, CHARACTER.SMALL, CHARACTER.TALL, CHARACTER.BOOTS, CHARACTER.SPIKEY, CHARACTER.STRETCH];
 mode_queue_index = 1;
 
 // movement vars
