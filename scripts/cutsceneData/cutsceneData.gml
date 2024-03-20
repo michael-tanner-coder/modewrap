@@ -1,6 +1,25 @@
 global.cutscene_index = 0;
 
 global.cutscenes = [
+     {
+        key: "controls",
+        scene_script: [
+            {
+                line: "D-PAD: MOVE",
+                animation: spr_player_run,
+            },
+            {
+                line: "X: JUMP",
+                animation: spr_player_idle,
+            },
+            {
+                line: "DOWN: FAST FALL",
+                animation: spr_player_idle,
+            },
+        ],
+        next_level: rm_level_1,
+        character_unlock: undefined
+    },
     {
         key: "test scene 1",
         scene_script: [

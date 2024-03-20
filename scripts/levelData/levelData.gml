@@ -51,7 +51,7 @@ global.levels = [
         enemy_speed: 1,
         spawn_limit: 1,
         map: rm_level_2,
-        cutscene: 0,
+        cutscene: 1,
         characters: _enabled_character_modes,
     },
     {
@@ -89,7 +89,7 @@ global.levels = [
         enemy_speed: 1,
         spawn_limit: 1,
         map: rm_level_3,
-        cutscene: 1,
+        cutscene: 2,
         characters: _enabled_character_modes,
     },
     {
@@ -127,7 +127,7 @@ global.levels = [
         enemy_speed: 1,
         spawn_limit: 2,
         map: rm_level_4,
-        cutscene: 2,
+        cutscene: 3,
         characters: _enabled_character_modes,
     },
     {

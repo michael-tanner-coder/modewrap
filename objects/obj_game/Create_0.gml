@@ -4,8 +4,6 @@
 // -- some block movement looks glitchy
 // -- unclear when you have iframes
 // -- level 2 is still evil
-// -- disable controls on left stick (too sensitive)
-// -- show controls in game
 
 // Graphics setup
 window_set_fullscreen(false);

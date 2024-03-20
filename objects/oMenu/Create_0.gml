@@ -289,7 +289,7 @@ global.credits = credits_string;
 #endregion
 
 // #region Menu array (user)
-	start_level = rm_level_1;
+	start_level = rm_cutscene;
 	menu = [
 		["START GAME", 
 			[

@@ -1,5 +1,5 @@
 function screenwrap() {
-	var _buffer = 48;
+	var _buffer = 64;
 	if (x >= 320 - _buffer) {
 		x = 0 + _buffer;
 		return true;
