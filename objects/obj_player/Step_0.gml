@@ -1,7 +1,7 @@
 var _room_delta = (1 / room_speed) * 1000000;
 var _dt = delta_time / _room_delta;
 
-if (global.paused || lives <= 0) return;
+if (global.paused) return;
 
 // get inputs
 var inputs = global.input_sys.check(global.current_device);
@@ -25,6 +25,9 @@ var gravity_boost = _down_key_held;
 
 // speed
 xspd = (_right_key - _left_key) * _player_jump_stats.move_spd;
+if (state == STATES.HURT || state == STATES.GAME_OVER) {
+	xspd = 0;
+}
 
 // facing direction
 if (_right_key && image_xscale != 1) {
@@ -99,7 +102,7 @@ if (place_meeting(x, y + 1, obj_ground)) {
 }
 
 // jump buffer
-if (_jump_key_pressed) {
+if (_jump_key_pressed && state != STATES.HURT && state != STATES.GAME_OVER) {
     jump_buffer_time = max_jump_buffer_time;
 }
 
@@ -191,7 +194,7 @@ if (is_stretching) {
     stretch_height = lerp(stretch_height, 0, 0.1);
 }
 
-// Screnwrapping
+// Screenwrapping
 var _screenwrapped = screenwrap();
 
 if (_screenwrapped && !is_screenwrapping) {

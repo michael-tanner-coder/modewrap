@@ -88,12 +88,7 @@ hurt_behavior = function() {
 respawn_behavior = function() {}
 
 game_over_behavior = function() {
-    // animation 
-    sprite_index = get_character_properties().hurt;
-
-    if (_player_jump_stats.backup_sprites) {
-        sprite_index = _player_jump_stats.backup_sprites.hurt;
-    }
+    hurt_behavior();
 }
 
 // State Behaviors
