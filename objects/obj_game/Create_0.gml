@@ -1,3 +1,13 @@
+// Playtesting Notes:
+// -- unclear what the difference is between small and regular characters
+// -- unclear what the tall character does when hitting a block
+// -- make levels shorter and easier for playtesting
+// -- some block movement looks glitchy
+// -- unclear when you have iframes
+// -- level 2 is still evil
+// -- disable controls on left stick (too sensitive)
+// -- show controls in game
+
 // Graphics setup
 window_set_fullscreen(false);
 gpu_set_texfilter(false);

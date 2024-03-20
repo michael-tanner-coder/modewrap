@@ -1,4 +1,4 @@
-function screenwrap(){
+function screenwrap() {
 	var _buffer = 48;
 	if (x >= 320 - _buffer) {
 		x = 0 + _buffer;

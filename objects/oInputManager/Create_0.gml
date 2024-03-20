@@ -50,7 +50,7 @@ global.input_sys = new InputSystem({
      jump:  [vk_space, gp_a],
 	 pause: [vk_enter, vk_escape, gp_start],
 	 skip: [vk_enter, gp_start, gp_b],
-	 progress: [vk_space, gp_b],
+	 progress: [vk_space, gp_a],
 	 select: [vk_enter, vk_space, gp_a],
 });
 global.current_device = 0;
