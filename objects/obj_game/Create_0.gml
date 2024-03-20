@@ -1,7 +1,6 @@
 // Playtesting Notes:
 // -- unclear what the difference is between small and regular characters
 // -- unclear what the tall character does when hitting a block
-// -- make levels shorter and easier for playtesting
 // -- some block movement looks glitchy
 // -- unclear when you have iframes
 // -- level 2 is still evil
