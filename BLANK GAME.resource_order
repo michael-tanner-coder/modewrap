@@ -35,6 +35,7 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"UI","order":19,"path":"folders/UI.yy",},
+    {"name":"New Sprites","order":77,"path":"folders/Sprites/New Sprites.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_life","order":63,"path":"sprites/spr_life/spr_life.yy",},

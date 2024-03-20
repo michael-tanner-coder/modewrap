@@ -3,7 +3,8 @@
 // -- unclear what the tall character does when hitting a block
 // -- some block movement looks glitchy
 // -- unclear when you have iframes
-// -- level 2 is still evil
+// -- players can still get stuck in blocks when they return
+// -- show tutorials for starter characters
 
 // Graphics setup
 window_set_fullscreen(false);
