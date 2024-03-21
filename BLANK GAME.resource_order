@@ -156,6 +156,7 @@
     {"name":"obj_HTML_FS","order":1,"path":"objects/obj_HTML_FS/obj_HTML_FS.yy",},
     {"name":"sineFunctions","order":9,"path":"scripts/sineFunctions/sineFunctions.yy",},
     {"name":"sInpMouseLeft","order":14,"path":"sprites/sInpMouseLeft/sInpMouseLeft.yy",},
+    {"name":"rm_hd_test","order":11,"path":"rooms/rm_hd_test/rm_hd_test.yy",},
     {"name":"spr_bomb_explosion","order":30,"path":"sprites/spr_bomb_explosion/spr_bomb_explosion.yy",},
     {"name":"spr_player_twin_idle","order":45,"path":"sprites/spr_player_twin_idle/spr_player_twin_idle.yy",},
     {"name":"rm_credits","order":10,"path":"rooms/rm_credits/rm_credits.yy",},

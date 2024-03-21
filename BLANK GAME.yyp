@@ -186,6 +186,7 @@
     {"id":{"name":"pubsub_manager","path":"scripts/pubsub_manager/pubsub_manager.yy",},},
     {"id":{"name":"sineFunctions","path":"scripts/sineFunctions/sineFunctions.yy",},},
     {"id":{"name":"sInpMouseLeft","path":"sprites/sInpMouseLeft/sInpMouseLeft.yy",},},
+    {"id":{"name":"rm_hd_test","path":"rooms/rm_hd_test/rm_hd_test.yy",},},
     {"id":{"name":"spr_bomb_explosion","path":"sprites/spr_bomb_explosion/spr_bomb_explosion.yy",},},
     {"id":{"name":"spr_player_twin_idle","path":"sprites/spr_player_twin_idle/spr_player_twin_idle.yy",},},
     {"id":{"name":"rm_credits","path":"rooms/rm_credits/rm_credits.yy",},},
@@ -311,6 +312,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
+    {"roomId":{"name":"rm_hd_test","path":"rooms/rm_hd_test/rm_hd_test.yy",},},
     {"roomId":{"name":"rm_cutscene","path":"rooms/rm_cutscene/rm_cutscene.yy",},},
     {"roomId":{"name":"rm_unlocks","path":"rooms/rm_unlocks/rm_unlocks.yy",},},
     {"roomId":{"name":"rm_level_1","path":"rooms/rm_level_1/rm_level_1.yy",},},
