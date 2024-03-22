@@ -1,10 +1,42 @@
-
 gamepad_deadzone = 0.1;
 
 // #region Create maps (system)
 
 global.axis_last_val = ds_map_create();
 global.axis_val_ls = ds_list_create();
+
+#endregion
+
+// #region Macros (system)
+
+#macro gp_axislr	string(gp_axislh) + "+"
+#macro gp_axisll	string(gp_axislh) + "-"
+#macro gp_axislu	string(gp_axislv) + "-"
+#macro gp_axisld	string(gp_axislv) + "+"
+
+#macro gp_axisrr	string(gp_axisrh) + "+"
+#macro gp_axisrl	string(gp_axisrh) + "-"
+#macro gp_axisru	string(gp_axisrv) + "-"
+#macro gp_axisrd	string(gp_axisrv) + "+"
+
+#macro gp_a			gp_face1
+#macro gp_b			gp_face2
+#macro gp_x			gp_face3
+#macro gp_y			gp_face4
+
+#macro vk_left_cmd      92
+#macro vk_right_cmd     91
+#macro vk_semicolon     186
+#macro vk_comma         188
+#macro vk_dot           190
+#macro vk_equal         24
+#macro vk_slash         191
+#macro vk_backslash     220
+#macro vk_singlequote   222
+#macro vk_pilcrow       10
+#macro vk_backtick      2
+#macro vk_opening_square_bracket    219
+#macro vk_closing_square_breacket   221
 
 #endregion
 
