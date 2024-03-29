@@ -196,6 +196,7 @@ if (is_stretching) {
 
 // Screenwrapping
 var _screenwrapped = screenwrap();
+// var _screenwrapped = false;
 
 if (_screenwrapped && !is_screenwrapping) {
 	is_screenwrapping = true;
