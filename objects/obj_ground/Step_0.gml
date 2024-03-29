@@ -4,8 +4,8 @@ if(place_meeting(x, y+1, obj_player)) {
 		audio_play_sound(snd_move_platform, 2, false);
 	}
 	
-	if (obj_player.mode == CHARACTER.TALL) {
-		y -= obj_player.sprite_height;
+	if (obj_player.mode == CHARACTER.TALL && !pushed) {
+		y -= sprite_height;
 		pushed = true;
 	}
 	
@@ -23,7 +23,6 @@ if(place_meeting(x, y-1, obj_player) && obj_player.can_destroy_blocks_below) {
 	inactive = true;
 	alarm_set(0, 750);
 	obj_player.bounce_from_block = true;
-	// Player.can_destroy_blocks_below = false;
 }
 
 if (!inactive) {

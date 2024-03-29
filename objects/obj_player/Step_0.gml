@@ -161,6 +161,7 @@ if (place_meeting(x + xspd, y + yspd, obj_ground)) {
     }
 
     yspd = 0;
+    jump_timer = 0; // cancel the current jump if we hit a block
 }
 
 // movement

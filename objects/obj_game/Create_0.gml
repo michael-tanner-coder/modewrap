@@ -1,7 +1,6 @@
 // Playtesting Notes:
 // -- unclear what the difference is between small and regular characters
 // -- unclear what the tall character does when hitting a block
-// -- some block movement looks glitchy
 // -- unclear when you have iframes
 // -- players can still get stuck in blocks when they return
 // -- show tutorials for starter characters
