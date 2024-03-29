@@ -10,7 +10,6 @@ enum CHARACTER {
     SPIKEY = 7,
 }
 
-
 // Sprites for Mode Text in UI
 global.mode_text_sprites[CHARACTER.NORMAL] = {
 	key: "normal",
@@ -64,11 +63,11 @@ global.mode_text_sprites[CHARACTER.TWIN] = {
 // Properties for playing as specific character modes
 global.mode_properties[CHARACTER.NORMAL] = {
 	key: "normal",
-	jump_spd: -2.5,
+	jump_spd: -2.5 * SIZE_FACTOR,
 	jump_max: 1,
 	jump_hold_frames: 15,
-	grav: 0.25,
-	move_spd: 1,
+	grav: 0.25 * SIZE_FACTOR,
+	move_spd: SIZE_FACTOR,
 	run: spr_player_new_run,
 	idle: spr_player_new_idle,
 	hurt: spr_player_new_hurt,
@@ -84,11 +83,11 @@ global.mode_properties[CHARACTER.NORMAL] = {
 
 global.mode_properties[CHARACTER.BOOTS] = {
 	key: "boots", 
-	jump_spd: -2.5,
+	jump_spd: -2.5 * SIZE_FACTOR,
 	jump_max: 1,
 	jump_hold_frames: 15,
-	grav: 0.25,
-	move_spd: 1,
+	grav: 0.25 * SIZE_FACTOR,
+	move_spd: SIZE_FACTOR,
 	run: spr_player_spike_boots_run,
 	idle: spr_player_spike_boots_idle,
 	hurt: spr_player_spike_boots_hurt,
@@ -104,11 +103,11 @@ global.mode_properties[CHARACTER.BOOTS] = {
 
 global.mode_properties[CHARACTER.SMALL] = {
 	key: "small",
-	jump_spd: -2.5,
+	jump_spd: -2.5 * SIZE_FACTOR,
 	jump_max: 1,
 	jump_hold_frames: 15,
-	grav: 0.25,
-	move_spd: 2,
+	grav: 0.25 * SIZE_FACTOR,
+	move_spd: 2 * SIZE_FACTOR,
 	run: spr_player_short_run,
 	idle: spr_player_short_idle,
 	hurt: spr_player_short_hurt,
@@ -124,11 +123,11 @@ global.mode_properties[CHARACTER.SMALL] = {
 
 global.mode_properties[CHARACTER.TALL] = {
 	key: "tall",
-	jump_spd: -3,
+	jump_spd: -3 * SIZE_FACTOR,
 	jump_max: 1,
 	jump_hold_frames: 10,
-	grav: 0.25,
-	move_spd: 1,
+	grav: 0.25 * SIZE_FACTOR,
+	move_spd: SIZE_FACTOR,
 	run: spr_player_tall_run,
 	idle: spr_player_tall_idle,
 	hurt: spr_player_tall_hurt,
@@ -144,11 +143,11 @@ global.mode_properties[CHARACTER.TALL] = {
 
 global.mode_properties[CHARACTER.STRETCH] = 	{
 	key: "stretch",
-	jump_spd: -3,
+	jump_spd: -3 * SIZE_FACTOR,
 	jump_max: 1,
 	jump_hold_frames: 10,
-	grav: 0.25,
-	move_spd: 1,
+	grav: 0.25 * SIZE_FACTOR,
+	move_spd: 1 * SIZE_FACTOR,
 	run: spr_player_stretch_feet_run,
 	idle: spr_player_stretch_feet_idle,
 	hurt: spr_player_stretch_feet_hurt,
@@ -164,11 +163,11 @@ global.mode_properties[CHARACTER.STRETCH] = 	{
 
 global.mode_properties[CHARACTER.SPIKEY] = {
 	key: "spikey",
-	jump_spd: -3,
+	jump_spd: -3 * SIZE_FACTOR,
 	jump_max: 1,
 	jump_hold_frames: 10,
-	grav: 0.25,
-	move_spd: 1,
+	grav: 0.25 * SIZE_FACTOR,
+	move_spd: SIZE_FACTOR,
 	run: spr_player_spikey_run,
 	idle: spr_player_spikey_idle,
 	hurt: spr_player_spikey_hurt,
@@ -184,11 +183,11 @@ global.mode_properties[CHARACTER.SPIKEY] = {
 
 global.mode_properties[CHARACTER.BIG] = {
 	key: "big",
-	jump_spd: -1.5,
+	jump_spd: -1.5 * SIZE_FACTOR,
 	jump_max: 1,
 	jump_hold_frames: 15,
-	grav: 1,
-	move_spd: 1,
+	grav: SIZE_FACTOR,
+	move_spd: SIZE_FACTOR,
 	run: spr_player_big_run,
 	idle: spr_player_big_idle,
 	hurt: spr_player_big_hurt,
@@ -204,11 +203,11 @@ global.mode_properties[CHARACTER.BIG] = {
 
 global.mode_properties[CHARACTER.TWIN] = {
 	key: "twin",
-	jump_spd: -2.5,
+	jump_spd: -2.5 * SIZE_FACTOR,
 	jump_max: 1,
 	jump_hold_frames: 15,
-	grav: 0.25,
-	move_spd: 2,
+	grav: 0.25 * SIZE_FACTOR,
+	move_spd: 2 * SIZE_FACTOR,
 	run: spr_player_twin_run,
 	idle: spr_player_twin_idle,
 	hurt: spr_player_twin_hurt,
