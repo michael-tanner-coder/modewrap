@@ -1,5 +1,5 @@
 function screenwrap() {
-	var _buffer = 64;
+	var _buffer = UNIT_SIZE;
 	var _left_edge = view_xport[0];
 	var _right_edge = view_xport[0] + camera_get_view_width(view_camera[0]);
 	var _bottom_edge = view_yport[0] + camera_get_view_height(view_camera[0]);
