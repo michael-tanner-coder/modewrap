@@ -17,30 +17,11 @@ for (var _i = 0; _i < lives; _i++) {
 }
 
 // Current mode
-var _current_mode_index = global.mode_text_sprites[mode].sprite;
-var _character_mode_text = global.mode_text_sprites[mode].text_image;
-draw_sprite_ext(
-    spr_mode_text,
-    0,
-    _start_x,
-    _start_y,
-    2,
-    2,
-    image_angle,
-    image_blend,
-    image_alpha
-);
-draw_sprite_ext(
-    _character_mode_text,
-    0,
-    _start_x,
-    _start_y + 12,
-    2,
-    2,
-    image_angle,
-    image_blend,
-    image_alpha
-);
+var _character = get_character_properties();
+draw_set_font(Header);
+draw_set_color(_character.color);
+var _character_string = string_upper(_character.key);
+draw_text(view_xport[0] + camera_get_view_width(view_camera[0]) - string_width(_character_string), _start_y, _character_string);
 
 // Next mode
 var _next_mode = mode_queue[mode_queue_index];
