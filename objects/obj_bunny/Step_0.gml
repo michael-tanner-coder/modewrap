@@ -52,14 +52,14 @@ if (place_meeting(x + xspd, y + yspd, obj_ground))
 	}
 	
 	grounded = true;
-
 }
 
 // movement
 x += xspd;
-y+=yspd;
+y += yspd;
 
-if (y >= 240) {
+var _bottom_edge = view_yport[0] + camera_get_view_height(view_camera[0]);
+if (y >= _bottom_edge) {
 	instance_destroy(self);
 }
 
