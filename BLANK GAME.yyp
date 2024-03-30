@@ -95,6 +95,7 @@
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
     {"id":{"name":"spr_block_outline","path":"sprites/spr_block_outline/spr_block_outline.yy",},},
     {"id":{"name":"cutsceneData","path":"scripts/cutsceneData/cutsceneData.yy",},},
+    {"id":{"name":"spr_new_spawner","path":"sprites/spr_new_spawner/spr_new_spawner.yy",},},
     {"id":{"name":"sInpGamepadDpad","path":"sprites/sInpGamepadDpad/sInpGamepadDpad.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
     {"id":{"name":"rm_scores","path":"rooms/rm_scores/rm_scores.yy",},},

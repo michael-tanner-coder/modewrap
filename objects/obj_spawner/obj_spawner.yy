@@ -44,8 +44,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_spawner",
-    "path": "sprites/spr_spawner/spr_spawner.yy",
+    "name": "spr_new_spawner",
+    "path": "sprites/spr_new_spawner/spr_new_spawner.yy",
   },
   "spriteMaskId": null,
   "visible": true,

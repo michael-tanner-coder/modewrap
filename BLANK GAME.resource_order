@@ -74,6 +74,7 @@
     {"name":"goToNextLevel","order":1,"path":"scripts/goToNextLevel/goToNextLevel.yy",},
     {"name":"spr_background","order":6,"path":"sprites/spr_background/spr_background.yy",},
     {"name":"spr_block_outline","order":6,"path":"sprites/spr_block_outline/spr_block_outline.yy",},
+    {"name":"spr_new_spawner","order":20,"path":"sprites/spr_new_spawner/spr_new_spawner.yy",},
     {"name":"sInpGamepadDpad","order":8,"path":"sprites/sInpGamepadDpad/sInpGamepadDpad.yy",},
     {"name":"spr_player_idle","order":16,"path":"sprites/spr_player_idle/spr_player_idle.yy",},
     {"name":"rm_scores","order":3,"path":"rooms/rm_scores/rm_scores.yy",},
