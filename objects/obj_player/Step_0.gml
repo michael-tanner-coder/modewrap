@@ -197,7 +197,6 @@ if (is_stretching) {
 
 // Screenwrapping
 var _screenwrapped = screenwrap();
-// var _screenwrapped = false;
 
 if (_screenwrapped && !is_screenwrapping) {
 	is_screenwrapping = true;
@@ -223,15 +222,12 @@ if (_screenwrapped && !is_screenwrapping) {
         is_stretching = false;
     }
 
-	// 
-    change_mode();
-
     health = _player_jump_stats.base_health;
 
     audio_play_sound(snd_modewrap, 3, false);
 
     if (grounded) {
-        y -= sprite_height;
+        y -= sprite_get_height(_player_jump_stats.idle);
     }
 
     // slow fall when screenwrapping from bottom to top
