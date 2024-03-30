@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_new_sticky",
-  "bbox_bottom": 43,
+  "bbox_bottom": 59,
   "bbox_left": 0,
-  "bbox_right": 43,
+  "bbox_right": 59,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d0eeb780-e3b6-4a01-8012-c4b0e040c733",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"71b4b74e-d615-44f2-9aeb-9263ad1e8550",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 44,
+  "height": 60,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"66612d72-d703-41fc-ad4b-30efce80615a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c39214e2-934a-41d8-a604-de9df31244e8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d0eeb780-e3b6-4a01-8012-c4b0e040c733","path":"sprites/spr_new_sticky/spr_new_sticky.yy",},},},"Disabled":false,"id":"3a8da086-f85e-4b47-a60d-66374676c0d2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"71b4b74e-d615-44f2-9aeb-9263ad1e8550","path":"sprites/spr_new_sticky/spr_new_sticky.yy",},},},"Disabled":false,"id":"25f4d3e8-e2d8-4fc7-85d1-bb7d577e2ee6","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 44,
+  "width": 60,
 }

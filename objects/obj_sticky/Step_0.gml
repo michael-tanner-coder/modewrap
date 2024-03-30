@@ -1,17 +1,16 @@
 // change x and y speed based on where the ground is touching the character
-xspd = place_meeting(x,y+1, obj_ground) ? 1 : (place_meeting(x,y-1,obj_ground) ? -1 : 0);
-yspd = place_meeting(x-1, y, obj_ground) ? 1 : (place_meeting(x+1, y, obj_ground) ? -1 : 0);
-
+xspd = place_meeting(x,y+(1*SIZE_FACTOR), obj_ground) ? 1 * SIZE_FACTOR : (place_meeting(x,y-(1*SIZE_FACTOR),obj_ground) ? -1 * SIZE_FACTOR : 0);
+yspd = place_meeting(x-(1*SIZE_FACTOR), y, obj_ground) ? 1  * SIZE_FACTOR : (place_meeting(x+(1*SIZE_FACTOR), y, obj_ground) ? -1  * SIZE_FACTOR : 0);
 
 // if we hit a corner and aren't touching any ground blocks
 if (xspd == 0 && yspd == 0) 
 {
-	xspd = prev_yspd > 0 ? -1 : (prev_yspd < 0 ? 1 : 0);
-	yspd = prev_xspd > 0 ? 1 : (prev_xspd < 0 ? -1 : 0);
+	xspd = prev_yspd > 0 ? -1 * SIZE_FACTOR : (prev_yspd < 0 ? 1 * SIZE_FACTOR : 0);
+	yspd = prev_xspd > 0 ? 1 * SIZE_FACTOR : (prev_xspd < 0 ? -1 * SIZE_FACTOR : 0);
 }
 
 // if no ground blocks are nearby, destroy self
-if (distance_to_object(obj_ground) > 5) {
+if (distance_to_object(obj_ground) > 5 * SIZE_FACTOR) {
 	instance_destroy(self);
 }
 
