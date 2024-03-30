@@ -12,12 +12,7 @@ if (!grounded) {
 
 check_for_collision();
 
-//screenwrap();
-
 nonlethal_frames--;
 if (nonlethal_frames <= 0) {
 	nonlethal_frames = 0;
 }
-
-
-
