@@ -62,6 +62,7 @@ global.mode_text_sprites[CHARACTER.TWIN] = {
 
 // Properties for playing as specific character modes
 global.mode_properties[CHARACTER.NORMAL] = {
+	color: $577DEF,
 	key: "normal",
 	jump_spd: -2.5 * SIZE_FACTOR,
 	jump_max: 1,
@@ -82,6 +83,7 @@ global.mode_properties[CHARACTER.NORMAL] = {
 };
 
 global.mode_properties[CHARACTER.BOOTS] = {
+	color: $BA7BD7,
 	key: "boots", 
 	jump_spd: -2.5 * SIZE_FACTOR,
 	jump_max: 1,
@@ -102,6 +104,7 @@ global.mode_properties[CHARACTER.BOOTS] = {
 };
 
 global.mode_properties[CHARACTER.SMALL] = {
+	color: $FF9B63,
 	key: "small",
 	jump_spd: -2.5 * SIZE_FACTOR,
 	jump_max: 1,
@@ -122,6 +125,7 @@ global.mode_properties[CHARACTER.SMALL] = {
 };
 
 global.mode_properties[CHARACTER.TALL] = {
+	color: $30BE6A,
 	key: "tall",
 	jump_spd: -3 * SIZE_FACTOR,
 	jump_max: 1,
@@ -142,6 +146,7 @@ global.mode_properties[CHARACTER.TALL] = {
 };
 
 global.mode_properties[CHARACTER.STRETCH] = 	{
+	color: $2C1E19,
 	key: "stretch",
 	jump_spd: -3 * SIZE_FACTOR,
 	jump_max: 1,
@@ -162,6 +167,7 @@ global.mode_properties[CHARACTER.STRETCH] = 	{
 };
 
 global.mode_properties[CHARACTER.SPIKEY] = {
+	color: $75CDFF,
 	key: "spikey",
 	jump_spd: -3 * SIZE_FACTOR,
 	jump_max: 1,
@@ -182,6 +188,7 @@ global.mode_properties[CHARACTER.SPIKEY] = {
 };
 
 global.mode_properties[CHARACTER.BIG] = {
+	color: $8A4276,
 	key: "big",
 	jump_spd: -1.5 * SIZE_FACTOR,
 	jump_max: 1,
@@ -202,6 +209,7 @@ global.mode_properties[CHARACTER.BIG] = {
 };
 
 global.mode_properties[CHARACTER.TWIN] = {
+	color: $3232AC,
 	key: "twin",
 	jump_spd: -2.5 * SIZE_FACTOR,
 	jump_max: 1,
