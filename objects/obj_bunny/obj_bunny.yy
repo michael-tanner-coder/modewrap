@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bunny",
-    "path": "sprites/spr_bunny/spr_bunny.yy",
+    "name": "spr_new_bunny",
+    "path": "sprites/spr_new_bunny/spr_new_bunny.yy",
   },
   "spriteMaskId": null,
   "visible": true,

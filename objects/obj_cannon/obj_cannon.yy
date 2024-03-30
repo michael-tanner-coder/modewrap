@@ -38,8 +38,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_cannon",
-    "path": "sprites/spr_cannon/spr_cannon.yy",
+    "name": "spr_new_cannon",
+    "path": "sprites/spr_new_cannon/spr_new_cannon.yy",
   },
   "spriteMaskId": null,
   "visible": true,

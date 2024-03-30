@@ -38,8 +38,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_sticky",
-    "path": "sprites/spr_sticky/spr_sticky.yy",
+    "name": "spr_new_sticky",
+    "path": "sprites/spr_new_sticky/spr_new_sticky.yy",
   },
   "spriteMaskId": null,
   "visible": true,

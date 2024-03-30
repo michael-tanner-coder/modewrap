@@ -32,8 +32,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_cannonball",
-    "path": "sprites/spr_cannonball/spr_cannonball.yy",
+    "name": "spr_new_cannonball",
+    "path": "sprites/spr_new_cannonball/spr_new_cannonball.yy",
   },
   "spriteMaskId": null,
   "visible": true,

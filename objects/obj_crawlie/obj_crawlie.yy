@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_crawler",
-    "path": "sprites/spr_crawler/spr_crawler.yy",
+    "name": "spr_new_crawlie",
+    "path": "sprites/spr_new_crawlie/spr_new_crawlie.yy",
   },
   "spriteMaskId": null,
   "visible": true,

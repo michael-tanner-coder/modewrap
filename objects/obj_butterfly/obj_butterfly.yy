@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_butterfly",
-    "path": "sprites/spr_butterfly/spr_butterfly.yy",
+    "name": "spr_new_butterfly",
+    "path": "sprites/spr_new_butterfly/spr_new_butterfly.yy",
   },
   "spriteMaskId": null,
   "visible": true,
