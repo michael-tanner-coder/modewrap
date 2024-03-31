@@ -16,47 +16,28 @@ draw_text(_left_pillar_box_center, _timer_text_y, "TIME");
 // -- time
 var _timer_x = _left_pillar_box_center;
 var _timer_y = _timer_text_y + font_get_size(Header) * 2;
-draw_set_color(c_white);
 draw_text(_timer_x, _timer_y, string(round(global.level_timer / 60)));
 
-// Coins
-var _coins_rendered = 1;
-for (var _i = 0; _i < coin_rows; _i++) {
-    if (_coins_rendered >= goal_coin_count) {
+// Keys
+var _keys_rendered = 1;
+var _key_grid_y = 650;
+for (var _i = 0; _i < key_rows; _i++) {
+    if (_keys_rendered >= goal_coin_count) {
         break;
     }
 
-    for (var _j = 0; _j < coin_columns; _j++) {
-        var _x = _ui_start_x + sprite_get_width(spr_coin_outline) * _j;
-        var _y = _ui_start_y + 79 + sprite_get_height(spr_coin_outline) * _i;
+    for (var _j = 0; _j < key_columns; _j++) {
+    	var _total_columns_width = sprite_get_width(spr_key_outline) * key_columns;
+        var _x = (_left_pillar_box_center - _total_columns_width / 2) + sprite_get_width(spr_key_outline) * _j;
+        var _y = _key_grid_y + sprite_get_height(spr_key_outline) * _i;
 
-        if (global.collected_coins >= _coins_rendered) {
-            draw_sprite_ext(
-                spr_coin,
-                0,
-                _x,
-                _y,
-                1,
-                1,
-                image_angle,
-                image_blend,
-                image_alpha
-            );
+        if (global.collected_coins >= _keys_rendered) {
+            draw_sprite(spr_key, 0, _x, _y);
         } else {
-            draw_sprite_ext(
-                spr_coin_outline,
-                0,
-                _x,
-                _y,
-                1,
-                1,
-                image_angle,
-                image_blend,
-                image_alpha
-            );
+            draw_sprite(spr_key_outline, 0, _x, _y);
         }
 
-        _coins_rendered++;
+        _keys_rendered++;
     }
 }
 
@@ -67,4 +48,4 @@ if (_level_key == "BONUS") {
     draw_set_color(c_yellow);
     _level_key = "B";
 }
-draw_text(_ui_start_x + _text_padding, _ui_start_y + 136, _level_key);
+draw_text(_left_pillar_box_center, _key_grid_y + key_rows * sprite_get_height(spr_key), _level_key);

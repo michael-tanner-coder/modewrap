@@ -34,8 +34,8 @@ global.current_map = global.levels[global.level_index].map;
 lives = 3;
 
 // Coin UI Properties
-coin_columns = 3;
-coin_rows = 4;
+key_columns = 3;
+key_rows = 4;
 
 // Unlockables
 mode_unlocks = [

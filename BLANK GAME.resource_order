@@ -208,6 +208,7 @@
     {"name":"spr_player_big_hurt","order":27,"path":"sprites/spr_player_big_hurt/spr_player_big_hurt.yy",},
     {"name":"spr_player_small_new_hurt","order":8,"path":"sprites/spr_player_small_new_hurt/spr_player_small_new_hurt.yy",},
     {"name":"obj_butterfly","order":10,"path":"objects/obj_butterfly/obj_butterfly.yy",},
+    {"name":"spr_key_outline","order":21,"path":"sprites/spr_key_outline/spr_key_outline.yy",},
     {"name":"resumeGame","order":6,"path":"scripts/resumeGame/resumeGame.yy",},
     {"name":"spr_player_stretch_head_run","order":58,"path":"sprites/spr_player_stretch_head_run/spr_player_stretch_head_run.yy",},
     {"name":"spr_mode_tall","order":71,"path":"sprites/spr_mode_tall/spr_mode_tall.yy",},

@@ -244,6 +244,7 @@
     {"id":{"name":"spr_player_big_hurt","path":"sprites/spr_player_big_hurt/spr_player_big_hurt.yy",},},
     {"id":{"name":"spr_player_small_new_hurt","path":"sprites/spr_player_small_new_hurt/spr_player_small_new_hurt.yy",},},
     {"id":{"name":"obj_butterfly","path":"objects/obj_butterfly/obj_butterfly.yy",},},
+    {"id":{"name":"spr_key_outline","path":"sprites/spr_key_outline/spr_key_outline.yy",},},
     {"id":{"name":"resumeGame","path":"scripts/resumeGame/resumeGame.yy",},},
     {"id":{"name":"loadFromJson","path":"scripts/loadFromJson/loadFromJson.yy",},},
     {"id":{"name":"spr_player_stretch_head_run","path":"sprites/spr_player_stretch_head_run/spr_player_stretch_head_run.yy",},},
