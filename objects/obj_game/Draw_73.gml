@@ -3,17 +3,29 @@ var _ui_start_x = 6;
 var _pillar_box_width = sprite_get_width(spr_black) * 6;
 var _left_pillar_box_center = view_xport[0] + _pillar_box_width / 2;
 
+var _character = undefined;
+var _character_color = c_white;
+with(obj_player) {
+	_character = get_character_properties();
+	_character_color = _character.color;
+}
+
+if (_character == undefined) {
+	return;
+}
+
 // GUI Font
 draw_set_font(Header);
-draw_set_color(c_white);
 
 // Timer
 // -- text
+draw_set_color(_character_color);
 var _timer_text_y = _ui_start_y * 4;
 var _timer_text_x = _left_pillar_box_center;
 draw_text(_left_pillar_box_center, _timer_text_y, "TIME");
 
 // -- time
+draw_set_color(c_white);
 var _timer_x = _left_pillar_box_center;
 var _timer_y = _timer_text_y + font_get_size(Header) * 2;
 draw_text(_timer_x, _timer_y, string(round(global.level_timer / 60)));
