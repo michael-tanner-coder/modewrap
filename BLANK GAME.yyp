@@ -71,6 +71,7 @@
     {"id":{"name":"spr_new_cannonball","path":"sprites/spr_new_cannonball/spr_new_cannonball.yy",},},
     {"id":{"name":"spr_player_twin_red_run","path":"sprites/spr_player_twin_red_run/spr_player_twin_red_run.yy",},},
     {"id":{"name":"obj_coinspawner","path":"objects/obj_coinspawner/obj_coinspawner.yy",},},
+    {"id":{"name":"obj_player_ui","path":"objects/obj_player_ui/obj_player_ui.yy",},},
     {"id":{"name":"mbCheck","path":"scripts/mbCheck/mbCheck.yy",},},
     {"id":{"name":"contains","path":"scripts/contains/contains.yy",},},
     {"id":{"name":"snd_shoot","path":"sounds/snd_shoot/snd_shoot.yy",},},

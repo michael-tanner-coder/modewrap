@@ -1,0 +1,1 @@
+player_instance = obj_player;
