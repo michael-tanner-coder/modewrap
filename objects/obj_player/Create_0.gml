@@ -7,6 +7,13 @@ points_to_next_life = 0;
 mode = CHARACTER.NORMAL;
 mode_index = 0;
 
+font_enable_effects(Header, true, {
+	outlineEnable: true,
+    outlineDistance: 4,
+    outlineColour: c_white
+})
+
+
 // Jump properties
 jump_buffer_time = 0;
 max_jump_buffer_time = 24;

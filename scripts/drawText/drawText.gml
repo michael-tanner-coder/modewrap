@@ -12,7 +12,7 @@
  * @return {undefied}		N/A
  */
 
-function drawText(xx, yy, str, scale, oc) {
+function drawText(xx, yy, str, scale, oc, outline_size = 1) {
     if (str == undefined) str = "";
     if (scale == undefined) scale = 1;
 
@@ -22,10 +22,10 @@ function drawText(xx, yy, str, scale, oc) {
     if (oc != undefined) {
         draw_set_color(oc);
 
-        draw_text_transformed(xx + scale, yy, str, scale, scale, 0);
-        draw_text_transformed(xx - scale, yy, str, scale, scale, 0);
-        draw_text_transformed(xx, yy + scale, str, scale, scale, 0);
-        draw_text_transformed(xx, yy - scale, str, scale, scale, 0);
+        draw_text_transformed(xx + scale + outline_size, yy, str, scale, scale, 0);
+        draw_text_transformed(xx - scale - outline_size, yy, str, scale, scale, 0);
+        draw_text_transformed(xx, yy + scale + outline_size, str, scale, scale, 0);
+        draw_text_transformed(xx, yy - scale - outline_size, str, scale, scale, 0);
     }
 
     // Draw text

@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_block_outline",
-  "bbox_bottom": 31,
+  "bbox_bottom": 325,
   "bbox_left": 0,
-  "bbox_right": 31,
+  "bbox_right": 309,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0555609a-c608-405c-8b20-dfaee5aafbe5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5803273d-6147-4eec-9600-aebb679aeff6",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 32,
+  "height": 326,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5bc477a9-697f-424a-b001-8bf9b39d8112","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4457da02-f1bd-464e-bd4a-7b1e2b616e7b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0555609a-c608-405c-8b20-dfaee5aafbe5","path":"sprites/spr_block_outline/spr_block_outline.yy",},},},"Disabled":false,"id":"311d2040-cc4e-4c6b-9cad-f5d8eb230618","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5803273d-6147-4eec-9600-aebb679aeff6","path":"sprites/spr_block_outline/spr_block_outline.yy",},},},"Disabled":false,"id":"a49d7d4a-3ef8-45ef-93a2-3945979cb44a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 32,
+  "width": 310,
 }

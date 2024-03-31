@@ -1,70 +1,71 @@
-var _start_y = 48;
-var _start_x = 264;
+var _ui_start_y = 100;
+var _pillar_box_width = sprite_get_width(spr_black) * 6; // pillar box is currently scaled by a factor of 6
+var _right_pillar_box_center = view_xport[0] + camera_get_view_width(view_camera[0]) - _pillar_box_width/2;
+var _left_pillar_box_center = view_xport[0] + _pillar_box_width/2;
 
 // Lives
+var _total_lives_width = lives * sprite_get_width(spr_life);
 for (var _i = 0; _i < lives; _i++) {
-    draw_sprite_ext(
+    draw_sprite(
         spr_life,
         0,
-        10 + (sprite_get_width(spr_life) + 4) * _i,
-        24,
-        1,
-        1,
-        image_angle,
-        image_blend,
-        image_alpha
+        (_left_pillar_box_center - _total_lives_width/2) + (sprite_get_width(spr_life) + 4) * _i,
+        _ui_start_y,
     );
 }
 
-// Current mode
+// Current character UI
+// -- string
 var _character = get_character_properties();
-draw_set_font(Header);
-draw_set_color(_character.color);
 var _character_string = string_upper(_character.key);
-draw_text(view_xport[0] + camera_get_view_width(view_camera[0]) - string_width(_character_string), _start_y, _character_string);
 
-// Next mode
-var _next_mode = mode_queue[mode_queue_index];
-var _next_mode_sprite = global.mode_text_sprites[_next_mode].sprite;
+// -- position
+draw_set_halign(fa_center);
+var _character_text_x = _right_pillar_box_center;
+var _character_text_y = _ui_start_y;
 
-draw_sprite_ext(
-    spr_next_mode_text,
-    0,
-    _start_x,
-    _start_y + 36,
-    2,
-    2,
-    image_angle,
-    image_blend,
-    image_alpha
+// -- outline
+var _outline_size = 4;
+draw_set_font(Header);
+
+// // -- colored text
+draw_set_color(_character.color);
+draw_text(_character_text_x, _character_text_y, _character_string);
+
+// Next Character UI
+// -- next text
+var _next_string = "NEXT";
+var _next_text_x = _character_text_x;
+var _next_text_y = _character_text_y * 4;
+draw_text(
+    _next_text_x,
+    _next_text_y,
+    _next_string
 );
 
-var _outline_x = _start_x;
-var _outline_y = _start_y + 68;
-var _sprite_character_width = sprite_get_width(_next_mode_sprite);
-var _sprite_character_height = sprite_get_height(_next_mode_sprite);
-var _center_x = _outline_x + sprite_get_width(spr_block_outline) / 2;
-var _center_y = _outline_y + sprite_get_height(spr_block_outline) / 2;
+// -- character preview image
+var _next_mode = mode_queue[mode_queue_index];
+var _next_mode_sprite = global.mode_properties[_next_mode].idle;
 
-draw_sprite_ext(
+var _character_preview_box_x = _right_pillar_box_center - sprite_get_width(spr_block_outline) / 2;
+var _character_preview_box_y = _next_text_y + sprite_get_height(spr_block_outline) / 4;
+
+var _character_preview_box_center_x = _character_preview_box_x + sprite_get_width(spr_block_outline) / 2;
+var _character_preview_box_center_y = _character_preview_box_y + sprite_get_height(spr_block_outline) / 2;
+
+var _character_sprite_width = sprite_get_width(_next_mode_sprite);
+var _character_sprite_height = sprite_get_height(_next_mode_sprite);
+
+draw_sprite(
     spr_block_outline,
     0,
-    _outline_x,
-    _outline_y,
-    1,
-    1,
-    image_angle,
-    image_blend,
-    image_alpha
+    _character_preview_box_x,
+    _character_preview_box_y,
 );
-draw_sprite_ext(
+
+draw_sprite(
     _next_mode_sprite,
     0,
-    _center_x - _sprite_character_width / 2,
-    _center_y - _sprite_character_height / 2,
-    1,
-    1,
-    image_angle,
-    image_blend,
-    image_alpha
+    _character_preview_box_center_x - _character_sprite_width / 2,
+    _character_preview_box_center_y - _character_sprite_height / 2,
 );
