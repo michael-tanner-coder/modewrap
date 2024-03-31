@@ -1,4 +1,4 @@
-// Global interface with the pubssub system
+// Global interface with the pubsub system
 
 /**
  * @description Subscribe the calling instance to the given event in the pubsub_manager
