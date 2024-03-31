@@ -1,24 +1,23 @@
-var _start_y = 48;
-var _start_x = 6;
+var _ui_start_y = 100;
+var _ui_start_x = 6;
+var _pillar_box_width = sprite_get_width(spr_black) * 6;
+var _left_pillar_box_center = view_xport[0] + _pillar_box_width / 2;
 
 // GUI Font
 draw_set_font(Header);
 draw_set_color(c_white);
 
 // Timer
-draw_sprite_ext(
-    spr_time_text,
-    0,
-    _start_x,
-    _start_y + 40,
-    2,
-    2,
-    image_angle,
-    image_blend,
-    image_alpha
-);
+// -- text
+var _timer_text_y = _ui_start_y * 4;
+var _timer_text_x = _left_pillar_box_center;
+draw_text(_left_pillar_box_center, _timer_text_y, "TIME");
+
+// -- time
+var _timer_x = _left_pillar_box_center;
+var _timer_y = _timer_text_y + font_get_size(Header) * 2;
 draw_set_color(c_white);
-draw_text(_start_x, _start_y + 50, string(round(global.level_timer / 60)));
+draw_text(_timer_x, _timer_y, string(round(global.level_timer / 60)));
 
 // Coins
 var _coins_rendered = 1;
@@ -28,8 +27,8 @@ for (var _i = 0; _i < coin_rows; _i++) {
     }
 
     for (var _j = 0; _j < coin_columns; _j++) {
-        var _x = _start_x + sprite_get_width(spr_coin_outline) * _j;
-        var _y = _start_y + 79 + sprite_get_height(spr_coin_outline) * _i;
+        var _x = _ui_start_x + sprite_get_width(spr_coin_outline) * _j;
+        var _y = _ui_start_y + 79 + sprite_get_height(spr_coin_outline) * _i;
 
         if (global.collected_coins >= _coins_rendered) {
             draw_sprite_ext(
@@ -68,4 +67,4 @@ if (_level_key == "BONUS") {
     draw_set_color(c_yellow);
     _level_key = "B";
 }
-draw_text(_start_x + _text_padding, _start_y + 136, _level_key);
+draw_text(_ui_start_x + _text_padding, _ui_start_y + 136, _level_key);
