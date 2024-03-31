@@ -20,8 +20,24 @@ if (_character == undefined) {
 
 // -- score header
 draw_set_font(Header);
+var _score_header = "SCORE";
+
+// ---- white text pass
+font_enable_effects(Header, true, {
+	enableOutline: true,
+	outlineDistance: 4,
+	outlineColour: c_white,
+});
+draw_set_color(c_white);
+draw_text(_start_x, _start_y, _score_header);
+
+// ---- color text pass
+font_enable_effects(Header, true, {
+	enableOutline: false,
+	outlineDistance: 0,
+});
 draw_set_color(_character_color);
-draw_text(_start_x, _start_y, "SCORE");
+draw_text(_start_x, _start_y, _score_header);
 
 // -- score number
 draw_set_valign(fa_top);

@@ -20,10 +20,26 @@ draw_set_font(Header);
 // Timer
 // -- text
 draw_set_halign(fa_center);
-draw_set_color(_character_color);
+var _timer_header = "TIME";
 var _timer_text_y = _ui_start_y * 4;
 var _timer_text_x = _left_pillar_box_center;
-draw_text(_left_pillar_box_center, _timer_text_y, "TIME");
+
+// ---- white text pass
+font_enable_effects(Header, true, {
+	enableOutline: true,
+	outlineDistance: 4,
+	outlineColour: c_white,
+});
+draw_set_color(c_white);
+draw_text(_left_pillar_box_center, _timer_text_y, _timer_header);
+
+// ---- color text pass
+font_enable_effects(Header, true, {
+	enableOutline: false,
+	outlineDistance: 0,
+});
+draw_set_color(_character_color);
+draw_text(_left_pillar_box_center, _timer_text_y, _timer_header);
 
 // -- time
 draw_set_color(c_white);

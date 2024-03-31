@@ -20,6 +20,7 @@ for (var _i = 0; _i < lives; _i++) {
 }
 
 // Current character UI
+
 // -- string
 var _character = player_instance.get_character_properties();
 var _character_string = string_upper(_character.key);
@@ -33,7 +34,20 @@ var _character_text_y = _ui_start_y;
 var _outline_size = 4;
 draw_set_font(Header);
 
-// // -- colored text
+// ---- white text pass
+font_enable_effects(Header, true, {
+	enableOutline: true,
+	outlineDistance: 4,
+	outlineColour: c_white,
+});
+draw_set_color(c_white);
+draw_text(_character_text_x, _character_text_y, _character_string);
+
+// ---- color text pass
+font_enable_effects(Header, true, {
+	enableOutline: false,
+	outlineDistance: 0,
+});
 draw_set_color(_character.color);
 draw_text(_character_text_x, _character_text_y, _character_string);
 
@@ -42,6 +56,25 @@ draw_text(_character_text_x, _character_text_y, _character_string);
 var _next_string = "NEXT";
 var _next_text_x = _character_text_x;
 var _next_text_y = _character_text_y * 4;
+// ---- white text pass
+font_enable_effects(Header, true, {
+	enableOutline: true,
+	outlineDistance: 4,
+	outlineColour: c_white,
+});
+draw_set_color(c_white);
+draw_text(
+    _next_text_x,
+    _next_text_y,
+    _next_string
+);
+
+// ---- color text pass
+font_enable_effects(Header, true, {
+	enableOutline: false,
+	outlineDistance: 0,
+});
+draw_set_color(_character.color);
 draw_text(
     _next_text_x,
     _next_text_y,
