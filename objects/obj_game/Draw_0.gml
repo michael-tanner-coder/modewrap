@@ -19,6 +19,7 @@ draw_set_font(Header);
 
 // Timer
 // -- text
+draw_set_halign(fa_center);
 draw_set_color(_character_color);
 var _timer_text_y = _ui_start_y * 4;
 var _timer_text_x = _left_pillar_box_center;
