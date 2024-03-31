@@ -9,12 +9,13 @@ var _left_pillar_box_center = view_xport[0] + _pillar_box_width/2;
 
 // Lives
 var _total_lives_width = lives * sprite_get_width(spr_life);
+var _lives_y = 39;
 for (var _i = 0; _i < lives; _i++) {
     draw_sprite(
         spr_life,
         0,
         (_left_pillar_box_center - _total_lives_width/2) + (sprite_get_width(spr_life) + 4) * _i,
-        _ui_start_y,
+        _lives_y,
     );
 }
 
