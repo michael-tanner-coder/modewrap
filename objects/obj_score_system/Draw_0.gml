@@ -120,7 +120,13 @@ var _monsters_bonus = {
 	points: 1000,
 };
 
-var score_structs = [_points_gained, _no_lives_lost, _time_bonus, _monsters_bonus];
+var _total = {
+	label: "TOTAL SCORE",
+	tally: undefined,
+	points: 2125,
+};
+
+var score_structs = [_points_gained, _no_lives_lost, _time_bonus, _monsters_bonus, _total];
 
 draw_set_font(Paragraph);
 for(var _i = 0; _i < array_length(score_structs); _i++) {
