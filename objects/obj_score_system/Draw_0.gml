@@ -127,8 +127,8 @@ var _total = {
 };
 
 var score_structs = [_points_gained, _no_lives_lost, _time_bonus, _monsters_bonus, _total];
-
-draw_set_font(Paragraph);
+var _score_font = Paragraph;
+draw_set_font(_score_font);
 for(var _i = 0; _i < array_length(score_structs); _i++) {
 	var _current_score = score_structs[_i];
 	var _current_score_y = _labels_column_start_y + ((_text_size + _text_y_margin) * _i);
@@ -137,7 +137,7 @@ for(var _i = 0; _i < array_length(score_structs); _i++) {
 	draw_set_halign(fa_left);
 	
 	// -- white text pass
-	font_enable_effects(Paragraph, true, {
+	font_enable_effects(_score_font, true, {
 		enableOutline: true,
 		outlineDistance: 4,
 		outlineColour: c_white,
@@ -146,7 +146,7 @@ for(var _i = 0; _i < array_length(score_structs); _i++) {
 	draw_text(_labels_column_start_x, _current_score_y, _current_score.label);
 	
 	// -- color text pass
-	font_enable_effects(Paragraph, true, {
+	font_enable_effects(_score_font, true, {
 		enableOutline: false,
 		outlineDistance: 0,
 	});
