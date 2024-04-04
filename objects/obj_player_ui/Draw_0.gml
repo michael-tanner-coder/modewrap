@@ -2,7 +2,6 @@ if (player_instance == undefined || player_instance == noone) {
 	return;
 }
 
-
 // --- LEFT PILLAR BOX ---
 var _pillar_box_width = sprite_get_width(spr_black) * 6; // pillar box is currently scaled by a factor of 6
 var _right_pillar_box_center = view_xport[0] + camera_get_view_width(view_camera[0]) - _pillar_box_width/2;
@@ -128,11 +127,12 @@ if (global.victory) {
 
 	// -- base points
 	var _text_x_padding = 30;
+	var _text_y_padding = 120;
 	var _text_y_margin = 30;
 	var _text_size = font_get_size(Paragraph);
 	
 	var _labels_column_start_x = _victory_ui_x + 20;
-	var _labels_column_start_y = _victory_ui_x + _text_x_padding;
+	var _labels_column_start_y = _victory_ui_y + _text_y_padding;
 	
 	var _points_column_start_x = _victory_ui_x + (_block_scale_width * _block_width) - _text_x_padding;
 	var _points_column_start_y = _labels_column_start_y;
@@ -196,7 +196,7 @@ if (global.victory) {
 	}
 }
 
-// GAME OVER UI
+// --- GAME OVER UI ---
 if (global.game_over) {
 	// -- victory header
 	var _game_over_header = "GAME OVER!";
@@ -207,11 +207,12 @@ if (global.game_over) {
 	
 	// -- base points
 	var _text_x_padding = 30;
+	var _text_y_padding = 120;
 	var _text_y_margin = 240;
 	var _text_size = font_get_size(Paragraph);
 	
 	var _labels_column_start_x = _victory_ui_x + 20;
-	var _labels_column_start_y = _victory_ui_x + _text_x_padding;
+	var _labels_column_start_y = _victory_ui_y + _text_y_padding;
 	
 	var _points_column_start_x = _victory_ui_x + (_block_scale_width * _block_width) - _text_x_padding;
 	var _points_column_start_y = _labels_column_start_y;
