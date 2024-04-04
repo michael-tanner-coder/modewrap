@@ -108,16 +108,44 @@ draw_sprite(
 // --- VICTORY UI ---
 // Score Table on Victory Screen
 // -- background underlay
-var _victory_ui_x = view_xport[0] + _pillar_box_width;
+var _target_victory_ui_x = view_xport[0] + _pillar_box_width;
 var _victory_ui_y = 264;
 var _block_width = sprite_get_width(spr_black);
 var _game_area_width = camera_get_view_width(view_camera[0]) - _pillar_box_width * 2;
 var _block_scale_width = _game_area_width / _block_width;
 var _block_scale_height = 8;
+var _underlay_height = _block_scale_height * sprite_get_height(spr_black);
 draw_sprite_ext(spr_black, 0, _victory_ui_x, _victory_ui_y, _block_scale_width, _block_scale_height, image_angle, image_blend, 0.6);
 
-
 if (global.victory) {
+	_victory_ui_x = lerp(_victory_ui_x, _target_victory_ui_x, 0.2);
+	
+	// -- borders
+	var _rect_width = 172;
+	var _rect_height = 10;
+	var _rect_count = _game_area_width / _rect_width;
+	var _total_border_width = _rect_width * _rect_count;
+	
+	for(var _i = 0; _i <= _rect_count * 2; _i++) {
+		
+		if (_i % 2 == 0) {
+			draw_set_color(_character_color);
+		} else {
+			draw_set_color(c_white);
+		}
+		
+		var _rect_x = (border_x + _victory_ui_x + _rect_width * _i) - (_total_border_width / 2);
+		var _rect_y = _victory_ui_y;
+		
+		draw_rectangle(_rect_x, _rect_y, _rect_x + _rect_width, _rect_y + _rect_height, false);
+		draw_rectangle(_rect_x, _rect_y + _underlay_height, _rect_x + _rect_width, _rect_y + _underlay_height + _rect_height, false);
+	}
+	
+	border_x += 1;
+	if (border_x >= _total_border_width/2) {
+		border_x = 0;
+	}
+	
 	// -- victory header
 	var _victory_header = "VICTORY!";
 	var _victory_text_x = _victory_ui_x + (_block_scale_width * _block_width) / 2;
@@ -140,59 +168,36 @@ if (global.victory) {
 	var _tally_column_start_x = _victory_ui_x + 660;
 	var _tally_column_start_y = _labels_column_start_y;
 	
-	var _points_gained = {
-		label: "POINTS GAINED",
-		tally: undefined,
-		points: 100,
-	};
-	
-	var _no_lives_lost = {
-		label: "NO LIVES LOST",
-		tally: undefined,
-		points: 1000,
-	};
-	
-	var _time_bonus = {
-		label: "TIME BONUS",
-		tally: "10 s",
-		points: 1000,
-	};
-	
-	var _monsters_bonus = {
-		label: "MONSTERS DEFEATED",
-		tally: 5,
-		points: 1000,
-	};
-	
-	var _total = {
-		label: "TOTAL SCORE",
-		tally: undefined,
-		points: 2125,
-	};
-	
 	var score_structs = [_points_gained, _no_lives_lost, _time_bonus, _monsters_bonus, _total];
 	var _score_font = Paragraph;
 	draw_set_font(_score_font);
 	for(var _i = 0; _i < array_length(score_structs); _i++) {
 		var _current_score = score_structs[_i];
 		var _current_score_y = _labels_column_start_y + ((_text_size + _text_y_margin) * _i);
+		_current_score.current_x = lerp(_current_score.current_x, 0, 0.4);
+		_current_score.current_points = lerp(_current_score.current_points, _current_score.points, 0.3);
+		var _rounded_score = round(_current_score.current_points);
 		
 		// label
 		draw_set_halign(fa_left);
 		draw_set_color(_character_color);
-		draw_outlined_text(_labels_column_start_x, _current_score_y, _current_score.label, _character_color, _score_font, 4, c_white);
+		draw_outlined_text(_labels_column_start_x + _current_score.current_x, _current_score_y, _current_score.label, _character_color, _score_font, 4, c_white);
 		
 		// tally
 		if (_current_score.tally != undefined) {
 			draw_set_halign(fa_center);
 			draw_set_color(c_white);
-			draw_text(_tally_column_start_x, _current_score_y, string(_current_score.tally));
+			draw_text(_tally_column_start_x + _current_score.current_x, _current_score_y, string(_current_score.tally));
 		}
 	
 		// points
 		draw_set_halign(fa_right);
 		draw_set_color(c_white);
-		draw_text(_points_column_start_x, _current_score_y, _current_score.points);
+		draw_text(_points_column_start_x + _current_score.current_x, _current_score_y, _rounded_score);
+		
+		if (_current_score.current_x != 0 || _current_score.current_points != _current_score.points) {
+			break;
+		}
 	}
 }
 
@@ -219,18 +224,6 @@ if (global.game_over) {
 	
 	var _tally_column_start_x = _victory_ui_x + 660;
 	var _tally_column_start_y = _labels_column_start_y;
-	
-	var _points_gained = {
-		label: "POINTS GAINED",
-		tally: undefined,
-		points: 100,
-	};
-	
-	var _final_score = {
-		label: "FINAL SCORE",
-		tally: undefined,
-		points: 100,
-	};
 	
 	var score_structs = [_points_gained, _final_score];
 	var _score_font = Paragraph;
