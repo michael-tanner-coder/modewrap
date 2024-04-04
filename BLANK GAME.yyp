@@ -166,6 +166,7 @@
     {"id":{"name":"spr_short_player","path":"sprites/spr_short_player/spr_short_player.yy",},},
     {"id":{"name":"Shift","path":"scripts/Shift/Shift.yy",},},
     {"id":{"name":"obj_respawn_platform","path":"objects/obj_respawn_platform/obj_respawn_platform.yy",},},
+    {"id":{"name":"textUtils","path":"scripts/textUtils/textUtils.yy",},},
     {"id":{"name":"spr_player_tall_run","path":"sprites/spr_player_tall_run/spr_player_tall_run.yy",},},
     {"id":{"name":"spr_mode_twin","path":"sprites/spr_mode_twin/spr_mode_twin.yy",},},
     {"id":{"name":"fPixelBig","path":"fonts/fPixelBig/fPixelBig.yy",},},

@@ -44,23 +44,7 @@ if (_character == undefined) {
 // -- score header
 draw_set_font(Header);
 var _score_header = "SCORE";
-
-// ---- white text pass
-font_enable_effects(Header, true, {
-	enableOutline: true,
-	outlineDistance: 4,
-	outlineColour: c_white,
-});
-draw_set_color(c_white);
-draw_text(_ui_start_x, _ui_start_y, _score_header);
-
-// ---- color text pass
-font_enable_effects(Header, true, {
-	enableOutline: false,
-	outlineDistance: 0,
-});
-draw_set_color(_character_color);
-draw_text(_ui_start_x, _ui_start_y, _score_header);
+draw_outlined_text(_ui_start_x, _ui_start_y, _score_header, _character_color, Header, 4, c_white);
 
 // -- score number
 draw_set_valign(fa_top);
@@ -85,53 +69,15 @@ var _character_text_y = _ui_start_y;
 // -- outline
 var _outline_size = 4;
 draw_set_font(Header);
-
-// ---- white text pass
-font_enable_effects(Header, true, {
-	enableOutline: true,
-	outlineDistance: 4,
-	outlineColour: c_white,
-});
-draw_set_color(c_white);
-draw_text(_character_text_x, _character_text_y, _character_string);
-
-// ---- color text pass
-font_enable_effects(Header, true, {
-	enableOutline: false,
-	outlineDistance: 0,
-});
-draw_set_color(_character.color);
-draw_text(_character_text_x, _character_text_y, _character_string);
+draw_outlined_text(_character_text_x, _character_text_y, _character_string, _character_color, Header, _outline_size, c_white);
 
 // Next Character UI
 // -- next text
 var _next_string = "NEXT";
 var _next_text_x = _character_text_x;
 var _next_text_y = _character_text_y * 4;
-// ---- white text pass
-font_enable_effects(Header, true, {
-	enableOutline: true,
-	outlineDistance: 4,
-	outlineColour: c_white,
-});
-draw_set_color(c_white);
-draw_text(
-    _next_text_x,
-    _next_text_y,
-    _next_string
-);
+draw_outlined_text(_next_text_x, _next_text_y, _next_string, _character_color, Header, _outline_size, c_white);
 
-// ---- color text pass
-font_enable_effects(Header, true, {
-	enableOutline: false,
-	outlineDistance: 0,
-});
-draw_set_color(_character.color);
-draw_text(
-    _next_text_x,
-    _next_text_y,
-    _next_string
-);
 
 // -- character preview image
 var _next_mode = player_instance.mode_queue[player_instance.mode_queue_index];
@@ -178,24 +124,8 @@ if (global.victory) {
 	var _victory_text_x = _victory_ui_x + (_block_scale_width * _block_width) / 2;
 	var _victory_text_y = _victory_ui_y + 40;
 	draw_set_halign(fa_center);
-	// 
-	// ---- white text pass
-	font_enable_effects(Header, true, {
-		enableOutline: true,
-		outlineDistance: 4,
-		outlineColour: c_white,
-	});
-	draw_set_color(c_white);
-	draw_text(_victory_text_x, _victory_text_y, _victory_header);
-	
-	// ---- color text pass
-	font_enable_effects(Header, true, {
-		enableOutline: false,
-		outlineDistance: 0,
-	});
-	draw_set_color(_character_color);
-	draw_text(_victory_text_x, _victory_text_y, _victory_header);
-	
+	draw_outlined_text(_victory_text_x, _victory_text_y, _victory_header, _character_color, Header, _outline_size, c_white);
+
 	// -- base points
 	var _text_x_padding = 30;
 	var _text_y_margin = 30;
@@ -249,23 +179,8 @@ if (global.victory) {
 		
 		// label
 		draw_set_halign(fa_left);
-		
-		// -- white text pass
-		// font_enable_effects(_score_font, true, {
-		// 	enableOutline: true,
-		// 	outlineDistance: 4,
-		// 	outlineColour: c_white,
-		// });
-		// draw_set_color(c_white);
-		// draw_text(_labels_column_start_x, _current_score_y, _current_score.label);
-		
-		// -- color text pass
-		// font_enable_effects(_score_font, true, {
-		// 	enableOutline: false,
-		// 	outlineDistance: 0,
-		// });
 		draw_set_color(_character_color);
-		draw_text(_labels_column_start_x, _current_score_y, _current_score.label);
+		draw_outlined_text(_labels_column_start_x, _current_score_y, _current_score.label, _character_color, _score_font, 4, c_white);
 		
 		// tally
 		if (_current_score.tally != undefined) {
@@ -288,25 +203,9 @@ if (global.game_over) {
 	var _game_over_text_x = _victory_ui_x + (_block_scale_width * _block_width) / 2;
 	var _game_over_text_y = _victory_ui_y + 40;
 	draw_set_halign(fa_center);
+	draw_outlined_text(_game_over_text_x, _game_over_text_y, _game_over_header, _character_color, Paragraph, 4, c_white);
 	
-	// ---- white text pass
-	font_enable_effects(Header, true, {
-		enableOutline: true,
-		outlineDistance: 4,
-		outlineColour: c_white,
-	});
-	draw_set_color(c_white);
-	draw_text(_game_over_text_x, _game_over_text_y, _game_over_header);
-	
-	// ---- color text pass
-	font_enable_effects(Header, true, {
-		enableOutline: false,
-		outlineDistance: 0,
-	});
-	draw_set_color(_character_color);
-	draw_text(_game_over_text_x, _game_over_text_y, _game_over_header);
-	
-		// -- base points
+	// -- base points
 	var _text_x_padding = 30;
 	var _text_y_margin = 240;
 	var _text_size = font_get_size(Paragraph);
@@ -341,24 +240,8 @@ if (global.game_over) {
 		
 		// label
 		draw_set_halign(fa_left);
-		
-		// -- white text pass
-		// font_enable_effects(_score_font, true, {
-		// 	enableOutline: true,
-		// 	outlineDistance: 4,
-		// 	outlineColour: c_white,
-		// });
-		// draw_set_color(c_white);
-		// draw_text(_labels_column_start_x, _current_score_y, _current_score.label);
-		
-		// -- color text pass
-		// font_enable_effects(_score_font, true, {
-		// 	enableOutline: false,
-		// 	outlineDistance: 0,
-		// });
-		draw_set_color(_character_color);
-		draw_text(_labels_column_start_x, _current_score_y, _current_score.label);
-		
+		draw_outlined_text(_labels_column_start_x, _current_score_y, _current_score.label, _character_color, _score_font, 4, c_white);
+	
 		// tally
 		if (_current_score.tally != undefined) {
 			draw_set_halign(fa_center);
