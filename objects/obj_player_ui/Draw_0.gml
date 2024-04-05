@@ -108,144 +108,144 @@ draw_sprite(
 // --- VICTORY UI ---
 // Score Table on Victory Screen
 // -- background underlay
-var _target_victory_ui_x = view_xport[0] + _pillar_box_width;
-var _victory_ui_y = 264;
-var _block_width = sprite_get_width(spr_black);
-var _game_area_width = camera_get_view_width(view_camera[0]) - _pillar_box_width * 2;
-var _block_scale_width = _game_area_width / _block_width;
-var _block_scale_height = 8;
-var _underlay_height = _block_scale_height * sprite_get_height(spr_black);
-draw_sprite_ext(spr_black, 0, _victory_ui_x, _victory_ui_y, _block_scale_width, _block_scale_height, image_angle, image_blend, 0.6);
+// var _target_victory_ui_x = view_xport[0] + _pillar_box_width;
+// var _victory_ui_y = 264;
+// var _block_width = sprite_get_width(spr_black);
+// var _game_area_width = camera_get_view_width(view_camera[0]) - _pillar_box_width * 2;
+// var _block_scale_width = _game_area_width / _block_width;
+// var _block_scale_height = 8;
+// var _underlay_height = _block_scale_height * sprite_get_height(spr_black);
+// draw_sprite_ext(spr_black, 0, _victory_ui_x, _victory_ui_y, _block_scale_width, _block_scale_height, image_angle, image_blend, 0.6);
 
-if (global.victory) {
-	_victory_ui_x = lerp(_victory_ui_x, _target_victory_ui_x, 0.2);
+// if (global.victory) {
+// 	_victory_ui_x = lerp(_victory_ui_x, _target_victory_ui_x, 0.2);
 	
-	// -- borders
-	var _rect_width = 172;
-	var _rect_height = 10;
-	var _rect_count = _game_area_width / _rect_width;
-	var _total_border_width = _rect_width * _rect_count;
+// 	// -- borders
+// 	var _rect_width = 172;
+// 	var _rect_height = 10;
+// 	var _rect_count = _game_area_width / _rect_width;
+// 	var _total_border_width = _rect_width * _rect_count;
 	
-	for(var _i = 0; _i <= _rect_count * 2; _i++) {
+// 	for(var _i = 0; _i <= _rect_count * 2; _i++) {
 		
-		if (_i % 2 == 0) {
-			draw_set_color(_character_color);
-		} else {
-			draw_set_color(c_white);
-		}
+// 		if (_i % 2 == 0) {
+// 			draw_set_color(_character_color);
+// 		} else {
+// 			draw_set_color(c_white);
+// 		}
 		
-		var _rect_x = (border_x + _victory_ui_x + _rect_width * _i) - (_total_border_width / 2);
-		var _rect_y = _victory_ui_y;
+// 		var _rect_x = (border_x + _victory_ui_x + _rect_width * _i) - (_rect_width * 2);
+// 		var _rect_y = _victory_ui_y;
 		
-		draw_rectangle(_rect_x, _rect_y, _rect_x + _rect_width, _rect_y + _rect_height, false);
-		draw_rectangle(_rect_x, _rect_y + _underlay_height, _rect_x + _rect_width, _rect_y + _underlay_height + _rect_height, false);
-	}
+// 		draw_rectangle(_rect_x, _rect_y, _rect_x + _rect_width, _rect_y + _rect_height, false);
+// 		draw_rectangle(_rect_x, _rect_y + _underlay_height, _rect_x + _rect_width, _rect_y + _underlay_height + _rect_height, false);
+// 	}
 	
-	border_x += 1;
-	if (border_x >= _total_border_width/2) {
-		border_x = 0;
-	}
+// 	border_x += 1;
+// 	if (border_x >= _rect_width * 2) {
+// 		border_x = 0;
+// 	}
 	
-	// -- victory header
-	var _victory_header = "VICTORY!";
-	var _victory_text_x = _victory_ui_x + (_block_scale_width * _block_width) / 2;
-	var _victory_text_y = _victory_ui_y + 40;
-	draw_set_halign(fa_center);
-	draw_outlined_text(_victory_text_x, _victory_text_y, _victory_header, _character_color, Header, _outline_size, c_white);
+// 	// -- victory header
+// 	var _victory_header = "VICTORY!";
+// 	var _victory_text_x = _victory_ui_x + (_block_scale_width * _block_width) / 2;
+// 	var _victory_text_y = _victory_ui_y + 40;
+// 	draw_set_halign(fa_center);
+// 	draw_outlined_text(_victory_text_x, _victory_text_y, _victory_header, _character_color, Header, _outline_size, c_white);
 
-	// -- base points
-	var _text_x_padding = 30;
-	var _text_y_padding = 120;
-	var _text_y_margin = 30;
-	var _text_size = font_get_size(Paragraph);
+// 	// -- base points
+// 	var _text_x_padding = 30;
+// 	var _text_y_padding = 120;
+// 	var _text_y_margin = 30;
+// 	var _text_size = font_get_size(Paragraph);
 	
-	var _labels_column_start_x = _victory_ui_x + 20;
-	var _labels_column_start_y = _victory_ui_y + _text_y_padding;
+// 	var _labels_column_start_x = _victory_ui_x + 20;
+// 	var _labels_column_start_y = _victory_ui_y + _text_y_padding;
 	
-	var _points_column_start_x = _victory_ui_x + (_block_scale_width * _block_width) - _text_x_padding;
-	var _points_column_start_y = _labels_column_start_y;
+// 	var _points_column_start_x = _victory_ui_x + (_block_scale_width * _block_width) - _text_x_padding;
+// 	var _points_column_start_y = _labels_column_start_y;
 	
-	var _tally_column_start_x = _victory_ui_x + 660;
-	var _tally_column_start_y = _labels_column_start_y;
+// 	var _tally_column_start_x = _victory_ui_x + 660;
+// 	var _tally_column_start_y = _labels_column_start_y;
 	
-	var score_structs = [_points_gained, _no_lives_lost, _time_bonus, _monsters_bonus, _total];
-	var _score_font = Paragraph;
-	draw_set_font(_score_font);
-	for(var _i = 0; _i < array_length(score_structs); _i++) {
-		var _current_score = score_structs[_i];
-		var _current_score_y = _labels_column_start_y + ((_text_size + _text_y_margin) * _i);
-		_current_score.current_x = lerp(_current_score.current_x, 0, 0.4);
-		_current_score.current_points = lerp(_current_score.current_points, _current_score.points, 0.3);
-		var _rounded_score = round(_current_score.current_points);
+// 	var score_structs = [_points_gained, _no_lives_lost, _time_bonus, _monsters_bonus, _total];
+// 	var _score_font = Paragraph;
+// 	draw_set_font(_score_font);
+// 	for(var _i = 0; _i < array_length(score_structs); _i++) {
+// 		var _current_score = score_structs[_i];
+// 		var _current_score_y = _labels_column_start_y + ((_text_size + _text_y_margin) * _i);
+// 		_current_score.current_x = lerp(_current_score.current_x, 0, 0.4);
+// 		_current_score.current_points = lerp(_current_score.current_points, _current_score.points, 0.3);
+// 		var _rounded_score = round(_current_score.current_points);
 		
-		// label
-		draw_set_halign(fa_left);
-		draw_set_color(_character_color);
-		draw_outlined_text(_labels_column_start_x + _current_score.current_x, _current_score_y, _current_score.label, _character_color, _score_font, 4, c_white);
+// 		// label
+// 		draw_set_halign(fa_left);
+// 		draw_set_color(_character_color);
+// 		draw_outlined_text(_labels_column_start_x + _current_score.current_x, _current_score_y, _current_score.label, _character_color, _score_font, 4, c_white);
 		
-		// tally
-		if (_current_score.tally != undefined) {
-			draw_set_halign(fa_center);
-			draw_set_color(c_white);
-			draw_text(_tally_column_start_x + _current_score.current_x, _current_score_y, string(_current_score.tally));
-		}
+// 		// tally
+// 		if (_current_score.tally != undefined) {
+// 			draw_set_halign(fa_center);
+// 			draw_set_color(c_white);
+// 			draw_text(_tally_column_start_x + _current_score.current_x, _current_score_y, string(_current_score.tally));
+// 		}
 	
-		// points
-		draw_set_halign(fa_right);
-		draw_set_color(c_white);
-		draw_text(_points_column_start_x + _current_score.current_x, _current_score_y, _rounded_score);
+// 		// points
+// 		draw_set_halign(fa_right);
+// 		draw_set_color(c_white);
+// 		draw_text(_points_column_start_x + _current_score.current_x, _current_score_y, _rounded_score);
 		
-		if (_current_score.current_x != 0 || _current_score.current_points != _current_score.points) {
-			break;
-		}
-	}
-}
+// 		if (_current_score.current_x != 0 || _current_score.current_points != _current_score.points) {
+// 			break;
+// 		}
+// 	}
+// }
 
-// --- GAME OVER UI ---
-if (global.game_over) {
-	// -- victory header
-	var _game_over_header = "GAME OVER!";
-	var _game_over_text_x = _victory_ui_x + (_block_scale_width * _block_width) / 2;
-	var _game_over_text_y = _victory_ui_y + 40;
-	draw_set_halign(fa_center);
-	draw_outlined_text(_game_over_text_x, _game_over_text_y, _game_over_header, _character_color, Paragraph, 4, c_white);
+// // --- GAME OVER UI ---
+// if (global.game_over) {
+// 	// -- victory header
+// 	var _game_over_header = "GAME OVER!";
+// 	var _game_over_text_x = _victory_ui_x + (_block_scale_width * _block_width) / 2;
+// 	var _game_over_text_y = _victory_ui_y + 40;
+// 	draw_set_halign(fa_center);
+// 	draw_outlined_text(_game_over_text_x, _game_over_text_y, _game_over_header, _character_color, Paragraph, 4, c_white);
 	
-	// -- base points
-	var _text_x_padding = 30;
-	var _text_y_padding = 120;
-	var _text_y_margin = 240;
-	var _text_size = font_get_size(Paragraph);
+// 	// -- base points
+// 	var _text_x_padding = 30;
+// 	var _text_y_padding = 120;
+// 	var _text_y_margin = 240;
+// 	var _text_size = font_get_size(Paragraph);
 	
-	var _labels_column_start_x = _victory_ui_x + 20;
-	var _labels_column_start_y = _victory_ui_y + _text_y_padding;
+// 	var _labels_column_start_x = _victory_ui_x + 20;
+// 	var _labels_column_start_y = _victory_ui_y + _text_y_padding;
 	
-	var _points_column_start_x = _victory_ui_x + (_block_scale_width * _block_width) - _text_x_padding;
-	var _points_column_start_y = _labels_column_start_y;
+// 	var _points_column_start_x = _victory_ui_x + (_block_scale_width * _block_width) - _text_x_padding;
+// 	var _points_column_start_y = _labels_column_start_y;
 	
-	var _tally_column_start_x = _victory_ui_x + 660;
-	var _tally_column_start_y = _labels_column_start_y;
+// 	var _tally_column_start_x = _victory_ui_x + 660;
+// 	var _tally_column_start_y = _labels_column_start_y;
 	
-	var score_structs = [_points_gained, _final_score];
-	var _score_font = Paragraph;
-	draw_set_font(_score_font);
-	for(var _i = 0; _i < array_length(score_structs); _i++) {
-		var _current_score = score_structs[_i];
-		var _current_score_y = _labels_column_start_y + ((_text_size + _text_y_margin) * _i);
+// 	var score_structs = [_points_gained, _final_score];
+// 	var _score_font = Paragraph;
+// 	draw_set_font(_score_font);
+// 	for(var _i = 0; _i < array_length(score_structs); _i++) {
+// 		var _current_score = score_structs[_i];
+// 		var _current_score_y = _labels_column_start_y + ((_text_size + _text_y_margin) * _i);
 		
-		// label
-		draw_set_halign(fa_left);
-		draw_outlined_text(_labels_column_start_x, _current_score_y, _current_score.label, _character_color, _score_font, 4, c_white);
+// 		// label
+// 		draw_set_halign(fa_left);
+// 		draw_outlined_text(_labels_column_start_x, _current_score_y, _current_score.label, _character_color, _score_font, 4, c_white);
 	
-		// tally
-		if (_current_score.tally != undefined) {
-			draw_set_halign(fa_center);
-			draw_set_color(c_white);
-			draw_text(_tally_column_start_x, _current_score_y, string(_current_score.tally));
-		}
+// 		// tally
+// 		if (_current_score.tally != undefined) {
+// 			draw_set_halign(fa_center);
+// 			draw_set_color(c_white);
+// 			draw_text(_tally_column_start_x, _current_score_y, string(_current_score.tally));
+// 		}
 	
-		// points
-		draw_set_halign(fa_right);
-		draw_set_color(c_white);
-		draw_text(_points_column_start_x, _current_score_y, _current_score.points);
-	}
-}
+// 		// points
+// 		draw_set_halign(fa_right);
+// 		draw_set_color(c_white);
+// 		draw_text(_points_column_start_x, _current_score_y, _current_score.points);
+// 	}
+// }
