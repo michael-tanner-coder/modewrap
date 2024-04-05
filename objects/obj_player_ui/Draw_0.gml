@@ -51,8 +51,6 @@ draw_set_halign(fa_left);
 draw_set_color(c_white);
 draw_text(_ui_start_x, _ui_start_y + font_get_size(Header) * 2, string(_points_accrued));
 
-
-
 //  --- RIGHT PILLAR BOX ---
 // Current character UI
 
@@ -76,7 +74,6 @@ var _next_string = "NEXT";
 var _next_text_x = _character_text_x;
 var _next_text_y = _character_text_y * 4;
 draw_outlined_text(_next_text_x, _next_text_y, _next_string, _character_color, Header, _outline_size, c_white);
-
 
 // -- character preview image
 var _next_mode = player_instance.mode_queue[player_instance.mode_queue_index];

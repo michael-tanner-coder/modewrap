@@ -3,7 +3,7 @@ score_table_x = -1000;
 score_table_y = 264;
 border_x = 0;
 
-_points_gained = {
+points_gained = {
 	label: "POINTS GAINED",
 	tally: undefined,
 	points: 100,
@@ -11,7 +11,7 @@ _points_gained = {
 	current_x: -1000, 
 };
 
-_no_lives_lost = {
+no_lives_lost = {
 	label: "NO LIVES LOST",
 	tally: undefined,
 	points: 1000,
@@ -19,7 +19,7 @@ _no_lives_lost = {
 	current_x: -1000, 
 };
 
-_time_bonus = {
+time_bonus = {
 	label: "TIME BONUS",
 	tally: "10 s",
 	points: 1000,
@@ -27,7 +27,7 @@ _time_bonus = {
 	current_x: -1000, 
 };
 
-_monsters_bonus = {
+monsters_bonus = {
 	label: "MONSTERS DEFEATED",
 	tally: 5,
 	points: 1000,
@@ -35,7 +35,7 @@ _monsters_bonus = {
 	current_x: -1000, 
 };
 
-_total = {
+total = {
 	label: "TOTAL SCORE",
 	tally: undefined,
 	points: 2125,
@@ -43,7 +43,7 @@ _total = {
 	current_x: -1000, 
 };
 
-_final_score = {
+final_score = {
 	label: "FINAL SCORE", 
 	tally: undefined,
 	current_points: 0,
