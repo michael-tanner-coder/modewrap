@@ -6,7 +6,7 @@ if (_score_system == undefined) {
 
 // --- VICTORY UI --- 
 if (global.victory) {
-    render_level_end_scores("VICTORY!", [_score_system.points_gained, _score_system.no_lives_lost, _score_system.time_bonus, _score_system.monsters_bonus, _score_system.total], 30);
+    render_level_end_scores("VICTORY!", [_score_system.points_gained, _score_system.no_lives_lost_score, _score_system.time_bonus, _score_system.monsters_bonus, _score_system.total], 30);
 }
 
 // // --- GAME OVER UI ---

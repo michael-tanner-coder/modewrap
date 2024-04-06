@@ -21,7 +21,7 @@ points_gained = {
 	current_x: -1000, 
 };
 
-no_lives_lost = {
+no_lives_lost_score = {
 	label: "NO LIVES LOST",
 	tally: undefined,
 	points: 1000,
@@ -92,13 +92,14 @@ pubsub_subscribe("level_over", function () {
     var _time_bonus = (_total_seconds_of_level / _time_spent_on_level) * base_time_bonus;
     var _monster_bonus = monsters_defeated * base_monster_bonus;
     var _no_lives_lost_bonus = no_lives_lost ? base_no_lives_lost_bonus : 0;
+    var _total_score = _no_lives_lost_bonus + _time_bonus + _monster_bonus + points_accrued;
     points_gained.points = points_accrued;
-    score += points_gained.points;
+    score += _total_score;
     
     show_debug_message("Points Accrued: " + string(points_accrued));
     show_debug_message("Monsters Defeated: " + string(monsters_defeated));
     show_debug_message("No Lives Lost?: " + string(no_lives_lost));
     show_debug_message("Time to Finish Level: " + string(_time_spent_on_level));
-    show_debug_message("Level Score: " + string(_level_score));
+    show_debug_message("Level Score: " + string(_total_score));
     show_debug_message("Total Score: " + string(score));
 });
