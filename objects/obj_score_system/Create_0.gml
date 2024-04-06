@@ -13,6 +13,54 @@ base_monster_bonus = 5;
 base_no_lives_lost_bonus = 1000;
 points_accrued = 0;
 
+points_gained = {
+	label: "POINTS GAINED",
+	tally: undefined,
+	points: 100,
+	current_points: 0,
+	current_x: -1000, 
+};
+
+no_lives_lost = {
+	label: "NO LIVES LOST",
+	tally: undefined,
+	points: 1000,
+	current_points: 0,
+	current_x: -1000, 
+};
+
+time_bonus = {
+	label: "TIME BONUS",
+	tally: "10 s",
+	points: 1000,
+	current_points: 0,
+	current_x: -1000, 
+};
+
+monsters_bonus = {
+	label: "MONSTERS DEFEATED",
+	tally: 5,
+	points: 1000,
+	current_points: 0,
+	current_x: -1000, 
+};
+
+total = {
+	label: "TOTAL SCORE",
+	tally: undefined,
+	points: 2125,
+	current_points: 0,
+	current_x: -1000, 
+};
+
+final_score = {
+	label: "FINAL SCORE", 
+	tally: undefined,
+	current_points: 0,
+	points: 100,
+	current_x: -1000, 
+}
+
 // Events
 pubsub_subscribe("coin_collected", function () {
     combo_timer = time_to_continue_combo;
@@ -44,8 +92,8 @@ pubsub_subscribe("level_over", function () {
     var _time_bonus = (_total_seconds_of_level / _time_spent_on_level) * base_time_bonus;
     var _monster_bonus = monsters_defeated * base_monster_bonus;
     var _no_lives_lost_bonus = no_lives_lost ? base_no_lives_lost_bonus : 0;
-    var _level_score = points_accrued;
-    score += _level_score;
+    points_gained.points = points_accrued;
+    score += points_gained.points;
     
     show_debug_message("Points Accrued: " + string(points_accrued));
     show_debug_message("Monsters Defeated: " + string(monsters_defeated));

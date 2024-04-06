@@ -1,13 +1,17 @@
 /// @description Insert description here
+var _score_system = obj_score_system;
+if (_score_system == undefined) {
+    return;
+}
 
-// --- VICTORY UI ---
+// --- VICTORY UI --- 
 if (global.victory) {
-    render_level_end_scores("VICTORY!", [points_gained, no_lives_lost, time_bonus, monsters_bonus, total], 30);
+    render_level_end_scores("VICTORY!", [_score_system.points_gained, _score_system.no_lives_lost, _score_system.time_bonus, _score_system.monsters_bonus, _score_system.total], 30);
 }
 
 // // --- GAME OVER UI ---
 if (global.game_over) {
-    render_level_end_scores("GAME OVER!", [points_gained, final_score], 240);
+    render_level_end_scores("GAME OVER!", [_score_system.points_gained, _score_system.final_score], 240);
 }
 
 

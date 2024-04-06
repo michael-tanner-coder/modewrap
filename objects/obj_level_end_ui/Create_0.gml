@@ -3,54 +3,6 @@ score_table_x = -1000;
 score_table_y = 264;
 border_x = 0;
 
-points_gained = {
-	label: "POINTS GAINED",
-	tally: undefined,
-	points: 100,
-	current_points: 0,
-	current_x: -1000, 
-};
-
-no_lives_lost = {
-	label: "NO LIVES LOST",
-	tally: undefined,
-	points: 1000,
-	current_points: 0,
-	current_x: -1000, 
-};
-
-time_bonus = {
-	label: "TIME BONUS",
-	tally: "10 s",
-	points: 1000,
-	current_points: 0,
-	current_x: -1000, 
-};
-
-monsters_bonus = {
-	label: "MONSTERS DEFEATED",
-	tally: 5,
-	points: 1000,
-	current_points: 0,
-	current_x: -1000, 
-};
-
-total = {
-	label: "TOTAL SCORE",
-	tally: undefined,
-	points: 2125,
-	current_points: 0,
-	current_x: -1000, 
-};
-
-final_score = {
-	label: "FINAL SCORE", 
-	tally: undefined,
-	current_points: 0,
-	points: 100,
-	current_x: -1000, 
-};
-
 render_level_end_scores = function(header, scores, row_margin) {
     // Score Table on Victory Screen
     // -- background underlay
@@ -68,7 +20,7 @@ render_level_end_scores = function(header, scores, row_margin) {
     with(obj_player) {
         _character_color = get_character_properties().color;
     }
-
+    
     score_table_x = lerp(score_table_x, _target_score_table_x, 0.2);
 	
 	// -- borders
@@ -123,8 +75,9 @@ render_level_end_scores = function(header, scores, row_margin) {
 	var _score_font = Paragraph;
 	
 	draw_set_font(_score_font);
-	for(var _i = 0; _i < array_length(score_structs); _i++) {
-		var _current_score = score_structs[_i];
+	
+	FOREACH score_structs ELEMENT
+	    var _current_score = _elem;
 		var _current_score_y = _labels_column_start_y + ((_text_size + _text_y_margin) * _i);
 		_current_score.current_x = lerp(_current_score.current_x, 0, 0.4);
 		_current_score.current_points = lerp(_current_score.current_points, _current_score.points, 0.3);
@@ -150,5 +103,5 @@ render_level_end_scores = function(header, scores, row_margin) {
 		if (_current_score.current_x != 0 || _current_score.current_points != _current_score.points) {
 			break;
 		}
-	}
+	END
 }
