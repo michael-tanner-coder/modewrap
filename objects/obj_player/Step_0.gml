@@ -169,9 +169,6 @@ yspd *= fall_speed; // slow down fall speed
 x += xspd;
 y += yspd;
 
-// animation
-script_execute(states_array[state].active_behavior);
-
 // arrow key commands
 if (_up_key_pressed && _player_jump_stats.backup_sprites && health > 1) {
     var _twin_instance = instance_create_layer(
@@ -245,3 +242,6 @@ iframes--;
 if (iframes <= 0) {
     iframes = 0;
 }
+
+// animation
+script_execute(states_array[state].active_behavior);

@@ -1,17 +1,17 @@
 function screenwrap() {
 	var _buffer = UNIT_SIZE;
-	var _left_edge = view_xport[0];
-	var _right_edge = view_xport[0] + camera_get_view_width(view_camera[0]);
-	var _bottom_edge = view_yport[0] + camera_get_view_height(view_camera[0]);
-	var _top_edge = view_yport[0];
+	var _left_edge = view_xport[1];
+	var _right_edge = view_xport[1] + camera_get_view_width(view_camera[1]);
+	var _bottom_edge = view_yport[1] + camera_get_view_height(view_camera[1]);
+	var _top_edge = view_yport[1];
 
-	if (x >= _right_edge - _buffer) {
-		x = _left_edge + _buffer;
+	if (x >= _right_edge) {
+		x = _left_edge + _buffer/2;
 		return true;
 	}
 
-	if (x < 0 + _buffer) {
-		x = _right_edge - _buffer;
+	if (x < _left_edge) {
+		x = _right_edge - _buffer/2;
 		return true;
 	}
 	
