@@ -72,7 +72,7 @@ if (place_meeting(x, y + 1, obj_ground)) {
         audio_play_sound(_player_jump_stats.landing_sound, 1, false);
 
         if (_player_jump_stats.heavy) {
-            screenshake(5, 1, 0.4);
+            screenshake(5, 2, 0.4);
             destroy_enemies();
 
             var _shockwave_right = instance_create_layer(
