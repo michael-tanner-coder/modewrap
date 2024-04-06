@@ -47,7 +47,7 @@ draw_outlined_text(_ui_start_x, _ui_start_y, _score_header, _character_color, He
 
 // -- score number
 draw_set_valign(fa_top);
-draw_set_halign(fa_left);
+draw_set_halign(fa_center);
 draw_set_color(c_white);
 draw_text(_ui_start_x, _ui_start_y + font_get_size(Header) * 2, string(_points_accrued));
 
