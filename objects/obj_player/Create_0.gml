@@ -150,6 +150,33 @@ save_to_json([CHARACTER.NORMAL, CHARACTER.BIG, CHARACTER.SMALL, CHARACTER.TALL],
 mode_queue = load_from_json("unlocked_modes.json");
 mode_queue_index = 1;
 
+change_character = function(next_mode) {
+	mode = next_mode;
+	
+	// get stats pertaining to new character
+    _player_jump_stats = get_character_properties();
+
+	// reset and spawn floating head instance for float character
+    instance_destroy(obj_player_head);
+    if (mode == CHARACTER.STRETCH) {
+        instance_create_layer(x, y, layer, obj_player_head);
+        is_stretching = false;
+    }
+
+    health = _player_jump_stats.base_health;
+
+    audio_play_sound(snd_modewrap, 3, false);
+
+    if (grounded) {
+        y -= sprite_get_height(_player_jump_stats.idle);
+    }
+
+    // slow fall when screenwrapping from bottom to top
+    if (!grounded) {
+        fall_speed = min_fall_speed;
+    }
+}
+
 // movement vars
 xspd = 0;
 yspd = 0;

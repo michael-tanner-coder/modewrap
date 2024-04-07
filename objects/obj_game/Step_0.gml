@@ -1,10 +1,6 @@
 // Inputs
 var inputs = global.input_sys.check(global.current_device);
 
-if (keyboard_check_pressed(vk_backspace)) {
-	room_restart();
-}
-
 // Speed settings
 if (lives > 0) {
     room_speed = 60 * global.settings.game_speed;

@@ -191,6 +191,7 @@
     {"name":"inputLast","order":6,"path":"scripts/inputLast/inputLast.yy",},
     {"name":"scribble_anim_wheel","order":8,"path":"scripts/scribble_anim_wheel/scribble_anim_wheel.yy",},
     {"name":"sInpGamepadButtonB","order":5,"path":"sprites/sInpGamepadButtonB/sInpGamepadButtonB.yy",},
+    {"name":"obj_debug","order":31,"path":"objects/obj_debug/obj_debug.yy",},
     {"name":"spr_player_spike_boots_hurt","order":44,"path":"sprites/spr_player_spike_boots_hurt/spr_player_spike_boots_hurt.yy",},
     {"name":"spr_time_text","order":60,"path":"sprites/spr_time_text/spr_time_text.yy",},
     {"name":"scribble_external_sound_exists","order":1,"path":"scripts/scribble_external_sound_exists/scribble_external_sound_exists.yy",},

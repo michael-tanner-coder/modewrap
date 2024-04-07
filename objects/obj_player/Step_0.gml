@@ -201,36 +201,14 @@ if (_screenwrapped && !is_screenwrapping) {
     iframes = screenwrap_iframes;
 
     // get the next character
-    mode = mode_queue[mode_queue_index];
+    change_character(mode_queue[mode_queue_index]);
     
     // increase mode_queue_index
     mode_queue_index++;
     if (mode_queue_index > array_length(mode_queue) - 1) {
         mode_queue_index = 0;
     }
-
-	// get stats pertaining to new character
-    _player_jump_stats = get_character_properties();
-
-	// reset and spawn floating head instance for float character
-    instance_destroy(obj_player_head);
-    if (mode == CHARACTER.STRETCH) {
-        instance_create_layer(x, y, layer, obj_player_head);
-        is_stretching = false;
-    }
-
-    health = _player_jump_stats.base_health;
-
-    audio_play_sound(snd_modewrap, 3, false);
-
-    if (grounded) {
-        y -= sprite_get_height(_player_jump_stats.idle);
-    }
-
-    // slow fall when screenwrapping from bottom to top
-    if (!grounded) {
-        fall_speed = min_fall_speed;
-    }
+    
 }
 
 if (!_screenwrapped) {
