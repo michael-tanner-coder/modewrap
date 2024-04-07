@@ -92,6 +92,12 @@ if (global.collected_coins >= goal_coin_count) {
 	instance_destroy(obj_butterfly);
 	instance_destroy(obj_bunny);
 	instance_destroy(obj_crawlie);
+	
+	// Track how long we took to complete this phase of the level
+	var _total_seconds_of_level = global.levels[global.level_index].time_limit;
+	var _current_level_time = global.level_timer / 60;
+    var _time_spent_on_level = _total_seconds_of_level - _current_level_time;
+    pubsub_publish("phase_over", _time_spent_on_level);
 
     // If we are at the end of a sequence of levels on the same map, paused the game to show the Victory UI
     if (

@@ -1,3 +1,4 @@
+// Score Properties
 score = 0;
 combo_bonus = 0;
 combo_bonus_increment = 0.2;
@@ -11,12 +12,12 @@ no_lives_lost = true;
 base_time_bonus = 100;
 base_monster_bonus = 5;
 base_no_lives_lost_bonus = 1000;
-points_accrued = 0;
 
-points_gained = {
+// Score Structs
+base_score = {
 	label: "POINTS GAINED",
 	tally: undefined,
-	points: 100,
+	points: 0,
 	current_points: 0,
 	current_x: -1000, 
 };
@@ -24,23 +25,23 @@ points_gained = {
 no_lives_lost_score = {
 	label: "NO LIVES LOST",
 	tally: undefined,
-	points: 1000,
+	points: 0,
 	current_points: 0,
 	current_x: -1000, 
 };
 
 time_bonus = {
 	label: "TIME BONUS",
-	tally: "10 s",
-	points: 1000,
+	tally: 0,
+	points: 0,
 	current_points: 0,
 	current_x: -1000, 
 };
 
 monsters_bonus = {
 	label: "MONSTERS DEFEATED",
-	tally: 5,
-	points: 1000,
+	tally: 0,
+	points: 0,
 	current_points: 0,
 	current_x: -1000, 
 };
@@ -48,7 +49,7 @@ monsters_bonus = {
 total = {
 	label: "TOTAL SCORE",
 	tally: undefined,
-	points: 2125,
+	points: 0,
 	current_points: 0,
 	current_x: -1000, 
 };
@@ -57,49 +58,62 @@ final_score = {
 	label: "FINAL SCORE", 
 	tally: undefined,
 	current_points: 0,
-	points: 100,
+	points: 0,
 	current_x: -1000, 
 }
 
 // Events
 pubsub_subscribe("coin_collected", function () {
     combo_timer = time_to_continue_combo;
-    points_accrued += coin_points * (default_score_multiplier + combo_bonus);
+    base_score.points += coin_points * (default_score_multiplier + combo_bonus);
     combo_bonus += combo_bonus_increment;
 });
 
 pubsub_subscribe("monster_defeated", function () {
     combo_timer = time_to_continue_combo;
-    points_accrued += monster_points * (default_score_multiplier + combo_bonus);
+    base_score.points += monster_points * (default_score_multiplier + combo_bonus);
     combo_bonus += combo_bonus_increment;
-    monsters_defeated += 1;
+    monsters_bonus.tally += 1;
 });
 
 pubsub_subscribe("all_monsters_defeated", function (number_of_monsters_defeated) {
     combo_timer = time_to_continue_combo;
-    points_accrued += (monster_points * (default_score_multiplier + combo_bonus)) * number_of_monsters_defeated;
+    base_score.points += (monster_points * (default_score_multiplier + combo_bonus)) * number_of_monsters_defeated;
     combo_bonus += combo_bonus_increment;
-    monsters_defeated += number_of_monsters_defeated;
+    monsters_bonus.tally += number_of_monsters_defeated;
 });
 
 pubsub_subscribe("life_lost", function () {
     no_lives_lost = false;
 });
 
+pubsub_subscribe("phase_over", function(time_spent) {
+	time_bonus.tally += time_spent;
+	time_bonus.points += (global.levels[global.level_index].time_limit / time_spent);
+});
+
 pubsub_subscribe("level_over", function () {
+	// Time
     var _total_seconds_of_level = 60 * global.levels[global.level_index].time_limit;
-    var _time_spent_on_level = _total_seconds_of_level - global.level_timer;
-    var _time_bonus = (_total_seconds_of_level / _time_spent_on_level) * base_time_bonus;
-    var _monster_bonus = monsters_defeated * base_monster_bonus;
-    var _no_lives_lost_bonus = no_lives_lost ? base_no_lives_lost_bonus : 0;
-    var _total_score = _no_lives_lost_bonus + _time_bonus + _monster_bonus + points_accrued;
-    points_gained.points = points_accrued;
-    score += _total_score;
+    var _time_spent_on_level = (_total_seconds_of_level - global.level_timer) / 60;
+    time_bonus.points *= base_time_bonus;
+    time_bonus.tally = string(time_bonus.tally) + " s";
     
-    show_debug_message("Points Accrued: " + string(points_accrued));
-    show_debug_message("Monsters Defeated: " + string(monsters_defeated));
+    // Monsters
+    monsters_bonus.points = monsters_bonus.tally * base_monster_bonus;
+    
+    // Lives
+    no_lives_lost_score.points = no_lives_lost ? base_no_lives_lost_bonus : 0;
+    
+    // Total
+    total.points = no_lives_lost_score.points + time_bonus.points + monsters_bonus.points + base_score.points;
+    score += total.points;
+    
+    // Logging
+    show_debug_message("Points Accrued: " + string(base_score.points));
+    show_debug_message("Monsters Defeated: " + string(monsters_bonus.tally));
     show_debug_message("No Lives Lost?: " + string(no_lives_lost));
     show_debug_message("Time to Finish Level: " + string(_time_spent_on_level));
-    show_debug_message("Level Score: " + string(_total_score));
+    show_debug_message("Level Score: " + string(total.points));
     show_debug_message("Total Score: " + string(score));
 });

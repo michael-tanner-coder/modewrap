@@ -33,7 +33,7 @@ with(obj_player) {
 
 var _points_accrued = 0;
 with (obj_score_system) {
-	_points_accrued = points_accrued;
+	_points_accrued = base_score.points;
 }
 
 if (_character == undefined) {

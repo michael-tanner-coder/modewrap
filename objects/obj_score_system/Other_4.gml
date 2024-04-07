@@ -1,1 +1,1 @@
-points_accrued = 0;
+base_score.points = 0;
