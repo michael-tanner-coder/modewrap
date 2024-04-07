@@ -28,3 +28,10 @@ function spawn_sparkles(particle_x,particle_y){
 	part_particles_create(_emitter.particle_system, particle_x, particle_y, _emitter.spark_particles, 10);
 	instance_destroy(_emitter);
 }
+
+function spawn_trail() {
+	var _emitter = instance_create_layer(x,y,layer,obj_particle_emitter);
+	part_type_sprite(_emitter.trail_particles, sprite_index, 0, 0, 1);
+	part_particles_create(_emitter.particle_system, x, y, _emitter.trail_particles, 1);
+	instance_destroy(_emitter);
+}

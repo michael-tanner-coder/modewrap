@@ -5,6 +5,7 @@ particle_system = part_system_create();
 dust_particles = part_type_create();
 spark_particles = part_type_create();
 puff_particles = part_type_create();
+trail_particles = part_type_create();
 
 // dust
 part_type_sprite(dust_particles, spr_dust_cloud, 0,0,1);
@@ -42,4 +43,11 @@ part_type_life(spark_particles, 50,70);
 
 
 part_type_alpha3(spark_particles, 1, 0.5,0.01);
+
+// trails
+part_type_sprite(trail_particles, spr_white, 0, 0, 1);
+part_type_size(trail_particles, 1, 1, 0, 0);
+part_type_life(trail_particles, 20, 20);
+part_type_alpha3(trail_particles, 0.2, 0.1, 0);
+part_type_color1(trail_particles, c_white);
 
