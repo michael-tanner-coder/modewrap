@@ -18,7 +18,7 @@ if (global.spawn_countdown <= 0) {
 		var _new_enemy = instance_create_layer(x,y, layer, _enemy_spawn_type);
 		var _random_num = random(1);
 		_new_enemy.move_speed = _random_num > 0.5 ? _new_enemy.move_speed : -1 * _new_enemy.move_speed;
-		_new_enemy.xspd = _random_num > 0.5 ? _new_enemy.xspd * _current_level.enemy_speed: (-1 * _current_level.enemy_speed) * _new_enemy.xspd;
+		_new_enemy.xspd = spawn_direction == "right" ? _new_enemy.xspd * _current_level.enemy_speed: (-1 * _current_level.enemy_speed) * _new_enemy.xspd;
 		_new_enemy.original_xspd = _new_enemy.xspd;
 		audio_play_sound(snd_spawn_enemy, 1, false);
 	}
