@@ -293,22 +293,27 @@ global.credits = credits_string;
 	menu = [
 		["START GAME", 
 			[
-				["NEW GAME", new ScriptRunner(function() {
-					reset_character_data();
-					room_goto(start_level);		// Goes to game room
-					menuModePause();
-					menuSetPreset(e_menu_presets.pause_menu);
-					room = start_level;
-				}), undefined, undefined], // Play the game with looping levels and no end
+				[
+					"NEW GAME", 
+					new ScriptRunner(function() {
+						reset_character_data();
+						room_goto(start_level);		// Goes to game room
+						menuModePause();
+						menuSetPreset(e_menu_presets.pause_menu);
+						room = start_level;
+					}), undefined, undefined
+				], // Play the game with looping levels and no end
 
-				["CONTINUE", new ScriptRunner(function() { room_goto(start_level);		// Goes to game room
-					menuModePause();
-					menuSetPreset(e_menu_presets.pause_menu);
-					room = start_level;
-				}), 
+				[
+					"CONTINUE", 
+					new ScriptRunner(function() { room_goto(start_level); // Goes to game room
+						menuModePause();
+						menuSetPreset(e_menu_presets.pause_menu);
+						room = start_level;
+					}), 
 		
-				"RESUME",		new ScriptRunner(resumeGame)],	// Resumes the game when paused
-		
+					"RESUME",		new ScriptRunner(resumeGame) // Resumes the game when paused
+				],
 			]
 		], 
 		
@@ -370,7 +375,45 @@ global.credits = credits_string;
 			menuModeTitle(); 
 			menuSetPreset(e_menu_presets.title_screen);
 			room = rm_title;
-		})]
+		})],
+		
+		["DEBUG", 
+			[
+				["SPAWN ENEMY", 
+					[
+						["CRAWLIE",	new ScriptRunner(function() { return undefined})],			// Changes window mode, see Game object
+						["BUNNY",	new ScriptRunner(function() { return undefined})],									// Not set to do anything
+						["BUTTERFLY",	new ScriptRunner(function() { return undefined})],									// Not set to do anything
+						["CANNON",	new ScriptRunner(function() { return undefined})],									// Not set to do anything
+					]
+				],
+				["SPAWN KEY", new ScriptRunner(function() { return undefined })],
+				["SET SCORE", 
+					[
+						["RESET SCORE",	new ScriptRunner(function() {
+							with (obj_score_system) {
+								base_score.points = 0;
+							}
+						})],			// Changes window mode, see Game object
+						["+100",	new ScriptRunner(function() {
+							with (obj_score_system) {
+								base_score.points += 100;
+							}
+						})],									// Not set to do anything
+						["+1000",	new ScriptRunner(function() {
+							with (obj_score_system) {
+								base_score.points += 1000;
+							}
+						})],									// Not set to do anything
+						["+9999",	new ScriptRunner(function() {
+							with (obj_score_system) {
+								base_score.points += 9999;
+							}
+						})],									// Not set to do anything
+					]
+				],
+			]
+		]
 	];
 
 
@@ -378,7 +421,8 @@ global.credits = credits_string;
 	
 	enum e_menu_presets {
 		title_screen,
-		pause_menu
+		pause_menu,
+		debug_menu
 	}
 
 #endregion
