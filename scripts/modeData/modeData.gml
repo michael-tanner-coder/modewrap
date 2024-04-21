@@ -57,7 +57,7 @@ global.mode_text_sprites[CHARACTER.TWIN] = {
 	key: "twin",
 	index: 7,
 	text_image: spr_mode_twin,
-	sprite: spr_player_twin_idle
+	sprite: spr_player_twin_new_idle
 };
 
 // Properties for playing as specific character modes
@@ -216,18 +216,18 @@ global.mode_properties[CHARACTER.TWIN] = {
 	jump_hold_frames: 15,
 	grav: 0.25 * SIZE_FACTOR,
 	move_spd: 2 * SIZE_FACTOR,
-	run: spr_player_twin_run,
-	idle: spr_player_twin_idle,
-	hurt: spr_player_twin_hurt,
+	run: spr_player_twin_new_run,
+	idle: spr_player_twin_new_idle,
+	hurt: spr_player_twin_new_hurt,
 	heavy: false,
 	landing_sound: snd_land,
 	can_destroy_blocks_above: false,
 	can_destroy_blocks_below: false,
 	base_health: 2,
 	backup_sprites: {
-		run: spr_player_twin_red_run,
-		idle: spr_player_twin_red_idle,
-		hurt: spr_player_twin_red_hurt,
+		run: spr_player_twin_red_new_run,
+		idle: spr_player_twin_red_new_idle,
+		hurt: spr_player_twin_red_new_hurt,
 	},
 	can_stretch: false,
 	description: "Can take two hits; can separate to reach higher coins",

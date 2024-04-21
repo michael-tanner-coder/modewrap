@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_twin_blue",
-    "path": "sprites/spr_player_twin_blue/spr_player_twin_blue.yy",
+    "name": "spr_player_twin_new_blue",
+    "path": "sprites/spr_player_twin_new_blue/spr_player_twin_new_blue.yy",
   },
   "spriteMaskId": null,
   "visible": true,
