@@ -14,6 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7f5f90c5-43dd-43e5-878f-8cfa28634d5e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fd406936-6b2f-4022-a867-a7b806021c14",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"294e1429-7285-4f5d-853e-d04384ed3871",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,6 +57,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7f5f90c5-43dd-43e5-878f-8cfa28634d5e","path":"sprites/spr_player_stretch_head_new_hurt/spr_player_stretch_head_new_hurt.yy",},},},"Disabled":false,"id":"34a42632-085e-4ecb-9414-ae40eda3d5da","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fd406936-6b2f-4022-a867-a7b806021c14","path":"sprites/spr_player_stretch_head_new_hurt/spr_player_stretch_head_new_hurt.yy",},},},"Disabled":false,"id":"c986fb10-0868-4c40-a607-a0988ea1f11a","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"294e1429-7285-4f5d-853e-d04384ed3871","path":"sprites/spr_player_stretch_head_new_hurt/spr_player_stretch_head_new_hurt.yy",},},},"Disabled":false,"id":"b7ccc165-4d9b-41e3-8c90-6c48a0ab8cab","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

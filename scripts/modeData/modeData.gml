@@ -45,7 +45,7 @@ global.mode_text_sprites[CHARACTER.SPIKEY] = {
 	key: "spikey",
 	index: 5,
 	text_image: spr_mode_spikey,
-	sprite: spr_player_spikey_idle
+	sprite: spr_player_spikey_new_idle
 };
 global.mode_text_sprites[CHARACTER.STRETCH] = {
 	key: "stretch",
@@ -174,9 +174,9 @@ global.mode_properties[CHARACTER.SPIKEY] = {
 	jump_hold_frames: 10,
 	grav: 0.25 * SIZE_FACTOR,
 	move_spd: SIZE_FACTOR,
-	run: spr_player_spikey_run,
-	idle: spr_player_spikey_idle,
-	hurt: spr_player_spikey_hurt,
+	run: spr_player_spikey_new_run,
+	idle: spr_player_spikey_new_idle,
+	hurt: spr_player_spikey_new_hurt,
 	heavy: false,
 	landing_sound: snd_land,
 	can_destroy_blocks_above: true,

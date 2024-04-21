@@ -14,6 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f72e846c-def0-41de-bd84-4b51cd4e10f2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"837ea062-f742-4511-bd22-2e25c0cb75c7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"17f8e511-3d7b-4dd5-875d-e5cf8b949eb2",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,6 +57,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f72e846c-def0-41de-bd84-4b51cd4e10f2","path":"sprites/spr_player_spike_boots_new_hurt/spr_player_spike_boots_new_hurt.yy",},},},"Disabled":false,"id":"dca8caae-cdf7-469e-806e-f83123982b4e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"837ea062-f742-4511-bd22-2e25c0cb75c7","path":"sprites/spr_player_spike_boots_new_hurt/spr_player_spike_boots_new_hurt.yy",},},},"Disabled":false,"id":"1bc3f022-1e32-455b-86f2-456ca28bdb8c","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"17f8e511-3d7b-4dd5-875d-e5cf8b949eb2","path":"sprites/spr_player_spike_boots_new_hurt/spr_player_spike_boots_new_hurt.yy",},},},"Disabled":false,"id":"44b26762-b619-49ee-9def-7083b358c54a","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
