@@ -39,7 +39,7 @@ global.mode_text_sprites[CHARACTER.BOOTS] = {
 	key: "boots",
 	index: 1,
 	text_image: spr_mode_boots,
-	sprite: spr_player_spike_boots_idle
+	sprite: spr_player_spike_boots_new_idle
 };
 global.mode_text_sprites[CHARACTER.SPIKEY] = {
 	key: "spikey",
@@ -90,9 +90,9 @@ global.mode_properties[CHARACTER.BOOTS] = {
 	jump_hold_frames: 15,
 	grav: 0.25 * SIZE_FACTOR,
 	move_spd: SIZE_FACTOR,
-	run: spr_player_spike_boots_run,
-	idle: spr_player_spike_boots_idle,
-	hurt: spr_player_spike_boots_hurt,
+	run: spr_player_spike_boots_new_run,
+	idle: spr_player_spike_boots_new_idle,
+	hurt: spr_player_spike_boots_new_hurt,
 	heavy: false,
 	landing_sound: snd_land,
 	can_destroy_blocks_above: false,
