@@ -51,7 +51,7 @@ global.mode_text_sprites[CHARACTER.STRETCH] = {
 	key: "stretch",
 	index: 4,
 	text_image: spr_mode_float,
-	sprite: spr_player_stretch_feet_idle
+	sprite: spr_player_stretch_feet_new_idle
 };
 global.mode_text_sprites[CHARACTER.TWIN] = {
 	key: "twin",
@@ -153,9 +153,9 @@ global.mode_properties[CHARACTER.STRETCH] = 	{
 	jump_hold_frames: 10,
 	grav: 0.25 * SIZE_FACTOR,
 	move_spd: 1 * SIZE_FACTOR,
-	run: spr_player_stretch_feet_run,
-	idle: spr_player_stretch_feet_idle,
-	hurt: spr_player_stretch_feet_hurt,
+	run: spr_player_stretch_feet_new_run,
+	idle: spr_player_stretch_feet_new_idle,
+	hurt: spr_player_stretch_feet_new_hurt,
 	heavy: false,
 	landing_sound: snd_land,
 	can_destroy_blocks_above: false,

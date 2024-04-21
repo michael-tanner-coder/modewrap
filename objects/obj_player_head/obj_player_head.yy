@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_stretch_head_idle",
-    "path": "sprites/spr_player_stretch_head_idle/spr_player_stretch_head_idle.yy",
+    "name": "spr_player_stretch_head_new_idle",
+    "path": "sprites/spr_player_stretch_head_new_idle/spr_player_stretch_head_new_idle.yy",
   },
   "spriteMaskId": null,
   "visible": true,

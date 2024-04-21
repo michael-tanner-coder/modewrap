@@ -187,7 +187,7 @@ if (_up_key_pressed && _player_jump_stats.can_stretch) {
 
 //stretch_height = stretch_height == 0 ? -75 : 0;
 if (is_stretching) {
-    stretch_height = lerp(stretch_height, -75, 0.1);
+    stretch_height = lerp(stretch_height, -75 * SIZE_FACTOR, 0.1);
 } else {
     stretch_height = lerp(stretch_height, 0, 0.1);
 }
