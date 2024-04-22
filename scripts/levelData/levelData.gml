@@ -6,7 +6,7 @@ global.levels = [
     // 1
     {
         key: "1-1",
-        enemies: [obj_bunny],
+        enemies: [obj_crawlie],
         goal_coins: 3,
         time_limit: 100,
         spawn_interval: 6,
@@ -30,7 +30,7 @@ global.levels = [
     },
     {
         key: "1-3",
-        enemies: [obj_crawlie],
+        enemies: [obj_cannon],
         goal_coins: 9,
         time_limit: 100,
         spawn_interval: 6,
