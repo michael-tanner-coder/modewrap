@@ -8,6 +8,7 @@ animation = instance_create_layer(x + 120, y + 50, layer, obj_animation);
 depth = -10;
 typewriter.depth = depth;
 animation.depth = depth;
+typewriter.line_spacing = 50;
 
 typewriter.content_text = scene_script[script_index].line;
 animation.sprite_index = scene_script[script_index].animation;
