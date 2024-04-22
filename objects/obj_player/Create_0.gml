@@ -148,7 +148,7 @@ change_state = function(next_state) {
 modes = global.levels[global.level_index].characters;
 // save_to_json([CHARACTER.NORMAL, CHARACTER.STRETCH, CHARACTER.BIG, CHARACTER.SMALL, CHARACTER.TALL], "unlocked_modes.json");
 mode_queue = load_from_json("unlocked_modes.json");
-
+mode_queue = array_shuffle(mode_queue, 1);
 mode_queue_index = 1;
 
 change_character = function(next_mode) {
