@@ -3,8 +3,8 @@ if (life <= 0) {
 }
 
 if (nonlethal_frames <= 0) {
-	y = other.warp_y;
-	x = other.warp_x
+	y = other.warp_y - sprite_height/2;
+	x = other.warp_x;
 	life -= 1;
 }
 
