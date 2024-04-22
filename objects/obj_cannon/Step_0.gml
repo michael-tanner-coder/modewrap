@@ -2,16 +2,6 @@ if (global.paused) {
 	return;
 }
 
-// Parent step logic
-// --left
-if (move_speed < 0) {
-	image_xscale = 1;
-}
-//-- right
-if (move_speed > 0) {
-	image_xscale = -1;
-}
-
 // gravity
 yspd += my_gravity;
 
@@ -80,21 +70,21 @@ var _dt = delta_time / 1000000;
 var _aim_direction = 180;
 
 //-- left
-if (move_speed < 0) {
+if (xspd < 0) {
 	_aim_direction = 180;
-	image_xscale = 1;
+	image_xscale = -1;
 }
 
 //-- right
-if (move_speed > 0) {
+if (xspd > 0) {
 	_aim_direction = 0;
-	image_xscale = -1;
+	image_xscale = 1;
 }
 	
 // shoot projectile when timer hits zero
 shoot_timer -= _dt;
 if (shoot_timer <= 0 && grounded && nonlethal_frames <= 0) {
-	var _buffer = move_speed < 0 ? shoot_buffer_x * -1 : shoot_buffer_x;
+	var _buffer = xspd < 0 ? shoot_buffer_x * -1 : shoot_buffer_x;
 	var _new_bullet = instance_create_layer(x + sprite_width/2,y+sprite_height/4,layer, projectile);
 	_new_bullet.speed = 1.5 * SIZE_FACTOR;
 	_new_bullet.direction = _aim_direction;

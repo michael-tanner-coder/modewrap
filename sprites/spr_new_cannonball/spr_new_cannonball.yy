@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_new_cannonball",
-  "bbox_bottom": 30,
+  "bbox_bottom": 48,
   "bbox_left": 0,
-  "bbox_right": 21,
+  "bbox_right": 34,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d3165522-e368-4a72-9bea-6f6afd9814b0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dc8e5e97-8c51-40f1-96b4-6b877178cda1",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 31,
+  "height": 49,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"833fc1e1-d1b2-42f8-b223-09390907326a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3cdbc411-3641-45ad-a321-b208f2d65382","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d3165522-e368-4a72-9bea-6f6afd9814b0","path":"sprites/spr_new_cannonball/spr_new_cannonball.yy",},},},"Disabled":false,"id":"734e5202-5c65-4340-9e51-0331e95b3ab7","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"dc8e5e97-8c51-40f1-96b4-6b877178cda1","path":"sprites/spr_new_cannonball/spr_new_cannonball.yy",},},},"Disabled":false,"id":"2c187077-de8e-4bab-b746-1af7a16686e5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 22,
+  "width": 35,
 }
